@@ -1,8 +1,8 @@
 import React from "react";
 import "./Button.css";
 
-const STYLES = ["btn--primary", "btn--outline","btn--white-outline", "btn--footer", "btn--gradient"];
-const SIZES = ["btn--medium", "btn--large"];
+const STYLES = ["btn--primary", "btn--outline","btn--white-outline", "btn--footer", "btn--gradient","btn--yellow","btn--gray"];
+const SIZES = ["btn--medium", "btn--large","btn--small"];
 
 export const Button = ({
   children,
