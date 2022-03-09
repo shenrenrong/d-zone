@@ -3,10 +3,10 @@ import { Button } from "./Button";
 
 function Super() {
   return (
-    <main>
+    <main className="super-change">
           <ul className="tab">
         <li className="tab-item current">
-          <a href="#">계정변경</a>
+          <a href="/account">계정변경</a>
         </li>
         <li className="tab-item">
           <a href="account/generate">관리자 계정생성</a>

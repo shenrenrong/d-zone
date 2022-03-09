@@ -6,7 +6,7 @@ function SuperGenerate() {
   return (
       <div>
           <Gnb />
-    <main>
+    <main className="super-generate">
       <ul className="tab">
         <li className="tab-item">
           <a href="/account">계정변경</a>
@@ -19,7 +19,9 @@ function SuperGenerate() {
         </li>
       </ul>
       {/* ! tab */}
-      <form className="content">
+      <div className="content">
+
+      <form>
         <div className="row userID">
           <label htmlFor="userID">ID</label>
           <input
@@ -83,6 +85,7 @@ function SuperGenerate() {
           저장
         </Button>
       </form>
+      </div>
     </main>
     </div>
   );
