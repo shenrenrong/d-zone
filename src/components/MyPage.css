@@ -6,6 +6,7 @@ main {
 
 .tab {
     border-bottom: 1px solid #b1b1b1;
+    display: flex;
 }
 
 .tab-item {
@@ -14,8 +15,7 @@ main {
     line-height: 68px;
     font-size: 22px;
     text-align: center;
-    border: 1px solid #b1b1b1;
-    border-bottom: transparent;
+    
     border-radius: 10px 10px 0 0;
 }
 
@@ -23,6 +23,8 @@ main {
     display: block;
     background-color: #fff;
     border-radius: inherit;
+    border: 1px solid #b1b1b1;
+    border-bottom: transparent;
 }
 
 .content {
@@ -69,7 +71,18 @@ main {
     padding-right: 7px;
 }
 
-.content Button {
+.content > Button {
     align-self: flex-end;
     font-size: 22px;
+}
+
+.content > .userID > Button {
+    margin-left: 23px;
+}
+
+.content > .mobile > input {
+    width: 107px;
+}
+.content > .mobile > span {
+    margin: 0 12px;
 }

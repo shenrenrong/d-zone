@@ -2,15 +2,15 @@ import React from "react";
 import Gnb from "../Gnb";
 import { useState } from "react";
 import MyPage from "../MyPage";
-import Super from "../Super";
+import SuperCng from "../SuperCng";
 
 function Account() {
-  const [managerStat,setManagerState] = useState(false);
+  const [managerStat,setManagerState] = useState(true);
   return (
     <div className="account">
       <Gnb />
       {
-        managerStat ? <Super /> : <MyPage />
+        managerStat ? <SuperCng /> : <MyPage />
       }
     </div>
   )

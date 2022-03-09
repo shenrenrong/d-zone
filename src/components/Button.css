@@ -81,14 +81,13 @@
 }
 
 .btn--small {
-  width: 111px;
-  height: 40px;
-  font-size: 22px;
+  padding: 10px 30px;
+  font-size: 18px;
 }
 
 .btn--large {
   padding: 12px 26px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .btn--primary:hover,
