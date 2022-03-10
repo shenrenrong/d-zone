@@ -1,0 +1,292 @@
+/* top */
+.market-research {
+  width: 1200px;
+  margin: 53px auto 126px;
+}
+.toparea{
+  margin: 56px auto 41px;
+}
+.imgarea{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 53px;
+}
+.imgarea img{
+  width: 117px;
+  height: 115px;
+}
+.txtarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.txtarea h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 19px;
+}
+.txtarea p {
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+/* chart 텍스트 */
+.chart-txt {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto 36px;
+  width: 726px;
+  height: 243px;
+  background-color: #eee;
+}
+.result h2{
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 16px;
+  margin: 28px auto 37px;
+  width: 111px;
+}
+.result-txt {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: auto;
+  
+}
+.result-txt span {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.result-txt:last-child span{
+  padding-bottom: 39px;
+}
+/*도넛*/
+
+
+/*도넛 차트*/ 
+.donut-chart {
+  display: flex;
+  justify-content: space-evenly;
+  width: 726px;
+  margin: auto;
+}
+.donut1 {
+  width: calc(100% - 16px);
+  padding-bottom: calc(100% - 16px);
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  background: conic-gradient(
+    rgb(155, 187, 89) 0% 60%,
+    rgb(128, 127, 127) 40% 100%
+  );
+}
+.donut2 {
+  width: calc(100% - 16px);
+  padding-bottom: calc(100% - 16px);
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  background: conic-gradient(
+    rgb(101, 170, 195) 0% 40%,
+    rgb(128, 127, 127) 40% 100%
+  );
+}
+.donut1::before {
+  width: 50%;
+  padding: calc(25%) 0;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  display: block;
+  content: "";
+  margin: auto;
+}
+.donut2::before {
+  width: 50%;
+  padding: calc(25%) 0;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  display: block;
+  content: "";
+  margin: auto;
+}
+/* 도넛차트 텍스트 */
+.box-green {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(155, 187, 89);
+  text-indent: -99999px;
+  margin-right: 6px;
+}
+.box-gray {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(128, 127, 127);
+  text-indent: -99999px;
+  margin-right: 6px;
+}
+.box-blue {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(101, 170, 195);
+  text-indent: -99999px;
+  margin-right: 6px;
+}
+.box {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+  font-size: 16px;
+}
+.box p{margin-right: 20px;}
+/*----------------------------------------------------------------*/
+/* 설문 프로파일 */
+.survey-profile {
+  width: 1200px;
+  margin: 0 auto 70px;
+}
+.step {
+  margin: 74px 0 64px;
+}
+.step-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 350px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.step-area dt{
+  font-size: 17px;
+}
+.step-tag {
+  display: flex;
+}
+.step-bar {
+  position: relative;
+}
+.step-gauge {
+  position: absolute;
+}
+
+.history {
+  margin-bottom: 70px;
+}
+.resend {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 57px;
+}
+.resend dt {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 21px;
+}
+.resend dd {
+  width: 726px;
+  height: 89px;
+  background-color: #eee;
+  display: flex;
+}
+.resend-txt{
+  width:250px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+  margin: auto;
+}
+.resend-txt p:last-child{
+  color: #ff5907;
+}
+
+.confirm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 83px;
+}
+.confirm dt {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 21px;
+}
+.confirm dd {
+  width: 726px;
+  height: 89px;
+  background-color: #eee;
+  display: flex;
+}
+.confirm-txt{
+  width:350px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+  margin: auto;
+}
+.confirm-txt p:last-child{
+  color: #ff5907;
+}
+
+/* tag */
+/*register.css 참고*/
+
+/* 버튼 */
+.research-btnarea {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 127px;
+}
+.modify-btn{
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+  overflow: visible;
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  width: 162px;
+  height: 52px;
+  margin-right: 19px;
+}
+.list-btn{
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+  box-shadow: none;
+  border-radius: 10px;
+  overflow: visible;
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  width: 162px;
+  height: 52px;
+}

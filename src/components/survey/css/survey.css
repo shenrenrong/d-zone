@@ -1,0 +1,115 @@
+.survey_area {
+  width: 1200px;
+  margin: auto;
+  margin-top: 79px;
+  color: #333;
+}
+/* top */
+.topbar h2{
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+.search_area{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+.searchbox {
+  width: 320px;
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px 0;
+}
+.searchbox > input {
+  appearance: none;
+  border: none;
+  outline: none;
+  margin: 10px 0 0 20px;
+  font-size: 16px;
+  width: 230px;
+  height: 40px;
+}
+.searchbox > a {
+  margin: auto;
+  margin-right: 27px;
+  color: #ddd;
+}
+.topbtn {
+  padding-left: 50px;
+  padding-bottom: 17px;
+  display: flex;
+  justify-content: flex-end;
+}
+.topbtn button {
+  background-color: #ffc107;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 10px 30px;
+  overflow: visible;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  width: 162px;
+  height: 52px;
+  margin-left: 20px;
+}
+
+/* table */
+.table {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+th {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+th,
+td {
+  border-right: 1px solid #ddd;
+}
+th:last-child {
+  border-right: none;
+}
+td:last-child {
+  border-right: none;
+}
+.row_bottom {
+  border-bottom: none;
+}
+.fin {
+  opacity: 0.5;
+}
+
+/* page change num */
+.page_change {
+  text-align: center;
+  margin: 20px 0 119px;
+}
+.pagenum {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 0 5px;
+}
+.arrowkey {   /* (!) 화살표 키 디자인 */
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 0 5px;
+  background-color: #ffc107;
+  color: #fff;
+}
