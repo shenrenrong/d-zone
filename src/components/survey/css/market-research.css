@@ -1,6 +1,6 @@
 /* top */
 .market-research {
-  width: 1200px;
+  width: 100%;
   margin: 53px auto 126px;
 }
 .toparea{
@@ -62,9 +62,6 @@
 .result-txt:last-child span{
   padding-bottom: 39px;
 }
-/*도넛*/
-
-
 /*도넛 차트*/ 
 .donut-chart {
   display: flex;
@@ -72,89 +69,15 @@
   width: 726px;
   margin: auto;
 }
-.donut1 {
-  width: calc(100% - 16px);
-  padding-bottom: calc(100% - 16px);
-  margin: 0 auto;
-  border-radius: 50%;
-  position: relative;
-  text-align: center;
-  background: conic-gradient(
-    rgb(155, 187, 89) 0% 60%,
-    rgb(128, 127, 127) 40% 100%
-  );
+
+/*작대기 3개*/
+.highcharts-button-symbol{
+  display: none;
 }
-.donut2 {
-  width: calc(100% - 16px);
-  padding-bottom: calc(100% - 16px);
-  margin: 0 auto;
-  border-radius: 50%;
-  position: relative;
-  text-align: center;
-  background: conic-gradient(
-    rgb(101, 170, 195) 0% 40%,
-    rgb(128, 127, 127) 40% 100%
-  );
-}
-.donut1::before {
-  width: 50%;
-  padding: calc(25%) 0;
-  background: #fff;
-  border-radius: 50%;
-  position: absolute;
-  left: 25%;
-  top: 25%;
-  display: block;
-  content: "";
-  margin: auto;
-}
-.donut2::before {
-  width: 50%;
-  padding: calc(25%) 0;
-  background: #fff;
-  border-radius: 50%;
-  position: absolute;
-  left: 25%;
-  top: 25%;
-  display: block;
-  content: "";
-  margin: auto;
-}
-/* 도넛차트 텍스트 */
-.box-green {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(155, 187, 89);
-  text-indent: -99999px;
-  margin-right: 6px;
-}
-.box-gray {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(128, 127, 127);
-  text-indent: -99999px;
-  margin-right: 6px;
-}
-.box-blue {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(101, 170, 195);
-  text-indent: -99999px;
-  margin-right: 6px;
-}
-.box {
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  align-items: center;
-  font-size: 16px;
-}
-.box p{margin-right: 20px;}
 /*----------------------------------------------------------------*/
 /* 설문 프로파일 */
-.survey-profile {
-  width: 1200px;
+.profile {
+  width: 100%;
   margin: 0 auto 70px;
 }
 .step {
@@ -173,13 +96,9 @@
 }
 .step-tag {
   display: flex;
+  
 }
-.step-bar {
-  position: relative;
-}
-.step-gauge {
-  position: absolute;
-}
+
 
 .history {
   margin-bottom: 70px;

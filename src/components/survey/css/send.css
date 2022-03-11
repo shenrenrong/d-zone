@@ -1,6 +1,6 @@
 /* 상단 */
 .send-box {
-  width: 1200px;
+  width: 100%;
   margin: auto;
 }
 .title-box {
@@ -19,7 +19,8 @@
   font-size: 30px;
   line-height: 30px;
 }
-
+/* 인풋 */
+input:focus {outline:1px solid #ffc107;}
 /* 컨텐츠 */
 .contents-area{width:100%;}
 .headertxt-area {
@@ -30,7 +31,6 @@
   font-weight: 700;
   margin: 50px 0 70px;
 }
-.specification {}
 .sub-txt {
   display: flex;
   justify-content: center;

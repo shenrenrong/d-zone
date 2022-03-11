@@ -1,5 +1,5 @@
 .survey_area {
-  width: 1200px;
+  width: 100%;
   margin: auto;
   margin-top: 79px;
   color: #333;
@@ -60,9 +60,10 @@
   text-align: center;
   width: 162px;
   height: 52px;
-  margin-left: 20px;
+  margin-right: 20px;
 }
-
+/* 인풋 */
+.searchline:focus {outline:none;}
 /* table */
 .table {
   text-align: center;
