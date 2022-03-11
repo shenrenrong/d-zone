@@ -14,7 +14,6 @@
         $(document).ready(function () {
             var donut1 = document.getElementById("container");
             var donut2 = document.getElementById("container");
-            // Build the chart
             Highcharts.chart('donut1', {
                 colors: ['rgb(155, 187, 89)', 'rgb(128, 127, 127)'],
                 chart: {
@@ -56,7 +55,7 @@
                         selected: true
                     }]
                 }]
-            }); //ctx1
+            }); 
             Highcharts.chart('donut2', {
                 colors: ['rgb(101, 170, 195)', 'rgb(128, 127, 127)'],
                 chart: {
@@ -101,38 +100,8 @@
             });
         });
     </script>
-
 </head>
 <body>
-    <div id="wrap">
-        <header>
-            <div class="inner-wrap clearfix">
-            <h1 class="logo">
-                <img src="./img/logo_dzone_160x40.png" alt="headerLogo">
-            </h1>
-            <ul class="utill clearfix">
-                <li class="call-center"><a href="#"><img src="img/call-center.png"></a></li>
-                <li class="self-point"><a href="#">100point</a></li>
-                <li class="logout"><a href="#">로그아웃</a></li>
-            </ul>
-        </div>
-        </header>
-        <!-- header -->
-        <div class="gnb">
-          <div class="inner-wrap">
-            <ul>
-              <li><a href="#" alt="home">홈</a><span>|</span></li>
-              <li><a href="#" alt="useinfo">이용안내</a><span>|</span></li>
-              <li><a href="#" alt="FAQ">FAQ</a><span>|</span></li>
-              <li><a href="#" alt="Q&A">Q&A</a><span>|</span></li>
-              <li><a href="#" alt="계정설정">계정설정</a><span>|</span></li>
-              <li><a href="#" alt="설문등록/현황조회" class="active">설문등록/현황조회</a><span>|</span></li>
-              <li><a href="#" alt="포인트관리">포인트관리</a><span>|</span></li>
-              <li><a href="#" alt="통합관리">통합관리</a></li>
-          </ul>
-          </div> 
-        </div>
-        <!-- gnb -->
     <main>
             <div class="market-research">
                 <div class="toparea">
@@ -176,18 +145,17 @@
                                 <span>7,500 건</span>
                             </section>
                         </div>
-                    </div><!--chart-txt-->
+                    </div>
                     <div class="donut-chart">
                         <section class="result1">
                             <div id="donut1" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto;"></div>
                         </section>
                         <section class="result2">
-                            <!--<div class="donut2"></div>-->
                             <div id="donut2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto;"></div>
                         </section>
-                    </div><!--donut-chart-->
-                </div><!--chartarea-->
-            </div><!--market_research-->
+                    </div>
+                </div>
+            </div>
             
             <div class="profile">
                 <section class="txtarea">
@@ -225,7 +193,7 @@
                             </div>   
                         </dd>
                     </dl>
-                </section><!--step-->
+                </section>
                 <section class="history">
                     <section class="resend">
                         <dl>
@@ -251,24 +219,12 @@
                             </dd>
                         </dl>
                     </section>
-                </section><!--history-->
-            </div><!--survey_profile-->
+                </section>
+            </div>
             <div class="research-btnarea">
                 <button class="modify-btn">수정</button>
                 <button class="list-btn">목록</button>
-            </div><!--btn_area-->
+            </div>
     </main>
-    <footer>
-        <div class="footer-box clearfix">
-            <img src="./img/logo_dzone_footer.png" alt="f_logo">
-            <p>
-                서울특별시 구로구 디지털로33 55 E&C벤처드림타워 2차 1001호<br>
-                COPYRIGHT(C) 2018 Digitalzone CO., LTD. ALL RIGHTS RESERVED.
-            </p>
-        </div>
-      </footer>
-      <!-- footer -->
-    </div>
-    <!-- wrap -->
 </body>
 </html>
