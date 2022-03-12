@@ -16,6 +16,8 @@ import Registration from "./components/pages/Registration";
 import Points from "./components/pages/Points";
 import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
+import PanelSystem from './components/PanelSystem/PanelSystem';
+
 
 
 export default function App() {
@@ -36,6 +38,7 @@ export default function App() {
             <Route path='/points' element={<Points />} />
             <Route path='/general' element={<General />} />
             <Route path='/user-guide' element={<UserGuide />} />
+            <Route path='/panel-system' element={<PanelSystem />} />
           </Routes>
           <Footer />
     </div>

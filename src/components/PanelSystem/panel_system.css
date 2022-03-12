@@ -1,4 +1,4 @@
-@import url(../common/reset.css);
+@import url(./common/reset.css);
 
 /* content */
 .content {
@@ -57,18 +57,18 @@
 
 .search_box>a{
   display: block;
-  width: 40px;
-  height: 41px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
 }
 
-.search_box i {
+.search_box .search_icon {
   color: #b1b1b1;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 30px;
   
 }
 
@@ -132,4 +132,5 @@
   text-align: center;
   line-height: 18px;
   font-size: 16px;
+  padding: 0;
 }
