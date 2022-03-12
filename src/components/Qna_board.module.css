@@ -1,0 +1,142 @@
+main {
+    width: fit-content;
+    min-height: calc(100vh - 221px);
+    margin: 63px auto 108px auto;
+}
+
+.pannelText {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 59px;
+}
+
+/* qna 전체 박스 (qna-box) */
+.qnaBox {
+  width: 1108px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* qna-box의 regist-search */
+.registSearch {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.registSearch .registBox {
+  justify-content: flex-start;
+}
+.registSearch .searchBox {
+  justify-content: flex-end;
+}
+
+/* regist 버튼 */
+.regist {
+  width: 162px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: #ffc107;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* search 바 */
+.searchBox {
+  width: 190px;
+  height: 35px;
+  border: 1px solid #afafaf;
+  border-radius: 50px;
+  display: flex;
+  padding: 5px;
+}
+.searchBox .formControl {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.searchBox .btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.searchBox .btn img{
+  width: 20px;
+  height: 20px;
+}
+
+/* qna-box의 table */
+.table {
+  width: auto;
+  border-top: 1px solid #444444;
+  border-bottom: 1px solid #444444;
+  border-collapse: collapse;
+  overflow-y: scroll;
+}
+
+th {
+  border-bottom: 1px solid #444444;
+}
+
+th,
+td {
+  border-left: 1px solid #444444;
+  padding: 10px;
+  text-align: center;
+}
+
+th:first-child,
+td:first-child {
+  border-left: none;
+}
+
+.table .number {
+  width: 50px;
+}
+
+.table .title {
+  width: 400px;
+}
+
+.table .registDate {
+  width: 80px;
+}
+
+.table .register {
+  width: 80px;
+}
+
+/* qnaBox의 pagination */
+/* controllerBox */
+.controllerBox {
+  margin: 20px auto;
+  line-height: 20px;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.controllerBox a {
+  display: block;
+  margin-right: 10px;
+}
+.controllerBox .btn {
+  width: 20px;
+  height: 20px;
+  background-color: #ffc107;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+}

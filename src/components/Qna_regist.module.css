@@ -1,0 +1,100 @@
+main{
+    width: fit-content;
+    min-height: calc(100vh - 221px);
+    margin: 69px auto 159px auto;
+}
+
+/* container */
+.container {
+width: 1100px;
+margin: auto;
+}
+
+/* pannel-category */
+.pannelCategory{
+margin-bottom: 111px;
+}
+.pannelCategory .pannelTitle {
+color: #333;
+font-size: 16px;
+font-weight: bold;
+}
+.pannelCategory .pannelTitle span {
+margin: 0 21px 0 21px;
+}
+
+/* describe */
+.describe {
+text-align: center;
+margin-bottom: 82px;
+}
+.describe img {
+width: 179px;
+height: 184px;
+margin-bottom: 27px;
+}
+.describe p {
+font-size: 18px;
+line-height: 30px;
+}
+
+/* contents */
+.contents {
+width: 600px;
+margin: auto;
+}
+.contents label {
+font-size: 20px;
+font-weight: bold;
+}
+.contents .titleInput {
+margin-bottom: 40px;
+display: flex;
+justify-content: space-between;
+}
+.contents .titleInput input {
+width: 375px;
+height: 40px;
+border: 1px solid #b1b1b1;
+border-radius: 3px;
+padding: 10px;
+}
+.contents .contentInput {
+display: flex;
+justify-content: space-between;
+}
+.contents .contentInput textarea {
+width: 375px;
+height: 188px;
+resize: none;
+border: 1px solid #b1b1b1;
+border-radius: 3px;
+padding: 10px;
+}
+.contents .contentInput textarea::placeholder{
+font-size: 14px;
+line-height: 1.71;
+color: #999;
+}
+
+/* regist-cancle-btn */
+.registCancleBtn {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+.registCancleBtn .btn {
+border: none;
+cursor: pointer;
+background-color: #ffc107;
+width: 140px;
+height: 52px;
+font-size: 18px;
+font-weight: bold;
+color: #333;
+}
+.registCancleBtn .regist {
+margin-right: 20px;
+}
+  
+  
