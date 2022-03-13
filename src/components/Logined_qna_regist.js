@@ -1,8 +1,8 @@
 import React from "react";
 import Gnb from "./Gnb";
-import styles from "./Qna_regist.module.css";
+import styles from "./Logined_qna_regist.module.css";
 
-function Qna_regist() {
+function Logined_qna_regist() {
   return (
     <div>
       <main>
@@ -70,4 +70,4 @@ function Qna_regist() {
   );
 }
 
-export default Qna_regist;
+export default Logined_qna_regist;

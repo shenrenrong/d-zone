@@ -16,6 +16,7 @@ import Registration from "./components/pages/Registration";
 import Points from "./components/pages/Points";
 import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
+import Information from "./components/pages/Information";
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<Main />} />
+            <Route path='/Information' element={<Information />} />
             <Route path='/FAQ' element={<FAQ />} />
             <Route path='/log-in' element={<LogIn />} />
             <Route path='/sign-up' element={<SignUp />} />

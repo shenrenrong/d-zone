@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./Qna_board.module.css";
+import styles from "./Logined_qna_board.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import Gnb from "./Gnb";
 
-export default function Qna_board() {
+export default function Logined_qna_board() {
   return (
     <div>
       <main>

@@ -1,7 +1,7 @@
 import React from "react";
-import styles from './Qna_article.module.css'
+import styles from './Logined_qna_article.module.css'
 
-function Qna_article() {
+function Logined_qna_article() {
   return (
       <main>
         <div className={styles.container}>
@@ -86,4 +86,4 @@ function Qna_article() {
   );
 }
 
-export default Qna_article;
+export default Logined_qna_article;

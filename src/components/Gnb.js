@@ -9,6 +9,7 @@ function Gnb() {
     <nav className='gnb'>
         <ul className='gnb-nav-list'>
             <NavLink to="/home">홈</NavLink>
+            {/* <NavLink to="/Information">이용안내</NavLink> */}
             <NavLink to="/FAQ" >FAQ</NavLink>
             <NavLink to="/QA">Q&amp;A</NavLink>
             <NavLink to="/account" >계정설정</NavLink>
