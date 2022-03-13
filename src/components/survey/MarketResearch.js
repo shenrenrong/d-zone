@@ -91,103 +91,103 @@ function MarketResearch(){
     });
     return(
         <div>
-            <div class="market-research">
-                <div class="toparea">
-                    <section class="imgarea">
+            <div className="market-research">
+                <div className="toparea">
+                    <section className="imgarea">
                         <img src="./img/digitalnet.png" />
                     </section>
-                    <section class="txtarea">
+                    <section className="txtarea">
                         <h2>비대면 시장조사 필요성 인식 조사</h2>
                         <p>2021.09.30 ~ 2021.10.25</p>
                     </section>
                 </div>
-                <div class="chartarea">
-                    <div class="chart-txt">
-                        <div class="result">
+                <div className="chartarea">
+                    <div className="chart-txt">
+                        <div className="result">
                             <h2>설문지 현황</h2>
-                            <section class="result-txt">
+                            <section className="result-txt">
                                 <span>필요설문</span>
                                 <span>2,500 건</span>
                             </section>
-                            <section class="result-txt">
+                            <section className="result-txt">
                                 <span>응답완료</span>
                                 <span>1,500 건</span>
                             </section>
-                            <section class="result-txt">
+                            <section className="result-txt">
                                 <span>응답미완료</span>
                                 <span>1,000 건</span>
                             </section>
                         </div>
-                        <div class="result">
+                        <div className="result">
                             <h2>매칭 현황</h2>
-                            <section class="result-txt">
+                            <section className="result-txt">
                                 <span>매칭발송</span>
                                 <span>12,500 건</span>
                             </section>
-                            <section class="result-txt">
+                            <section className="result-txt">
                                 <span>매칭성공</span>
                                 <span>5,000 건</span>
                             </section>
-                            <section class="result-txt">
+                            <section className="result-txt">
                                 <span>매칭실패</span>
                                 <span>7,500 건</span>
                             </section>
                         </div>
                     </div>
-                    <div class="donut-chart">
-                        <section class="result1">
+                    <div className="donut-chart">
+                        <section className="result1">
                             <div id="donut1" style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
                         </section>
-                        <section class="result2">
+                        <section className="result2">
                             <div id="donut2" style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
                         </section>
                     </div>
                 </div>
             </div>
             
-            <div class="profile">
-                <section class="txtarea">
+            <div className="profile">
+                <section className="txtarea">
                     <h2>설문 프로파일</h2>
                 </section>
-                <section class="step">
-                    <dl class="step-area">
+                <section className="step">
+                    <dl className="step-area">
                         <dt>1단계</dt>
                         <dd>
-                            <div class="scrollbar">
-                                <section class="step-tag">
-                                    <button class="tag">성별/남성</button>
-                                    <button class="tag">나이/20세~39세</button>
+                            <div className="scrollbar">
+                                <section className="step-tag">
+                                    <button className="tag">성별/남성</button>
+                                    <button className="tag">나이/20세~39세</button>
                                 </section>
                             </div>
                         </dd>
                     </dl>
-                    <dl class="step-area">
+                    <dl className="step-area">
                         <dt>2단계</dt>
                         <dd>
-                            <div class="scrollbar">
-                                <section class="step-tag">   
-                                    <button class="tag">통신사/SKT</button>
+                            <div className="scrollbar">
+                                <section className="step-tag">   
+                                    <button className="tag">통신사/SKT</button>
                                 </section>
                             </div>
                         </dd>
                     </dl>
-                    <dl class="step-area">
+                    <dl className="step-area">
                         <dt>3단계</dt>
                         <dd>
-                            <div class="scrollbar">
-                                <section class="step-tag">
-                                    <button class="tag">전자기기/휴대폰기종/갤럭시S21</button>
+                            <div className="scrollbar">
+                                <section className="step-tag">
+                                    <button className="tag">전자기기/휴대폰기종/갤럭시S21</button>
                                 </section>
                             </div>   
                         </dd>
                     </dl>
                 </section>
-                <section class="history">
-                    <section class="resend">
+                <section className="history">
+                    <section className="resend">
                         <dl>
                             <dt>재전송 시도 내역</dt>
                             <dd>
-                                <section class="resend-txt">
+                                <section className="resend-txt">
                                     <p>21.10.01</p>
                                     <p>13:38PM</p>
                                     <p>3,000 건</p>
@@ -195,11 +195,11 @@ function MarketResearch(){
                             </dd>
                         </dl>
                     </section>
-                    <section class="confirm">
+                    <section className="confirm">
                         <dl>
                             <dt>설문 승인 여부</dt>
                             <dd>
-                                <section class="confirm-txt">
+                                <section className="confirm-txt">
                                     <p>21.10.01</p>
                                     <p>13:38PM</p>
                                     <p>설문거부 (설문 미적합)</p>
@@ -209,9 +209,9 @@ function MarketResearch(){
                     </section>
                 </section>
             </div>
-            <div class="research-btnarea">
-                <button class="modify-btn">수정</button>
-                <button class="list-btn">목록</button>
+            <div className="research-btnarea">
+                <button className="modify-btn">수정</button>
+                <button className="list-btn">목록</button>
             </div>
     </div>
     )
