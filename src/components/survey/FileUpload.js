@@ -1,4 +1,5 @@
 import React from "react";
+import './css/file-upload.css';
 
 function FileUpload(){
     return(
@@ -15,8 +16,8 @@ function FileUpload(){
                 <section class="filebox">
                     <span>파일 첨부</span>
                     <label for="upload_btn">첨부</label> 
-                    <input type="file" id="upload_btn">
-                    <input class="upload-name" value="" placeholder="">
+                    <input type="file" id="upload_btn" />
+                    <input class="upload-name" value="" placeholder="" />
                 </section>
                 <section class="btn_area">
                     <button class="submit_btn">등록</button>

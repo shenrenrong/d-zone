@@ -25,7 +25,7 @@ function Send(){
                             <li>
                                 <span><strong>설문기간'\u00A0'</strong></span>
                                 <label></label>
-                                <input type="date"> ~ <input type="date">
+                                <input type="date" /> ~ <input type="date" />
                             </li>
                             <li><strong>발송패널 수 :</strong>'\u00A0' 2,500건</li>
                             <li>

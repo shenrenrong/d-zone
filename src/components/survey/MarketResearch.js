@@ -1,96 +1,97 @@
 import React from "react";
-
+import './css/market-research.css';
 function MarketResearch(){
-    return(
-        $(document).ready(function () {
-            var donut1 = document.getElementById("container");
-            var donut2 = document.getElementById("container");
-            Highcharts.chart('donut1', {
-                colors: ['rgb(155, 187, 89)', 'rgb(128, 127, 127)'],
-                chart: {
-                    plotBackgroundColor: null,
-                    plotBorderWidth: null,
-                    plotShadow: false,
-                    type: 'pie'
-                },
-                title: {
-                    text: ''
-                },
-                tooltip: {
-                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-                },
-                plotOptions: {
-                    pie: {
-                        allowPointSelect: true,
-                        cursor: 'pointer',
-                        dataLabels: {
-                            enabled: false
-                        },
-                        showInLegend: true,
-                        innerSize: 80
-                    }
-                },
-                credits: {
-                    enabled: false
-                },
-                series: [{
-                    name: '',
-                    colorByPoint: true,
-                    data: [{
-                        name: '응답완료',
-                        y: 60
-                    }, {
-                        name: '응답미완료',
-                        y: 40,
-                        sliced: false,
-                        selected: true
-                    }]
+    $(document).ready(function () {
+        var donut1 = document.getElementById("container");
+        var donut2 = document.getElementById("container");
+        Highcharts.chart('donut1', {
+            colors: ['rgb(155, 187, 89)', 'rgb(128, 127, 127)'],
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true,
+                    innerSize: 80
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: '',
+                colorByPoint: true,
+                data: [{
+                    name: '응답완료',
+                    y: 60
+                }, {
+                    name: '응답미완료',
+                    y: 40,
+                    sliced: false,
+                    selected: true
                 }]
-            }); 
-            Highcharts.chart('donut2', {
-                colors: ['rgb(101, 170, 195)', 'rgb(128, 127, 127)'],
-                chart: {
-                    plotBackgroundColor: null,
-                    plotBorderWidth: null,
-                    plotShadow: false,
-                    type: 'pie'
-                },
-                title: {
-                    text: ''
-                },
-                tooltip: {
-                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-                },
-                plotOptions: {
-                    pie: {
-                        allowPointSelect: true,
-                        cursor: 'pointer',
-                        dataLabels: {
-                            enabled: false
-                        },
-                        showInLegend: true,
-                        innerSize: 80
-                    }
-                },
-                credits: {
-                    enabled: false
-                },
-                series: [{
-                    name: '',
-                    colorByPoint: true,
-                    data: [{
-                        name: '매칭성공',
-                        y: 40
-                    }, {
-                        name: '매칭실패',
-                        y: 60,
-                        sliced: false,
-                        selected: true
-                    }]
+            }]
+        }); 
+        Highcharts.chart('donut2', {
+            colors: ['rgb(101, 170, 195)', 'rgb(128, 127, 127)'],
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true,
+                    innerSize: 80
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: '',
+                colorByPoint: true,
+                data: [{
+                    name: '매칭성공',
+                    y: 40
+                }, {
+                    name: '매칭실패',
+                    y: 60,
+                    sliced: false,
+                    selected: true
                 }]
-            });
+            }]
         });
-        <div class="market-research">
+    });
+    return(
+        <div>
+            <div class="market-research">
                 <div class="toparea">
                     <section class="imgarea">
                         <img src="./img/digitalnet.png" />
@@ -135,10 +136,10 @@ function MarketResearch(){
                     </div>
                     <div class="donut-chart">
                         <section class="result1">
-                            <div id="donut1" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto;"></div>
+                            <div id="donut1" style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
                         </section>
                         <section class="result2">
-                            <div id="donut2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto;"></div>
+                            <div id="donut2" style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
                         </section>
                     </div>
                 </div>
@@ -212,6 +213,7 @@ function MarketResearch(){
                 <button class="modify-btn">수정</button>
                 <button class="list-btn">목록</button>
             </div>
+    </div>
     )
 }
 
