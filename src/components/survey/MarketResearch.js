@@ -1,6 +1,6 @@
 import React from "react";
 import './css/market-research.css';
-import './css/common.css';
+import '../../reset.css';
 
 function MarketResearch(){
     $(document).ready(function () {

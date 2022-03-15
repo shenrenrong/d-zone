@@ -1,6 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import './css/survey.css';
-import './css/common.css';
+import '../../reset.css';
 
 function Survey(){
     return(
@@ -167,7 +169,9 @@ function Survey(){
           </table>
           <section className="page-change">
             <a href="#" className="arrowkey">
-              <i className="fa fa-caret-left"></i>
+              <FontAwesomeIcon
+                icon={faCaretLeft} className={`${styles.fa}${styles.fasCaretLeft}`}
+                />
             </a>
             <a href="#" className="pagenum">1</a>
             <a href="#" className="pagenum">2</a>
@@ -175,7 +179,9 @@ function Survey(){
             <a href="#" className="pagenum">4</a>
             <a href="#" className="pagenum">5</a>
             <a href="#" className="arrowkey">
-              <i className="fa fa-caret-right"></i>
+              <FontAwesomeIcon
+                icon={faCaretRight} className={`${styles.fa}${styles.faCaretRight}`}
+                />
             </a>
           </section>
       </div>

@@ -1,6 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import './css/transfer.css';
-import './css/common.css';
+import '../../reset.css';
 
 function Transfer(){
     return(
@@ -10,7 +12,11 @@ function Transfer(){
                     <span>설문 전송</span>
                 </section>
                 <section className="x_box">
-                    <a href="#"><i className="fa fa-times"></i></a>
+                    <a href="#">
+                        <FontAwesomeIcon
+                            icon={faTimes} className={`${styles.fa}${styles.faTimes}`}
+                        />
+                    </a>
                 </section> 
             </div>
             <div className="contents_box">

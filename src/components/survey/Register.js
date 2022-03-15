@@ -1,6 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import './css/register.css';
-import './css/common.css';
+import '../../reset.css';
 
 function Register(){
     return(
@@ -73,8 +75,18 @@ function Register(){
                                         </select>
                                     </section>
                                     <section className="scrollbar">
-                                        <div className="tag">남성<i className="fa fa-times tag_x"></i></div>
-                                        <div className="tag">20세~39세<i className="fa fa-times tag_x"></i></div>
+                                        <div className="tag">
+                                            남성
+                                            <FontAwesomeIcon
+                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                            />
+                                        </div>
+                                        <div className="tag">
+                                            20세~39세
+                                            <FontAwesomeIcon
+                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                            />
+                                            </div>
                                     </section>
                                 </dd>
                             </li>
@@ -93,7 +105,12 @@ function Register(){
                                         </select>
                                     </section>
                                     <section className="scrollbar">
-                                        <div className="tag">SKT<i className="fa fa-times tag_x"></i></div>
+                                        <div className="tag">
+                                            SKT
+                                            <FontAwesomeIcon
+                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                            />
+                                            </div>
                                     </section>
                                 </dd>
                             </li>
@@ -115,7 +132,12 @@ function Register(){
                                         </select>
                                     </section>
                                     <section className="scrollbar">
-                                        <div className="tag">갤럭시S1<i className="fa fa-times tag_x"></i></div>
+                                        <div className="tag">
+                                            갤럭시S1
+                                            <FontAwesomeIcon
+                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                            />
+                                            </div>
                                     </section>
                                 </dd>
                             </li>

@@ -1,13 +1,19 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import './css/send.css';
-import './css/common.css';
+import '../../reset.css';
 
 function Send(){
     return(
         <div className="send-box">
             <div className="title-box">
                 <section className="x-box">
-                    <a href="#"><i className="fa fa-times"></i></a>
+                    <a href="#">
+                        <FontAwesomeIcon
+                            icon={faTimes} className={`${styles.fa}${styles.faTimes}`}
+                        />
+                    </a>
                 </section>
             </div>
             <div className="contents-area">

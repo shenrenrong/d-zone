@@ -1,6 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import './css/survey-modify.css';
-import './css/common.css';
+import '../../reset.css';
 
 function SurveyModify(){
     return(
@@ -59,8 +61,18 @@ function SurveyModify(){
                                         </select>
                                     </section>
                                     <section className="scrollbar">
-                                        <button className="tag">남성<i className="fa fa-times tag_x"></i></button>
-                                        <button className="tag">20세~39세<i className="fa fa-times tag_x"></i></button>
+                                        <button className="tag">
+                                            남성
+                                            <FontAwesomeIcon
+                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                            />
+                                        </button>
+                                        <button className="tag">
+                                            20세~39세
+                                            <FontAwesomeIcon
+                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                            />
+                                        </button>
                                     </section>
                                 </dd>
                             </li>
