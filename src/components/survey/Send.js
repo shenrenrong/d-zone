@@ -1,4 +1,6 @@
 import React from "react";
+import './css/send.css';
+import './css/common.css';
 
 function Send(){
     return(

@@ -30,6 +30,7 @@
   padding-bottom: 20px;
 }
 /* chart 텍스트 */
+.chartarea{}
 .chart-txt {
   display: flex;
   justify-content: space-evenly;
@@ -70,7 +71,7 @@
   margin: auto;
 }
 
-/*작대기 3개*/
+/*플러그인 작대기 3개 삭제*/
 .highcharts-button-symbol{
   display: none;
 }
@@ -94,12 +95,10 @@
 .step-area dt{
   font-size: 17px;
 }
+.scrollbar{}
 .step-tag {
   display: flex;
-  
 }
-
-
 .history {
   margin-bottom: 70px;
 }
@@ -170,9 +169,16 @@
 .confirm-txt p:last-child{
   color: #ff5907;
 }
-
-/* tag */
-/*register.css 참고*/
+/* 태그 */ 
+.tag {
+  border: 1px solid #777777;
+  border-radius: 10px;
+  margin-right: 7px;
+}
+/*.tag_x {
+  margin-left: 7px;
+  cursor: pointer;
+}*/
 
 /* 버튼 */
 .research-btnarea {

@@ -1,4 +1,6 @@
 import React from "react";
+import './css/register.css';
+import './css/common.css';
 
 function Register(){
     return(

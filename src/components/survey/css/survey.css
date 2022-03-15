@@ -1,4 +1,4 @@
-.survey_area {
+.survey-area {
   width: 100%;
   margin: auto;
   margin-top: 79px;
@@ -12,7 +12,7 @@
   justify-content: center;
   margin-bottom: 17px;
 }
-.search_area{
+.searcharea{
   display: flex;
   justify-content: center;
   margin-bottom: 17px;
@@ -96,7 +96,7 @@ td:last-child {
 }
 
 /* page change num */
-.page_change {
+.page-change {
   text-align: center;
   margin: 20px 0 119px;
 }
@@ -106,7 +106,7 @@ td:last-child {
   font-weight: 400;
   padding: 0 5px;
 }
-.arrowkey {   /* (!) 화살표 키 디자인 */
+.arrowkey {   
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;

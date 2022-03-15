@@ -1,4 +1,6 @@
 import React from "react";
+import './css/transfer.css';
+import './css/common.css';
 
 function Transfer(){
     return(

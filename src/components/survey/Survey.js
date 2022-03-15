@@ -1,11 +1,13 @@
 import React from "react";
+import './css/survey.css';
+import './css/common.css';
 
 function Survey(){
     return(
-      <div className="survey_area">
+      <div className="survey-area">
         <div className="topbar">
           <h2>설문등록 현황조회</h2>
-          <div className="search_area">
+          <div className="searcharea">
             <section className="searchbox">
               <input type="search" className="searchline"/>
               <a href="#"><i className="fa fa-search fa-2x"></i></a>
@@ -163,7 +165,7 @@ function Survey(){
               </tr>
             </tbody>
           </table>
-          <section className="page_change">
+          <section className="page-change">
             <a href="#" className="arrowkey">
               <i className="fa fa-caret-left"></i>
             </a>

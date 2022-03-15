@@ -1,5 +1,7 @@
 import React from "react";
 import './css/market-research.css';
+import './css/common.css';
+
 function MarketResearch(){
     $(document).ready(function () {
         var donut1 = document.getElementById("container");
