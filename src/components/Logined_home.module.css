@@ -58,6 +58,7 @@ main {
 .radioBox label {
   font-size: 17px;
   font-weight: bold;
+  cursor: pointer;
 }
 .radioBox .checkWill,
 .radioBox .checkIng {
@@ -106,6 +107,12 @@ main {
   font-size: 16px;
   text-align: center;
   padding: 10px 9px;
+}
+.tableBox .willSurvey,
+.tableBox .surveing,
+.tableBox .surveied {
+  /* display: contents; */
+  display: none;
 }
 
 /* qnaBox의 pagination */

@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 function Logined_home() {
+  // const setDisplay = () => {
+  //   return style="display: contents"
+  // }
+
   return (
     <main>
       <div className={styles.container}>
@@ -36,7 +40,9 @@ function Logined_home() {
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault1"
-                checked
+                value="checkWill"
+                defaultChecked
+                // onChange={setDisplay(this.value)}
               />
               <label className={styles.formCheckLabel} for="flexRadioDefault1">
                 설문 예정
@@ -48,6 +54,8 @@ function Logined_home() {
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault2"
+                value="checkIng"
+                // onChange={setDisplay(this.value)}
               />
               <label className={styles.formCheckLabel} for="flexRadioDefault2">
                 설문 중
@@ -59,6 +67,8 @@ function Logined_home() {
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault3"
+                value="checkEd"
+                // onChange={setDisplay(this.value)}
               />
               <label className={styles.formCheckLabel} for="flexRadioDefault3">
                 설문 마감
@@ -195,7 +205,7 @@ function Logined_home() {
                       0
                     </td>
                     <td scope="row" className={styles.state}>
-                      <span> 설문예정</span>
+                      <span> 설문중</span>
                     </td>
                     <td scope="row" className={styles.register}>
                       홍길동
@@ -221,7 +231,7 @@ function Logined_home() {
                       0
                     </td>
                     <td scope="row" className={styles.state}>
-                      <span> 설문예정</span>
+                      <span> 설문중</span>
                     </td>
                     <td scope="row" className={styles.register}>
                       홍길동
@@ -290,7 +300,7 @@ function Logined_home() {
                       0
                     </td>
                     <td scope="row" className={styles.state}>
-                      <span> 설문예정</span>
+                      <span> 설문마감</span>
                     </td>
                     <td scope="row" className={styles.register}>
                       홍길동
@@ -316,7 +326,7 @@ function Logined_home() {
                       0
                     </td>
                     <td scope="row" className={styles.state}>
-                      <span> 설문예정</span>
+                      <span> 설문마감</span>
                     </td>
                     <td scope="row" className={styles.register}>
                       홍길동
