@@ -1,5 +1,5 @@
 import React from "react";
-import './css/market-research.css';
+import './css/market-research.module.css';
 import '../../reset.css';
 
 function MarketResearch(){

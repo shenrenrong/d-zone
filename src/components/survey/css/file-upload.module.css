@@ -1,15 +1,15 @@
 /* 상단 */
-.file_upload_box {
+.fileUploadbox {
   width: 100%;
   margin: auto;
   border: 2px solid #333;
 }
-.title_box {
+.titlebox {
   display: flex;
   justify-content: space-between;
   background-color: #333;
 }
-.title_text {
+.titletext {
   margin: auto;
   font-size: 18px;
   font-weight: bold;
@@ -17,14 +17,14 @@
   padding: 18px 0;
   color: #fff;
 }
-.x_box {
+.xbox {
   /* border-left: 1px solid #000; */
   position: relative;
   right: 10px;
   padding: 10px 0;
   color: #fff;
 }
-.x_box a {
+.xbox a {
   margin-right: 10px;
   padding-left: 10px;
   font-size: 30px;
@@ -32,7 +32,7 @@
 }
 
 /* 컨텐츠 */
-.contents_box {
+.contentsbox {
   width: 80%;
   margin: 14px auto;
   display: flex;
@@ -52,7 +52,7 @@
   margin-right: 23px;
   text-align: center;
 }
-.filebox .upload-name {
+.filebox .uploadName {
   display: inline-block;
   padding: 0 10px;
   vertical-align: middle;
@@ -92,12 +92,12 @@
 }
 
 /* 버튼 */
-.btn_area {
+.btnArea {
   margin-bottom: 17px;
   display: flex;
   justify-content: flex-end;
 }
-.submit_btn {
+.submitBtn {
   background-color: #ffc107;
   border: none;
   box-shadow: none;

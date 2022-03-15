@@ -1,149 +1,140 @@
-/* a active */
-.gnb ul li a.active {
-  color: #ffc107;
-}
-
-/*상단*/
-.modify-box {
+/* 타이틀 박스 */
+.registerArea {
   width: 100%;
-  margin: 20px auto 0;
+  margin: auto;
   color: #333;
 }
-/* 폼 */
-.form {
+.titlebox {
+  display: flex;
+  justify-content: center;
+  background-color: #ffc107;
+}
+.titletext {
+  margin: auto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 29px 0 25px;
+}
+/* label 숨기기 */
+label {
+  display: none;
+}
+/* 인풋 */
+input:focus {outline:1px solid #ffc107;}
+  
+/* 컨텐츠 정렬*/
+.form{
   width: fit-content;
   margin: auto;
   padding: 20px 0;
 }
-.dl_1,
-.dl_2,
-.dl_3,
-.dl_4 {
+.dl1,
+.dl2,
+.dl3,
+.dl4 {
   display: flex;
   margin-bottom: 15px;
 }
-.dl_5 {
+.dl5 {
   display: flex;
   margin-bottom: 40px;
 }
-.dl_1 dt {
+.dl1 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
-.dl_2 dt {
+.dl2 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
-.dl_3 dt {
+.dl3 dt {
   width: 300px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
   display: flex;
 }
-.dl_3 dd {
+.dl3 dd {
   display: flex;
 }
-.dl_3 dt span {
+.dl3 dt span {
   display: inline-block;
   width: 120px;
 }
-.dl_3 dd span {
+.dl3 dd span {
   display: inline-block;
   width: 100px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
-.dl_4 dt {
+.dl4 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
-.dl_4 dd {
+.dl4 dd {
   display: flex;
 }
-.dl_4 dd .fileupload {
+.dl4 dd .fileupload{
   width: 120px;
 }
-.dl_5 dt {
+.dl5 dt {
   width: 120px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
 }
 /* dl 길이*/
-.dl_1 dd input {
+.dl1 dd input {
   width: 300px;
   height: 23px;
 }
-.dl_2 dd input {
+.dl2 dd input {
   width: 300px;
   height: 23px;
 }
-.dl_2 dt input {
+.dl2 dt input {
   height: 23px;
 }
-.dl_2 dd input {
+.dl2 dd input {
   height: 23px;
 }
 /* 단계 */
-.dl_6 {
+.dl6{
   display: flex;
-  width: fit-content;
+  width:fit-content;
 }
-.survey-profile {
+.surveyProfile {
   align-self: center;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
   width: 120px;
 }
-.steparea {
+.stepArea {
   display: flex;
   justify-content: flex-start;
 }
-.steparea dt {
+.stepArea dt {
   width: 50px;
   font-size: 17px;
   line-height: 1.3;
 }
-.steparea dd section {
+.stepArea dd section {
   margin-bottom: 10px;
 }
-/*설문지바로가기*/
-.shortcut {
-  text-decoration: underline;
-  margin-left: 10px;
-}
-/* 인풋 */
-input:focus {
-  outline: 1px solid #ffc107;
-}
-/*파일등록*/
-.fileupload-area {
-  width: 200px;
-}
-.fileupload-btn {
-  color: #fff;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  padding: 12px 20px;
-  background-color: #ffc107;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
 /* 선택박스 & 태그 */
-.selectarea {
+.selectArea {
   display: flex;
 }
-.select-box {
+.selectbox {
   margin-right: 10px;
   width: 90px;
 }
@@ -155,23 +146,23 @@ select option[value=""]:disabled {
   display: flex;
   overflow-x: scroll;
 }
-/* 태그 */
+/* 태그 */ 
 .tag {
   border: 1px solid #777777;
   border-radius: 10px;
   margin-right: 7px;
 }
-.tag_x {
+.tagX {
   margin-left: 7px;
   cursor: pointer;
 }
 /* 버튼 */
-.btn-area {
+.btnArea {
   display: flex;
   justify-content: flex-end;
   margin: 0 30px 20px;
 }
-.save-btn {
+.saveBtn {
   background-color: #ffc107;
   color: #fff;
   border: none;
@@ -187,21 +178,6 @@ select option[value=""]:disabled {
   height: 52px;
   margin-right: 19px;
 }
-.cancel-btn {
-  background-color: #fff;
-  border: 1px solid #333;
-  box-shadow: none;
-  border-radius: 10px;
-  padding: 16px 60px;
-  overflow: visible;
-  cursor: pointer;
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-  width: 162px;
-  height: 52px;
-  margin-bottom: 77px;
-}
 .fileupload a {
   color: #fff;
   font-size: 16px;
@@ -212,3 +188,6 @@ select option[value=""]:disabled {
   padding: 5px 10px;
   border-radius: 10px;
 }
+
+/**/
+.datearea{}
