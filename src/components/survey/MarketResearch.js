@@ -1,6 +1,8 @@
 import React from "react";
 import './css/market-research.module.css';
 import '../../reset.css';
+//import Highcharts from "highcharts";
+//import HighchartsReact from "highcharts-react-official";
 
 function MarketResearch(){
     $(document).ready(function () {

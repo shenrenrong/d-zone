@@ -4,8 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 //import './css/register.module.css';
 import '../../reset.css';
+import { useState } from 'react';
 
 function Register(){
+    const [select, setSelect] = useState(false);
+    function selectCnt(){
+        setSelect += 1;
+
+    }
     return(
         <div className={styles.registerArea}>
             <div className={styles.titlebox}>
