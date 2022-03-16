@@ -1,0 +1,165 @@
+main {
+    width: fit-content;
+    min-height: calc(100vh - 221px);
+    margin: 30px auto 108px auto;
+  }
+  
+  .pannelText {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    padding: 60px 0 50px;
+    color: #0c2461;
+  }
+  
+  p{
+    text-align: center;
+    line-height: 2;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .row {
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    width: fit-content;
+  }
+  .companynameRow{
+    margin-bottom: 18px;
+  }
+  .usernameRow{
+    margin-bottom: 18px;
+  }
+  .phoneRow{
+    margin-bottom: 18px;
+  }
+  .emailRow{
+    margin-bottom: 18px;
+  }
+  .requestRow{
+    height: 170px;
+  }
+  .addfileRow {
+    margin-top: 18px;
+    height: auto;
+  }
+  
+  .row label {
+    width: 150px;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 18px;
+  }
+  
+  .col input {
+    width: 375px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #b1b1b1;
+    padding-top: 11px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+  }
+  .col input::-webkit-input-placeholder{
+    color: #b1b1b1;
+  }
+  .col input::-ms-input-placeholder{
+    color: #b1b1b1;
+  }
+  
+  /* addfileRow addfileCol */
+  /* .addfileCol #addfile1,2,3의 display:none이 안먹힘 */
+  .addfileCol #addfile1, 
+  .addfileCol #addfile2, 
+  .addfileCol #addfile3 {
+    display: none;
+  }
+  .addfileCol .addfileBtn1, 
+  .addfileCol .addfileBtn2, 
+  .addfileCol .addfileBtn3 {
+    cursor: pointer;
+    margin-right: 31px;
+  }
+  .addfileCol .addfileBtn3 {
+    margin-right: 0;
+  }
+  .addfileCol .addfileDes {
+    display: block;
+    font-size: 10px;
+    color: #b1b1b1;
+  }
+  
+  
+  .addfileRow .addfileCol {
+    margin-left: 15px;
+    margin-top: 21px;
+  }
+  .addfileCol {
+    width: 400px;
+    justify-content: space-between;
+  }
+  .addfileCol button {
+    width: 101px;
+    height: 98px;
+  }
+  
+  textarea{
+    width: 375px;
+    height: 188px;
+    margin-bottom: 21px;
+    margin-left: 15px;
+    resize: none;
+    border-radius: 5px;
+    border-color: #b1b1b1;
+    padding-top: 11px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  textarea::-webkit-input-placeholder{
+    color: #b1b1b1;
+  }
+  textarea::-ms-input-placeholder{
+    color: #b1b1b1;
+  }
+  
+  .btnContainer {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .btnContainer .btn:first-child {
+    background-color: #333;
+  }
+  .btnContainer .btn:last-child {
+    background-color: #fff;
+    border: 1.5px solid #333;
+    color: #333;
+  }
+  
+  .btn {
+      width: 151px;
+      height: 38px;
+      cursor: pointer;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 500;
+      margin-left: 15px;
+    }
+  
+  button {
+    background-color: #ffc107;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  

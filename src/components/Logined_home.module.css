@@ -108,12 +108,6 @@ main {
   text-align: center;
   padding: 10px 9px;
 }
-.tableBox .willSurvey,
-.tableBox .surveing,
-.tableBox .surveied {
-  /* display: contents; */
-  display: none;
-}
 
 /* qnaBox의 pagination */
 /* controllerBox */

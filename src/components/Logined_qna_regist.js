@@ -26,7 +26,7 @@ function Logined_qna_regist() {
             <form>
               <div className={styles.contents}>
                 <div className={styles.titleInput}>
-                  <label for="inputBox" className={styles.title}>
+                  <label htmlFor="inputBox" className={styles.title}>
                     제목
                   </label>
                   <input
@@ -37,7 +37,7 @@ function Logined_qna_regist() {
                 </div>
 
                 <div className={styles.contentInput}>
-                  <label for="inputBox" className={styles.content}>
+                  <label htmlFor="inputBox" className={styles.content}>
                     신청 / 문의내용
                   </label>
                   <textarea
