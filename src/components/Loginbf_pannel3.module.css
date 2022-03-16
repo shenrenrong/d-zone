@@ -106,6 +106,10 @@ main {
     width: 101px;
     height: 98px;
   }
+  .addfileCol button img{
+    width: 101px;
+    height: 98px;
+  }
   
   textarea{
     width: 375px;
