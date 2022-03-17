@@ -26,7 +26,7 @@ input:focus {outline:1px solid #ffc107;}
 /* 컨텐츠 정렬*/
 .form{
   width: fit-content;
-  margin: auto;
+  margin: 20px auto 0;
   padding: 20px 0;
 }
 .dl1,
@@ -35,10 +35,12 @@ input:focus {outline:1px solid #ffc107;}
 .dl4 {
   display: flex;
   margin-bottom: 15px;
+  font-size: 17px;
 }
 .dl5 {
   display: flex;
   margin-bottom: 40px;
+  font-size: 17px;
 }
 .dl1 dt {
   width: 120px;
@@ -84,6 +86,9 @@ input:focus {outline:1px solid #ffc107;}
 }
 .dl4 dd .fileupload{
   width: 120px;
+}
+.dl4 dd p{
+  font-size: 17px;
 }
 .dl5 dt {
   width: 120px;
@@ -144,17 +149,24 @@ select option[value=""]:disabled {
 /* 가로 스크롤 */
 .scrollbar {
   display: flex;
-  overflow-x: scroll;
+  /*overflow-x: scroll;*/
 }
 /* 태그 */ 
 .tag {
+  background-color: #fff;
   border: 1px solid #777777;
   border-radius: 10px;
   margin-right: 7px;
+  font-size: 16px;
+  
+}
+.tag span{
+  
 }
 .tagX {
   margin-left: 7px;
   cursor: pointer;
+  
 }
 /* 버튼 */
 .btnArea {

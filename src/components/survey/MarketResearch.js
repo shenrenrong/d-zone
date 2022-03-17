@@ -5,7 +5,6 @@ import '../../reset.css';
 //import HighchartsReact from "highcharts-react-official";
 
 function MarketResearch(){
-    $(document).ready(function () {
         var donut1 = document.getElementById("container");
         var donut2 = document.getElementById("container");
         Highcharts.chart('donut1', {
@@ -92,7 +91,6 @@ function MarketResearch(){
                 }]
             }]
         });
-    });
     return(
         <div>
             <div className="market-research">

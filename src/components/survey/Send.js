@@ -27,18 +27,18 @@ function Send(){
                     </section>
                     <section className={styles.formArea}>
                         <ul>
-                            <li><strong>조사명 :</strong>'\u00A0' 갤럭시S21 사용자 만족도 조사</li>
-                            <li><strong>설문링크 :</strong>'\u00A0'<a href="#" className={styles.Alink}>www.a.com</a></li>
-                            <li><strong>필요샘플 수 :</strong>'\u00A0' 500</li>
-                            <li><strong>참여포인트 :</strong>'\u00A0' 100pt</li>
+                            <li><strong>조사명 : </strong> 갤럭시S21 사용자 만족도 조사</li>
+                            <li><strong>설문링크 : </strong><a href="#" className={styles.Alink}>www.a.com</a></li>
+                            <li><strong>필요샘플 수 : </strong> 500</li>
+                            <li><strong>참여포인트 : </strong> 100pt</li>
                             <li>
-                                <span><strong>설문기간'\u00A0'</strong></span>
+                                <span><strong>설문기간 </strong></span>
                                 <label></label>
                                 <input type="date" /> ~ <input type="date" />
                             </li>
-                            <li><strong>발송패널 수 :</strong>'\u00A0' 2,500건</li>
+                            <li><strong>발송패널 수 : </strong> 2,500건</li>
                             <li>
-                                <span><strong>설문 프로파일 :</strong></span>
+                                <span><strong>설문 프로파일 : </strong></span>
                                 <button className={styles.tag}>남성</button>
                                 <button className={styles.tag}>20세~39세</button>
                                 <button className={styles.tag}>SKT</button>

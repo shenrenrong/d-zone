@@ -6,14 +6,14 @@ import { faCaretLeft, faCaretRight, faSearch } from "@fortawesome/free-solid-svg
 import '../../reset.css';
 
 function Survey(){
-    return(
+    return( 
       <div className={styles.surveyArea}>
         <div className={styles.topbar}>
           <h2>설문등록 현황조회</h2>
           <div className={styles.searchArea}>
             <section className={styles.searchbox}>
               <input type="search" className={styles.searchline} />
-              <a href="#">
+              <a href="#" className={styles.searchicon}>
                 <FontAwesomeIcon
                   icon={faSearch} 
                 />
@@ -185,7 +185,7 @@ function Survey(){
             <a href="#" className={styles.pageNum}>5</a>
             <a href="#" className={styles.arrowkey}>
               <FontAwesomeIcon
-                icon={faCaretLeft} className={`${styles.fa}${styles.faCaretRight}`}
+                icon={faCaretRight} className={`${styles.fa}${styles.faCaretRight}`}
                 />
             </a>
           </section>

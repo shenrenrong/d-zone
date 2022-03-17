@@ -7,11 +7,6 @@ import '../../reset.css';
 import { useState } from 'react';
 
 function Register(){
-    const [select, setSelect] = useState(false);
-    function selectCnt(){
-        setSelect += 1;
-
-    }
     return(
         <div className={styles.registerArea}>
             <div className={styles.titlebox}>
@@ -56,7 +51,7 @@ function Register(){
                     <dt><span>요청기간</span></dt>
                     <dd className={styles.dataarea}>
                         <input type="date" data-placeholder="" required aria-required="ture"/> 
-                        <span>~</span>
+                        <span> ~ </span>
                         <input type="date" data-placeholder="" required aria-required="ture"/>
                     </dd>
                 </dl>
@@ -83,9 +78,9 @@ function Register(){
                                     </section>
                                     <section className={styles.scrollbar}>
                                         <div className={styles.tag}>
-                                            남성
+                                            <span>남성</span>
                                             <FontAwesomeIcon
-                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}`}
+                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}` }
                                             />
                                         </div>
                                         <div className={styles.tag}>
