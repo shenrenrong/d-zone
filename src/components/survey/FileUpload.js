@@ -2,12 +2,36 @@ import React from "react";
 import styles from "./css/file-upload.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-//import './css/file-upload.module.css';
 import '../../reset.css';
+import {useState} from 'react';
+import Transfer from './Transfer';
 
+const MODAL_STYLES = {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    backgroundColor: '#fff',
+    zIndex: 1000
+}
+const OVERLAY_STYLE = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0,0,0,.7)',
+    zIndex: 1000
+}
 
-function FileUpload(){
+function FileUpload({opens, children, onClose}){
+    const [transfer, setTransfer] = useState(false);
+    if (!opens) return null
     return(
+        <>
+        <div style={OVERLAY_STYLE} /> {/* 검은창 */}
+        <div style={MODAL_STYLES}>
+        {children}
         <div className={styles.fileUploadbox}>
             <div className={styles.titlebox}>
                 <section className={styles.titletext}>
@@ -29,10 +53,15 @@ function FileUpload(){
                     <input className={styles.uploadName} value="" placeholder="" />
                 </section>
                 <section className={styles.btnArea}>
-                    <button className={styles.submitBtn}>등록</button>
+                    <button className={styles.submitBtn} onClick={()=>{setTransfer(true)}}>
+                        <span>등록</span>
+                        <Transfer trans={transfer} onClose={()=>setTransfer(false)}/>
+                    </button>
                 </section>
             </div>
         </div>
+        </div>
+        </>
     )
 }
 

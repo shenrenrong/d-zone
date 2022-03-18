@@ -2,11 +2,34 @@ import React from "react";
 import styles from "./css/send.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-//import './css/send.module.css';
 import '../../reset.css';
 
-function Send(){
+const MODAL_STYLES = {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    backgroundColor: '#fff',
+    zIndex: 1000
+}
+const OVERLAY_STYLE = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0,0,0,.7)',
+    zIndex: 1000
+}
+
+
+function Send({send, children, onClose}){
+    if (!send) return null
     return(
+        <>
+        <div style={OVERLAY_STYLE} />
+        <div style={MODAL_STYLES}>
+            {children}
         <div className={styles.sendbox}>
             <div className={styles.titlebox}>
                 <section className={styles.xbox}>
@@ -52,10 +75,12 @@ function Send(){
                 </section>
             </div>
             <div className={styles.btnArea}>
-                <button className={styles.confirmBtn}>확인</button>
+                <button className={styles.confirmBtn} onClick={onClose}>확인</button>
                 <button className={styles.cancelBtn}>취소</button>
             </div>
         </div>
+        </div>
+        </>
     )
 }
 

@@ -2,10 +2,14 @@ import React from "react";
 import styles from "./css/survey.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight, faSearch } from "@fortawesome/free-solid-svg-icons";
-//import './css/survey.module.css';
+import { useState } from 'react';
+import Register from './Register';
+import Send from './Send';
 import '../../reset.css';
 
 function Survey(){
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSend, setIsSend] = useState(false);
     return( 
       <div className={styles.surveyArea}>
         <div className={styles.topbar}>
@@ -21,8 +25,10 @@ function Survey(){
             </section>
           </div>
           <section className={styles.topbtn}>
-              <button>신규등록</button>
-              <button>발송</button>
+              <button onClick={()=>{setIsOpen(true)}}>신규등록</button>
+              <Register open={isOpen} onClose={()=>setIsOpen(false)} />
+              <button onClick={()=>{setIsSend(true)}}>발송</button>
+              <Send send={isSend} onClose={()=>setIsSend(false)} />
           </section>  
         </div>
         <table className={styles.table}>

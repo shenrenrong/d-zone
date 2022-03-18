@@ -11,6 +11,8 @@ import Survey from '../survey/Survey';
 import SurveyModify from '../survey/SurveyModify';
 import Transfer from '../survey/Transfer';
 
+//import Modal from '../survey/modal/Modal'
+
 export default function Registration() {
   return (
     <div className='registration'>

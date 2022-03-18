@@ -2,12 +2,36 @@ import React from "react";
 import styles from "./css/register.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-//import './css/register.module.css';
 import '../../reset.css';
 import { useState } from 'react';
+import FileUpload from "./FileUpload";
 
-function Register(){
+const MODAL_STYLES = {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    backgroundColor: '#fff',
+    zIndex: 1000
+}
+const OVERLAY_STYLE = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0,0,0,.7)',
+    zIndex: 1000
+}
+
+function Register({open, children, onClose}){
+    const [isOpens, setIsOpens] = useState(false);
+    if (!open) return null
     return(
+        <>
+        <div style={OVERLAY_STYLE} />
+        <div style={MODAL_STYLES}>
+            {children}
         <div className={styles.registerArea}>
             <div className={styles.titlebox}>
                 <section className={styles.titletext}>
@@ -41,8 +65,9 @@ function Register(){
                 <dl className={styles.dl4}>
                     <dt><span>발송패널 등록</span></dt>
                     <dd>
-                        <div className={styles.fileupload}>
-                            <a href="#">파일 등록</a>
+                        <div className={styles.fileupload} onClick={()=>{setIsOpens(true)}}>
+                            <a href="#" >파일 등록</a>
+                            <FileUpload opens={isOpens} onClose={()=>setIsOpens(false)}/>
                         </div>
                         <p>8,545건</p>
                     </dd>
@@ -79,16 +104,21 @@ function Register(){
                                     <section className={styles.scrollbar}>
                                         <div className={styles.tag}>
                                             <span>남성</span>
-                                            <FontAwesomeIcon
-                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}` }
-                                            />
+                                            <div className={styles.tagX}>
+                                                <FontAwesomeIcon
+                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
+                                                />
+                                            </div>  
                                         </div>
                                         <div className={styles.tag}>
-                                            20세~39세
-                                            <FontAwesomeIcon
-                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}`}
-                                            />
+                                            <span>20세~39세</span>
+                                            <div className={styles.tagX}>
+                                                <FontAwesomeIcon
+                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}`}
+                                                />
                                             </div>
+                                           
+                                        </div>
                                     </section>
                                 </dd>
                             </li>
@@ -108,11 +138,13 @@ function Register(){
                                     </section>
                                     <section className={styles.scrollbar}>
                                         <div className={styles.tag}>
-                                            SKT
-                                            <FontAwesomeIcon
-                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}`}
-                                            />
+                                            <span>SKT</span>
+                                            <div className={styles.tagX}>
+                                                <FontAwesomeIcon
+                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}`}
+                                                />
                                             </div>
+                                        </div>
                                     </section>
                                 </dd>
                             </li>
@@ -135,11 +167,13 @@ function Register(){
                                     </section>
                                     <section className={styles.scrollbar}>
                                         <div className={styles.tag}>
-                                            갤럭시S1
-                                            <FontAwesomeIcon
-                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}`}
-                                            />
+                                            <span>갤럭시S1</span>
+                                            <div className={styles.tagX}>
+                                                <FontAwesomeIcon
+                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}`}
+                                                />
                                             </div>
+                                        </div>
                                     </section>
                                 </dd>
                             </li>
@@ -148,9 +182,11 @@ function Register(){
                 </dl>
             </form>
             <section className={styles.btnArea}>
-                <button className={styles.saveBtn}>저장</button>
+                <button className={styles.saveBtn} onClick={onClose}>저장</button>
             </section>
         </div>
+        </div>
+        </>
     )
 }
 

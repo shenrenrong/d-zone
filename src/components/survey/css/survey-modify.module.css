@@ -1,6 +1,6 @@
 /*상단*/
 .modifybox {
-  width: 100%;
+  width: 1200px;
   margin: 20px auto 0;
   color: #333;
   font-size: 17px;
@@ -153,13 +153,22 @@ select option[value=""]:disabled {
 }
 /* 태그 */
 .tag {
+  background-color: #fff;
   border: 1px solid #777777;
   border-radius: 10px;
   margin-right: 7px;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+}
+.tag span{
+  padding: 3px;
+  vertical-align: middle;
 }
 .tagX {
   margin-left: 7px;
   cursor: pointer;
+  padding: 3px;
 }
 /* 버튼 */
 .btnArea {

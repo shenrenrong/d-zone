@@ -36,7 +36,7 @@ function SurveyModify(){
                     <dt><span>조사기간</span></dt>
                     <dd className={styles.datearea}>
                         <input type="date" data-placeholder="" required aria-required="ture"/> 
-                        <span>~</span>
+                        <span> ~ </span>
                         <input type="date" data-placeholder="" required aria-required="ture"/>
                     </dd>
                 </dl>
@@ -63,16 +63,20 @@ function SurveyModify(){
                                     </section>
                                     <section className={styles.scrollbar}>
                                         <button className={styles.tag}>
-                                            남성
-                                            <FontAwesomeIcon
-                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
-                                            />
+                                            <span>남성</span>
+                                            <div className={styles.tagX}>
+                                                <FontAwesomeIcon
+                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                                />
+                                            </div>
                                         </button>
                                         <button className={styles.tag}>
-                                            20세~39세
-                                            <FontAwesomeIcon
-                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
-                                            />
+                                            <span>20세~39세</span>
+                                            <div className={styles.tagX}>
+                                                <FontAwesomeIcon
+                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                                />
+                                            </div>
                                         </button>
                                     </section>
                                 </dd>
@@ -93,10 +97,12 @@ function SurveyModify(){
                                     </section>
                                     <section className={styles.scrollbar}>
                                         <button className={styles.tag}>
-                                            SKT
-                                            <FontAwesomeIcon
-                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
-                                            />
+                                            <span>SKT</span>
+                                            <div className={styles.tagX}>
+                                                <FontAwesomeIcon
+                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                                />
+                                            </div>
                                             </button>
                                     </section>
                                 </dd>
@@ -120,10 +126,12 @@ function SurveyModify(){
                                     </section>
                                     <section className={styles.scrollbar}>
                                         <button className={styles.tag}>
-                                            갤럭시S1
-                                            <FontAwesomeIcon
-                                                icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
-                                            />
+                                            <span>갤럭시S1</span>
+                                            <div className={styles.tagX}>
+                                                <FontAwesomeIcon
+                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
+                                                />
+                                            </div>
                                             </button>
                                     </section>
                                 </dd>

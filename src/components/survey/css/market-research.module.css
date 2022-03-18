@@ -1,5 +1,5 @@
 /* top */
-.market-research {
+.marketResearch {
   width: 100%;
   margin: 53px auto 126px;
 }
@@ -31,7 +31,7 @@
 }
 /* chart 텍스트 */
 .chartarea{}
-.chart-txt {
+.chartTxt {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto 36px;
@@ -49,22 +49,22 @@
   margin: 28px auto 37px;
   width: 111px;
 }
-.result-txt {
+.resultTxt {
   display: flex;
   justify-content: space-between;
   width: 200px;
   margin: auto;
   
 }
-.result-txt span {
+.resultTxt span {
   font-size: 16px;
   padding-bottom: 20px;
 }
-.result-txt:last-child span{
+.resultTxt:last-child span{
   padding-bottom: 39px;
 }
 /*도넛 차트*/ 
-.donut-chart {
+.donutChart {
   display: flex;
   justify-content: space-evenly;
   width: 726px;
@@ -84,7 +84,7 @@
 .step {
   margin: 74px 0 64px;
 }
-.step-area {
+.stepArea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -92,11 +92,11 @@
   margin: auto;
   padding-bottom: 20px;
 }
-.step-area dt{
+.stepArea dt{
   font-size: 17px;
 }
 .scrollbar{}
-.step-tag {
+.stepTag {
   display: flex;
 }
 .history {
@@ -121,7 +121,7 @@
   background-color: #eee;
   display: flex;
 }
-.resend-txt{
+.resendTxt{
   width:250px;
   font-size: 16px;
   line-height: 16px;
@@ -132,7 +132,7 @@
   vertical-align: middle;
   margin: auto;
 }
-.resend-txt p:last-child{
+.resendTxt p:last-child{
   color: #ff5907;
 }
 
@@ -155,7 +155,7 @@
   background-color: #eee;
   display: flex;
 }
-.confirm-txt{
+.confirmTxt{
   width:350px;
   font-size: 16px;
   line-height: 16px;
@@ -166,14 +166,22 @@
   vertical-align: middle;
   margin: auto;
 }
-.confirm-txt p:last-child{
+.confirmTxt p:last-child{
   color: #ff5907;
 }
 /* 태그 */ 
 .tag {
+  background-color: #fff;
   border: 1px solid #777777;
   border-radius: 10px;
   margin-right: 7px;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+}
+.tag span{
+  padding: 3px;
+  vertical-align: middle;
 }
 /*.tag_x {
   margin-left: 7px;
@@ -181,12 +189,12 @@
 }*/
 
 /* 버튼 */
-.research-btnarea {
+.researchBtnarea {
   display: flex;
   justify-content: center;
   margin: 0 auto 127px;
 }
-.modify-btn{
+.modifyBtn{
   background-color: #ffc107;
   color: #333;
   border: none;
@@ -201,7 +209,7 @@
   height: 52px;
   margin-right: 19px;
 }
-.list-btn{
+.listBtn{
   background-color: #fff;
   border: 1px solid #333;
   color: #333;
