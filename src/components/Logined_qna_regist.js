@@ -1,13 +1,14 @@
 import React from "react";
 import Gnb from "./Gnb";
 import styles from "./Logined_qna_regist.module.css";
+import FadeIn from "react-fade-in"
 
 function Logined_qna_regist() {
   return (
-    <div>
       <main>
         <div className={styles.container}>
           <div className={styles.qnaRegist}>
+            <FadeIn>
             <div className={styles.pannelCategory}>
               <h2 className={styles.pannelTitle}>
                 Q&A <span>{">"}</span> Q&A 게시판
@@ -63,10 +64,10 @@ function Logined_qna_regist() {
                 취소
               </button>
             </div>
+            </FadeIn>
           </div>
         </div>
       </main>
-    </div>
   );
 }
 

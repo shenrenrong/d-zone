@@ -8,7 +8,7 @@ main {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  color: #333;
+  color: #0c2461;
   margin-bottom: 59px;
 }
 
@@ -49,6 +49,11 @@ main {
   font-weight: bold;
   cursor: pointer;
 }
+.regist:hover{
+  background-color: #fff;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+}
 
 /* search 바 */
 .searchBox {
@@ -63,6 +68,7 @@ main {
   border: none;
   outline: none;
   background-color: transparent;
+  width: 100%;
 }
 .searchBox .btn {
   border: none;
@@ -84,35 +90,31 @@ main {
   border-collapse: collapse;
   overflow-y: scroll;
 }
-
 th {
   border-bottom: 1px solid #444444;
 }
-
 th,
 td {
   border-left: 1px solid #444444;
   padding: 10px;
   text-align: center;
 }
-
 th:first-child,
 td:first-child {
   border-left: none;
 }
-
+tbody tr td:nth-child(2) a:hover{
+  color: red;
+}
 .table .number {
   width: 50px;
 }
-
 .table .title {
   width: 400px;
 }
-
 .table .registDate {
   width: 80px;
 }
-
 .table .register {
   width: 80px;
 }
@@ -131,6 +133,9 @@ td:first-child {
   display: block;
   margin-right: 10px;
 }
+.controllerBox a:hover{
+  color: #ff7a3d;
+}
 .controllerBox .btn {
   width: 20px;
   height: 20px;
@@ -139,4 +144,9 @@ td:first-child {
   text-align: center;
   line-height: 20px;
   font-size: 16px;
+}
+.controllerBox .btn:hover{
+  background-color: #fff;
+  color: #ffc107;
+  border: 1px solid #ffc107;
 }

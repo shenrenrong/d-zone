@@ -3,12 +3,16 @@ import styles from "./Logined_qna_board.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import Gnb from "./Gnb";
+import FadeIn from "react-fade-in"
 
 export default function Logined_qna_board() {
   return (
     <div>
       <main>
-        <h1 className={styles.pannelText}>Q&A</h1>
+        <FadeIn>
+        <div>
+          <h1 className={styles.pannelText}>Q&A</h1>
+        </div>
         <div className={styles.qnaBox}>
           <div className={styles.registSearch}>
             <div className={styles.registBox}>
@@ -175,6 +179,7 @@ export default function Logined_qna_board() {
             </div>
           </div>
         </div>
+        </FadeIn>
       </main>
     </div>
   );

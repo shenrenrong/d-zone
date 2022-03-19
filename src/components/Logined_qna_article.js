@@ -1,10 +1,12 @@
 import React from "react";
-import styles from './Logined_qna_article.module.css'
+import styles from "./Logined_qna_article.module.css";
+import FadeIn from "react-fade-in";
 
 function Logined_qna_article() {
   return (
-      <main>
-        <div className={styles.container}>
+    <main>
+      <FadeIn>
+      <div className={styles.container}>
           <div className={styles.articleWrap}>
             <div className={styles.pannelCategory}>
               <h2 className={styles.pannelTitle}>
@@ -42,10 +44,16 @@ function Logined_qna_article() {
                 <span className={styles.time}>09:02:25</span>
               </div>
               <div className={styles.commentBtn}>
-                <button type="button" className={`${styles.btn} ${styles.modify}`}>
+                <button
+                  type="button"
+                  className={`${styles.btn} ${styles.modify}`}
+                >
                   수정
                 </button>
-                <button type="button" className={`${styles.btn} ${styles.delete}`}>
+                <button
+                  type="button"
+                  className={`${styles.btn} ${styles.delete}`}
+                >
                   삭제
                 </button>
               </div>
@@ -62,7 +70,10 @@ function Logined_qna_article() {
                   aria-label="With textarea"
                 ></textarea>
                 <div className={styles.replyConfirm}>
-                  <button type="button" className={`${styles.btn} ${styles.btnOutlinePrimary}`}>
+                  <button
+                    type="button"
+                    className={`${styles.btn} ${styles.btnOutlinePrimary}`}
+                  >
                     확인
                   </button>
                 </div>
@@ -81,8 +92,9 @@ function Logined_qna_article() {
               목록
             </button>
           </div>
-        </div>
-      </main>
+      </div>
+      </FadeIn>
+    </main>
   );
 }
 

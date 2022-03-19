@@ -123,6 +123,9 @@ main {
   display: block;
   margin-right: 10px;
 }
+.controllerBox a:hover{
+  color: #ff7a3d;
+}
 .controllerBox .btn {
   width: 20px;
   height: 20px;
@@ -131,4 +134,9 @@ main {
   text-align: center;
   line-height: 20px;
   font-size: 16px;
+}
+.controllerBox .btn:hover{
+  background-color: #fff;
+  color: #ffc107;
+  border: 1px solid #ffc107;
 }

@@ -93,6 +93,11 @@ font-size: 18px;
 font-weight: bold;
 color: #333;
 }
+.registCancleBtn .btn:hover{
+    background-color: #fff;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}
 .registCancleBtn .regist {
 margin-right: 20px;
 }

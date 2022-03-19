@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Logined_home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import FadeIn from "react-fade-in"
 
 function Logined_home() {
   const [isChecked, setIsChecked] = useState("checkWill");
@@ -13,6 +14,7 @@ function Logined_home() {
   return (
     <main>
       <div className={styles.container}>
+        <FadeIn>
         <div className={styles.describe}>
           <div className={styles.surveyWill}>
             <img src="/img/home_describe1.png" alt="" />
@@ -348,6 +350,7 @@ function Logined_home() {
                 </tbody>
               </table>
               {/* e: table */}
+              
               <div className={styles.qnaPageNumber}>
                 <div className={styles.controllerBox}>
                   <a href="#" className={styles.btn}>
@@ -377,6 +380,7 @@ function Logined_home() {
           {/* e: tableBox */}
         </div>
         {/* e: surveyBox */}
+        </FadeIn>
       </div>
     </main>
   );
