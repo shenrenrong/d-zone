@@ -143,10 +143,19 @@ main {
   .btnContainer .btn:first-child {
     background-color: #333;
   }
+  .btnContainer .btn:first-child:hover{
+    background-color: #fff;
+    border: 1.5px solid #333;
+    color: #333;
+  }
   .btnContainer .btn:last-child {
     background-color: #fff;
     border: 1.5px solid #333;
     color: #333;
+  }
+  .btnContainer .btn:last-child:hover{
+    background-color: #333;
+    color: #fff;
   }
   
   .btn {

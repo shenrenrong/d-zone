@@ -10,8 +10,8 @@ export default function QA() {
   return (
     <div className="QA">
       { memberStat && <Gnb /> }
-      <Logined_qna_board />
-      <Logined_qna_article />
+      {/* <Logined_qna_board /> */}
+      {/* <Logined_qna_article /> */}
       <Logined_qna_regist />
     </div>
   );

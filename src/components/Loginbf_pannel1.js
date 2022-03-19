@@ -13,7 +13,7 @@ function Loginbf_pannel1() {
         loginForm.submit();
         alert('입력하신 이메일로 아이디가 발송 되었습니다.')
     }
-}
+  }
 
 
 출처: https://dololak.tistory.com/728 [코끼리를 냉장고에 넣는 방법]
