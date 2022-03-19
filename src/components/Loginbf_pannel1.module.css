@@ -4,6 +4,10 @@ main {
   margin: 30px auto 108px auto;
 }
 
+.pannel, .content{
+  /* opacity: 0; */
+}
+
 .pannelText {
   font-size: 27px;
   font-weight: 600;
@@ -11,7 +15,6 @@ main {
   padding: 60px 0 44px;
   color: #0c2461;
 }
-
 .pannelDes {
   text-align: center;
   display: block;

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Loginbf_pannel2.module.css";
+import FadeIn from "react-fade-in"
 
 function Loginbf_pannel2() {
   // 인증번호 발송
@@ -49,12 +50,15 @@ function Loginbf_pannel2() {
 
   return (
     <main>
-      <h2 className={styles.pannelText}>비밀번호 찾기</h2>
-      <span className={styles.pannelDes}>
-        가입한 이메일 주소로 임시 비밀번호를 알려드립니다.
-        <br />
-        로그인 후 비밀번호를 꼭 변경해주세요.
-      </span>
+      <FadeIn>
+      <div>
+        <h2 className={styles.pannelText}>비밀번호 찾기</h2>
+        <span className={styles.pannelDes}>
+          가입한 이메일 주소로 임시 비밀번호를 알려드립니다.
+          <br />
+          로그인 후 비밀번호를 꼭 변경해주세요.
+        </span>
+      </div>
       <div className={styles.content}>
         <form name="findForm">
           <div className={`${styles.row} ${styles.emailRow}`}>
@@ -148,6 +152,7 @@ function Loginbf_pannel2() {
           {/* e:btnContainer */}
         </form>
       </div>
+      </FadeIn>
     </main>
   );
 }

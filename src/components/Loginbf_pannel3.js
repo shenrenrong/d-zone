@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import styles from './Loginbf_pannel3.module.css'
+import FadeIn from "react-fade-in"
 
 function Loginbf_pannel3() {
     // button onClick
@@ -27,11 +28,14 @@ function Loginbf_pannel3() {
   
     return (
     <main>
-      <h2 className={styles.pannelText}>패널인증시스템 신청</h2>
-      <p>
-        도입 관련하여 궁금하신 점을 아래에 작성해주시면 <br />
-        최대한 빠른 시간 내 담당자가 연락 드리도록 하겠습니다.
-      </p>
+      <FadeIn>
+      <div>
+        <h2 className={styles.pannelText}>패널인증시스템 신청</h2>
+        <p>
+          도입 관련하여 궁금하신 점을 아래에 작성해주시면 <br />
+          최대한 빠른 시간 내 담당자가 연락 드리도록 하겠습니다.
+        </p>
+      </div>
       <div className={styles.content}>
         <form>
           <div className={`${styles.row} ${styles.companynameRow}`}>
@@ -139,6 +143,7 @@ function Loginbf_pannel3() {
           </div>
         </form>
       </div>
+      </FadeIn>
     </main>
   );
 }
