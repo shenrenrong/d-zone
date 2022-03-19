@@ -11,17 +11,17 @@ function Cards() {
         <div className="cards-wrapper">
           <ul className="cards-items">
             <CardItem
-              src="img/box-ico_01.png"
+              src="img/box-ico_01.jpg"
               text="신규 설문 등록"
               path="/services"
             />
             <CardItem
-              src="img/box-ico_02.png"
+              src="img/box-ico_02.jpg"
               text="설문발송"
               path="/services"
             />
             <CardItem
-              src="img/box-ico_03.png"
+              src="img/box-ico_03.jpg"
               text="포인트 차감"
               path="/services"
             />
