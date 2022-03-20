@@ -20,6 +20,7 @@ function Loginbf_pannel2() {
     }
   };
 
+
   // 인증번호 확인
   const certifNum = () => {
     var findForm = document.findForm;
@@ -28,18 +29,18 @@ function Loginbf_pannel2() {
     if (!codeNumber) {
       alert("올바른 인증번호를 입력해주세요.");
     } else {
-      findForm.submit();
-      
+      findForm.submit();  
       alert("인증번호가 확인 되었습니다.");
-      
     }
   };
+
 
   // 인증번호 발급 후 확인버튼 활성화
   const certifBtnActive = () => {
     const target = document.getElementById("certifBtn");
     target.disabled = false;
   };
+
 
   // 휴대폰 번호 글자수 제한
   const handleOnInput = (e) => {
@@ -48,6 +49,26 @@ function Loginbf_pannel2() {
     }
   };
 
+
+  // 임시비밀번호 발송
+  const tempPasswordSend = () => {
+    var findForm = document.findForm;
+    var inputEmail = findForm.inputEmail.value;
+    var inputUsername = findForm.inputUsername.value;
+    var tel1 = findForm.tel1.value;
+    var tel2 = findForm.tel2.value;
+    var tel3 = findForm.tel3.value;
+    var codeNumber = findForm.codeNumber.value;
+
+    if (!inputEmail || !inputUsername || !tel1 || !tel2 || !tel3 || !codeNumber) {
+      alert("아이디와 사용자명 및 휴대폰 인증을 모두 확인해주세요.");
+    } else {
+      findForm.submit();
+      alert("입력하신 이메일로 임시비밀번호가 발송 되었습니다. 로그인 후 비밀번호를 반드시 변경해주시기 바랍니다.");
+    }
+  };
+
+  
   return (
     <main>
       <FadeIn>
@@ -108,8 +129,8 @@ function Loginbf_pannel2() {
                 className={styles.btn}
                 onClick={() => {
                   certifNumSend();
-                  certifBtnActive();
-                  return false;
+                  // certifBtnActive();
+                  // return false;
                 }}
               >
                 인증번호 발송
@@ -126,10 +147,10 @@ function Loginbf_pannel2() {
                 type="button"
                 className={styles.btn}
                 id="certifBtn"
-                disabled
+                // disabled
                 onClick={() => {
                   certifNum();
-                  return false;
+                  // return false;
                 }}
               >
                 확인
@@ -141,7 +162,7 @@ function Loginbf_pannel2() {
           <div className={styles.btnContainer}>
             <button
               type="submit"
-              className={`${styles.btn} ${styles.btnPrimary}`}
+              className={`${styles.btn} ${styles.btnPrimary}`} onClick={()=>{tempPasswordSend();}}
             >
               임시비밀번호 발송
             </button>

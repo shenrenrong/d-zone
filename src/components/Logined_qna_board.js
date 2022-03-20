@@ -6,6 +6,9 @@ import Gnb from "./Gnb";
 import FadeIn from "react-fade-in"
 
 export default function Logined_qna_board() {
+  // 답글 수
+  const replyNumber = 3;
+  
   return (
     <div>
       <main>
@@ -149,7 +152,7 @@ export default function Logined_qna_board() {
               <tr>
                 <td scope="row">160</td>
                 <td>
-                  <a href="#">Q&A 게시판</a>
+                  <a href="#">Q&A 게시판 ({replyNumber})</a>
                 </td>
                 <td>2021.11.28</td>
                 <td>홍길동</td>

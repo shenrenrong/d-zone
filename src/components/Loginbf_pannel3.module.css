@@ -70,6 +70,11 @@ p {
 .col input::-ms-input-placeholder {
   color: #b1b1b1;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* addfileRow addfileCol */
 /* .addfileCol #addfile1,2,3의 display:none이 안먹힘 */

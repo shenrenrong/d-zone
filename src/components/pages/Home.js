@@ -10,10 +10,10 @@ export default function Home() {
     <div className="home">
         <Gnb />
         {/* userState가 true일 때 */}
-        {/* <Logined_home /> */}
+        <Logined_home />
         {/* <Loginbf_pannel1 /> */}
         {/* <Loginbf_pannel2 /> */}
-        <Loginbf_pannel3 />
+        {/* <Loginbf_pannel3 /> */}
     </div>
   );
 }

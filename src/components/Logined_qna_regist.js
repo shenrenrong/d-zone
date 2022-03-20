@@ -4,6 +4,22 @@ import styles from "./Logined_qna_regist.module.css";
 import FadeIn from "react-fade-in"
 
 function Logined_qna_regist() {
+  // 문의신청
+  const qnaRegist = () => {
+    var qnaRegist = document.qnaRegist;
+    var titleInputBox = qnaRegist.titleInputBox.value;
+    var contentInputBox = qnaRegist.contentInputBox.value;
+
+    if (
+      !titleInputBox ||
+      !contentInputBox) {
+      alert("필수 정보를 모두 입력해주세요.");
+    } else {
+      qnaRegist.submit();
+      alert("Q&A 등록이 완료 되었습니다.");
+    }
+  };
+
   return (
       <main>
         <div className={styles.container}>
@@ -24,7 +40,7 @@ function Logined_qna_regist() {
               </p>
             </div>
 
-            <form>
+            <form name="qnaRegist">
               <div className={styles.contents}>
                 <div className={styles.titleInput}>
                   <label htmlFor="inputBox" className={styles.title}>
@@ -34,6 +50,8 @@ function Logined_qna_regist() {
                     className={styles.titleInputBox}
                     aria-label="With textarea"
                     type="text"
+                    id="titleInputBox"
+                    required
                   ></input>
                 </div>
 
@@ -44,6 +62,8 @@ function Logined_qna_regist() {
                   <textarea
                     className={styles.contentInputBox}
                     aria-label="With textarea"
+                    id="contentInputBox"
+                    required
                     placeholder="보다 신속 정확한 확인을 위하여&#13;&#10;신청/문의 내용을 구체적으로 알려주세요."
                   ></textarea>
                 </div>
@@ -54,6 +74,9 @@ function Logined_qna_regist() {
               <button
                 type="button"
                 className={`${styles.btn} ${styles.regist}`}
+                onClick={()=>{
+                  qnaRegist();
+                }}
               >
                 등록
               </button>

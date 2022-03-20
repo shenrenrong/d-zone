@@ -25,13 +25,13 @@ function Logined_home() {
           <div className={styles.surveyIng}>
             <img src="/img/home_describe2.png" alt="" />
             <span className={styles.title}>설문중</span>
-            <span className={styles.case}>0건</span>
+            <span className={styles.case}>2건</span>
           </div>
           <img src="/img/home_describe_arrow.png" alt="" />
           <div className={styles.surveyEd}>
             <img src="/img/home_describe3.png" alt="" />
             <span className={styles.title}>설문마감</span>
-            <span className={styles.case}>0건</span>
+            <span className={styles.case}>2건</span>
           </div>
         </div>
         {/* e: describe */}
@@ -105,7 +105,7 @@ function Logined_home() {
                         160
                       </td>
                       <td scope="row" className={styles.title}>
-                        갤럭시S21 사용자 만족도 조사
+                        <a>갤럭시S21 사용자 만족도 조사</a>
                       </td>
                       <td scope="row" className={styles.date}>
                         2021.10.28 ~ 2021.11.28
@@ -131,7 +131,7 @@ function Logined_home() {
                         160
                       </td>
                       <td scope="row" className={styles.title}>
-                        갤럭시S21 사용자 만족도 조사
+                      <a>갤럭시S21 사용자 만족도 조사</a>
                       </td>
                       <td scope="row" className={styles.date}>
                         2021.10.28 ~ 2021.11.28
@@ -202,7 +202,7 @@ function Logined_home() {
                         160
                       </td>
                       <td scope="row" className={styles.title}>
-                        갤럭시S21 사용자 만족도 조사
+                      <a>갤럭시S21 사용자 만족도 조사</a>
                       </td>
                       <td scope="row" className={styles.date}>
                         2021.10.28 ~ 2021.11.28
@@ -228,7 +228,7 @@ function Logined_home() {
                         160
                       </td>
                       <td scope="row" className={styles.title}>
-                        갤럭시S21 사용자 만족도 조사
+                      <a>갤럭시S21 사용자 만족도 조사</a>
                       </td>
                       <td scope="row" className={styles.date}>
                         2021.10.28 ~ 2021.11.28
@@ -300,7 +300,7 @@ function Logined_home() {
                       160
                     </td>
                     <td scope="row" className={styles.title}>
-                      갤럭시S21 사용자 만족도 조사
+                    <a>갤럭시S21 사용자 만족도 조사</a>
                     </td>
                     <td scope="row" className={styles.date}>
                       2021.10.28 ~ 2021.11.28
@@ -326,7 +326,7 @@ function Logined_home() {
                       160
                     </td>
                     <td scope="row" className={styles.title}>
-                      갤럭시S21 사용자 만족도 조사
+                    <a>갤럭시S21 사용자 만족도 조사</a>
                     </td>
                     <td scope="row" className={styles.date}>
                       2021.10.28 ~ 2021.11.28

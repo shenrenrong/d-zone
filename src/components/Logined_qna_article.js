@@ -3,6 +3,11 @@ import styles from "./Logined_qna_article.module.css";
 import FadeIn from "react-fade-in";
 
 function Logined_qna_article() {
+  // 게시글 삭제
+  const deleteArticle = () => {
+    alert("게시글 삭제가 완료되었습니다.")
+  }
+
   return (
     <main>
       <FadeIn>
@@ -85,7 +90,9 @@ function Logined_qna_article() {
             <button type="button" className={`${styles.btn} ${styles.modify}`}>
               수정
             </button>
-            <button type="button" className={`${styles.btn} ${styles.delete}`}>
+            <button type="button" className={`${styles.btn} ${styles.delete}`} onClick={()=>{
+              deleteArticle();
+            }} >
               삭제
             </button>
             <button type="button" className={`${styles.btn} ${styles.list}`}>
