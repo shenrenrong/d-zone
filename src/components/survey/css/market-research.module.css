@@ -99,6 +99,9 @@
 .stepTag {
   display: flex;
 }
+.tag{
+  cursor: pointer;
+}
 .history {
   margin-bottom: 70px;
 }

@@ -9,9 +9,10 @@ import $ from 'jquery';
 
 
 function MarketResearch(){
-    $( document ).ready( function() {
-        const donut1 = document.getElementById("container");
-        const donut2 = document.getElementById("container");
+    /*
+    $( document ).ready( function() { 
+        const donut1 = document.getElementsById("container");
+        const donut2 = document.getElementsById("container"); 
         Highcharts.chart(donut1, {
             colors: ['rgb(155, 187, 89)', 'rgb(128, 127, 127)'],
             chart: {
@@ -53,7 +54,7 @@ function MarketResearch(){
                     selected: true
                 }]
             }]
-        }); 
+        });
         Highcharts.chart(donut2, {
             colors: ['rgb(101, 170, 195)', 'rgb(128, 127, 127)'],
             chart: {
@@ -96,7 +97,91 @@ function MarketResearch(){
                 }]
             }]
         });
-    });
+    });   */
+    const donut1 =  {
+        colors: ['rgb(155, 187, 89)', 'rgb(128, 127, 127)'],
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true,
+                innerSize: 80
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '',
+            colorByPoint: true,
+            data: [{
+                name: '응답완료',
+                y: 60
+            }, {
+                name: '응답미완료',
+                y: 40,
+                sliced: false,
+                selected: true
+            }]
+        }]
+    };
+    const donut2 = {
+        colors: ['rgb(101, 170, 195)', 'rgb(128, 127, 127)'],
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true,
+                innerSize: 80
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: '',
+            colorByPoint: true,
+            data: [{
+                name: '매칭성공',
+                y: 40
+            }, {
+                name: '매칭실패',
+                y: 60,
+                sliced: false,
+                selected: true
+            }]
+        }]
+    };
     return(
         <div>
             <div className={styles.marketResearch}>
@@ -143,13 +228,11 @@ function MarketResearch(){
                         </div>
                     </div>
                     <div className={styles.donutChart}>
-                        <section className={styles.result1}>
-                            <div id="container" className={styles.donut1} style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
+                        <section className={styles.result1} style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}>
+                        <HighchartsReact highcharts={Highcharts} options={donut1} />
                         </section>
-                        <section className={styles.result2}>
-                            <HighchartsReact>
-                            <div id="container" className={styles.donut2} style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
-                            </HighchartsReact>
+                        <section className={styles.result2} style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}>
+                        <HighchartsReact highcharts={Highcharts} options={donut2} /> 
                         </section>
                     </div>
                 </div>

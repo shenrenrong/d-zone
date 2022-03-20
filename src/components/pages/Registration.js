@@ -9,6 +9,8 @@ import Send from '../survey/Send';
 import Survey from '../survey/Survey';
 import SurveyModify from '../survey/SurveyModify';
 import Transfer from '../survey/Transfer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 
 export default function Registration() {
@@ -16,10 +18,11 @@ export default function Registration() {
     <div className='registration'>
       <Gnb />
       <MarketResearch />
-      {/*<h1>
-        Registration
-        </h1>
-      */}
-        </div>
+      {/*<Survey />*/}
+      <Routes>
+        <Route path='/surveymodify' element={<SurveyModify />} />
+        <Route path='/marketresearch' element={<MarketResearch />} />
+      </Routes>
+    </div>
   )
 }

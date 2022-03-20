@@ -3,6 +3,7 @@ import styles from "./css/survey-modify.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
+import { Link } from "react-router-dom";
 
 function SurveyModify(){
     return(
@@ -140,7 +141,7 @@ function SurveyModify(){
                 </dl>
             </form>
             <section className={styles.btnArea}>
-                <button className={styles.saveBtn}>저장</button>
+                <button className={styles.saveBtn}><Link to='/registration'>저장</Link></button>
                 <button className={styles.cancelBtn}>취소</button>
             </section>
         </div>
