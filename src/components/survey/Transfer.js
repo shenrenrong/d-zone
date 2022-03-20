@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./css/transfer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-//import './css/transfer.module.css';
 import '../../reset.css';
 
 const MODAL_STYLES = {
@@ -27,15 +26,16 @@ function Transfer({trans, children, onClose}){
     if (!trans) return null
     return(
         <>
-        <div style={OVERLAY_STYLE} /> {/* 검은창 */}
+        <div style={OVERLAY_STYLE} />
         <div style={MODAL_STYLES}>
+            {children}
         <div className={styles.transferArea}>
             <div className={styles.titlebox}>
                 <section className={styles.titletext}>
                     <span>설문 전송</span>
                 </section>
                 <section className={styles.xbox}>
-                    <a href="#">
+                    <a href="#" onClick={onClose}>
                         <FontAwesomeIcon
                             icon={faTimes} className={`${styles.fa}${styles.faTimes}`}
                         />
@@ -48,8 +48,8 @@ function Transfer({trans, children, onClose}){
                 </section>
             </div>
             <div className={styles.btnArea}>
-                <button className={styles.confirmBtn}>확인</button>
-                <button className={styles.cancelBtn}>취소</button>
+                <button className={styles.confirmBtn} onClick={onClose}>확인</button>
+                <button className={styles.cancelBtn} onClick={onClose}>취소</button>
             </div>
         </div>
         </div>

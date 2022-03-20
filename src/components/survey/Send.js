@@ -5,8 +5,8 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
 
 const MODAL_STYLES = {
-    position: 'fixed',
-    top: '50%',
+    position: 'absolute',
+    top: '70%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
     backgroundColor: '#fff',
@@ -32,7 +32,7 @@ function Send({send, children, onClose}){
             {children}
         <div className={styles.sendbox}>
             <div className={styles.titlebox}>
-                <section className={styles.xbox}>
+                <section className={styles.xbox} onClick={onClose}>
                     <a href="#">
                         <FontAwesomeIcon
                             icon={faTimes} className={`${styles.fa}${styles.faTimes}`}
@@ -62,10 +62,10 @@ function Send({send, children, onClose}){
                             <li><strong>발송패널 수 : </strong> 2,500건</li>
                             <li>
                                 <span><strong>설문 프로파일 : </strong></span>
-                                <button className={styles.tag}>남성</button>
-                                <button className={styles.tag}>20세~39세</button>
-                                <button className={styles.tag}>SKT</button>
-                                <button className={styles.tag}>갤럭시S21</button>
+                                <div className={styles.tag}>남성</div>
+                                <div className={styles.tag}>20세~39세</div>
+                                <div className={styles.tag}>SKT</div>
+                                <div className={styles.tag}>갤럭시S21</div>
                             </li>
                         </ul>
                     </section> 
@@ -76,7 +76,7 @@ function Send({send, children, onClose}){
             </div>
             <div className={styles.btnArea}>
                 <button className={styles.confirmBtn} onClick={onClose}>확인</button>
-                <button className={styles.cancelBtn}>취소</button>
+                <button className={styles.cancelBtn} onClick={onClose}>취소</button>
             </div>
         </div>
         </div>

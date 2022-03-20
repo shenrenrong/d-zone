@@ -24,12 +24,12 @@ const OVERLAY_STYLE = {
     zIndex: 1000
 }
 
-function FileUpload({opens, children, onClose}){
+function FileUpload({fileopen, children, onClose}){
     const [transfer, setTransfer] = useState(false);
-    if (!opens) return null
+    if (!fileopen) return null
     return(
         <>
-        <div style={OVERLAY_STYLE} /> {/* 검은창 */}
+        <div style={OVERLAY_STYLE} /> 
         <div style={MODAL_STYLES}>
         {children}
         <div className={styles.fileUploadbox}>
@@ -37,8 +37,8 @@ function FileUpload({opens, children, onClose}){
                 <section className={styles.titletext}>
                     <span>파일등록</span>
                 </section>
-                <section className={styles.xbox}>
-                    <a href="#">
+                <section className={styles.xbox} onClick={onClose}>
+                    <a href="#" >
                         <FontAwesomeIcon
                             icon={faTimes} className={`${styles.fa}${styles.faTimes}`}
                         />
@@ -55,8 +55,8 @@ function FileUpload({opens, children, onClose}){
                 <section className={styles.btnArea}>
                     <button className={styles.submitBtn} onClick={()=>{setTransfer(true)}}>
                         <span>등록</span>
-                        <Transfer trans={transfer} onClose={()=>setTransfer(false)}/>
                     </button>
+                    <Transfer trans={transfer} onClose={()=>setTransfer(false)}/>
                 </section>
             </div>
         </div>

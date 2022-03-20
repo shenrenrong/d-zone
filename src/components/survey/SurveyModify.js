@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./css/survey-modify.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-//import './css/survey-modify.module.css';
 import '../../reset.css';
 
 function SurveyModify(){

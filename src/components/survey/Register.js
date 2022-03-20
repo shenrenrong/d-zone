@@ -25,7 +25,7 @@ const OVERLAY_STYLE = {
 }
 
 function Register({open, children, onClose}){
-    const [isOpens, setIsOpens] = useState(false);
+    const [isFileOpen, setIsFileOpen] = useState(false);
     if (!open) return null
     return(
         <>
@@ -65,10 +65,10 @@ function Register({open, children, onClose}){
                 <dl className={styles.dl4}>
                     <dt><span>발송패널 등록</span></dt>
                     <dd>
-                        <div className={styles.fileupload} onClick={()=>{setIsOpens(true)}}>
+                        <div className={styles.fileupload} onClick={()=>{setIsFileOpen(true)}}>
                             <a href="#" >파일 등록</a>
-                            <FileUpload opens={isOpens} onClose={()=>setIsOpens(false)}/>
                         </div>
+                        <FileUpload fileopen={isFileOpen} onClose={()=>setIsFileOpen(false)}/>
                         <p>8,545건</p>
                     </dd>
                 </dl>

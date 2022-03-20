@@ -1,7 +1,6 @@
 import React from 'react'
 import Gnb from '../Gnb'
 import { useState } from 'react';
-//import HighCharts from './High';
 
 import FileUpload from '../survey/FileUpload';
 import MarketResearch from '../survey/MarketResearch';
@@ -11,13 +10,12 @@ import Survey from '../survey/Survey';
 import SurveyModify from '../survey/SurveyModify';
 import Transfer from '../survey/Transfer';
 
-//import Modal from '../survey/modal/Modal'
 
 export default function Registration() {
   return (
     <div className='registration'>
       <Gnb />
-      <Survey />
+      <MarketResearch />
       {/*<h1>
         Registration
         </h1>

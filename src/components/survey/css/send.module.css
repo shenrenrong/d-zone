@@ -64,10 +64,9 @@ input:focus {outline:1px solid #ffc107;}
 .Alink{text-decoration: underline;}
 
 /* 태그 */
+.formArea li:last-child{display: flex;}
 .tag {
-  background: inherit;
   border: 1px solid #777;
-  box-shadow: none;
   border-radius: 10px;
   padding: 3px 10px;
   overflow: visible;
@@ -75,6 +74,7 @@ input:focus {outline:1px solid #ffc107;}
   line-height: 12px;
   color: #777;
   cursor: pointer;
+  margin-left: 3px;
 }
 /* 포인트 차감 안내 */
 .msgbox {

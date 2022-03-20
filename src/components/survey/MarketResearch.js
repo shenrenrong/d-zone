@@ -1,14 +1,17 @@
 import React from "react";
 import styles from './css/market-research.module.css';
 import '../../reset.css';
-import Highcharts from "highcharts";
+import { render } from 'react-dom';
+import * as Highcharts from 'highcharts';
 import HighchartsReact from "highcharts-react-official";
+import jquery from 'jquery';
+import $ from 'jquery';
 
 
 function MarketResearch(){
-    /*
-        var donut1 = document.getElementById("container");
-        var donut2 = document.getElementById("container");
+    $( document ).ready( function() {
+        const donut1 = document.getElementById("container");
+        const donut2 = document.getElementById("container");
         Highcharts.chart(donut1, {
             colors: ['rgb(155, 187, 89)', 'rgb(128, 127, 127)'],
             chart: {
@@ -93,7 +96,7 @@ function MarketResearch(){
                 }]
             }]
         });
-        */
+    });
     return(
         <div>
             <div className={styles.marketResearch}>
@@ -141,11 +144,11 @@ function MarketResearch(){
                     </div>
                     <div className={styles.donutChart}>
                         <section className={styles.result1}>
-                            <div id="donut1" style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
+                            <div id="container" className={styles.donut1} style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
                         </section>
                         <section className={styles.result2}>
                             <HighchartsReact>
-                            <div id="donut2" style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
+                            <div id="container" className={styles.donut2} style={{minWidth: '310px', height: '400px', maxWidth: '600px', margin: '0 auto'}}></div>
                             </HighchartsReact>
                         </section>
                     </div>
