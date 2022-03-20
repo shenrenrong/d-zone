@@ -48,7 +48,7 @@ function Transfer({trans, children, onClose}){
                 </section>
             </div>
             <div className={styles.btnArea}>
-                <button className={styles.confirmBtn} onClick={onClose}>확인</button>
+                <button className={styles.confirmBtn} onClick={()=>{alert('등록이 완료되었습니다.')}}>확인</button>
                 <button className={styles.cancelBtn} onClick={onClose}>취소</button>
             </div>
         </div>

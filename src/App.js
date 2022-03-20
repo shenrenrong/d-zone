@@ -16,7 +16,8 @@ import Registration from "./components/pages/Registration";
 import Points from "./components/pages/Points";
 import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
-
+import MarketResearch from "./components/survey/MarketResearch";
+import SurveyModify from "./components/survey/SurveyModify";
 
 export default function App() {
   return (
@@ -36,6 +37,8 @@ export default function App() {
             <Route path='/points' element={<Points />} />
             <Route path='/general' element={<General />} />
             <Route path='/user-guide' element={<UserGuide />} />
+            <Route exact path='/surveymodify' element={<SurveyModify />} />
+            <Route exact path='/marketresearch' element={<MarketResearch />} />
           </Routes>
           <Footer />
     </div>

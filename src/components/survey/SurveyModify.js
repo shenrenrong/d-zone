@@ -4,9 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
 import { Link } from "react-router-dom";
+import Gnb from '../Gnb'
 
 function SurveyModify(){
     return(
+        <>
+        <Gnb />
         <div className={styles.modifybox}>
             <form className={styles.form}>
                 <dl className={styles.dl1}>
@@ -142,9 +145,10 @@ function SurveyModify(){
             </form>
             <section className={styles.btnArea}>
                 <button className={styles.saveBtn}><Link to='/registration'>저장</Link></button>
-                <button className={styles.cancelBtn}>취소</button>
+                <button className={styles.cancelBtn}><Link to='/marketresearch'>취소</Link></button>
             </section>
         </div>
+        </>
     )
 }
 

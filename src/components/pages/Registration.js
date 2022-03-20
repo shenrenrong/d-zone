@@ -17,12 +17,7 @@ export default function Registration() {
   return (
     <div className='registration'>
       <Gnb />
-      <MarketResearch />
-      {/*<Survey />*/}
-      <Routes>
-        <Route path='/surveymodify' element={<SurveyModify />} />
-        <Route path='/marketresearch' element={<MarketResearch />} />
-      </Routes>
+      <Survey />
     </div>
   )
 }

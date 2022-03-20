@@ -6,98 +6,10 @@ import * as Highcharts from 'highcharts';
 import HighchartsReact from "highcharts-react-official";
 import jquery from 'jquery';
 import $ from 'jquery';
-
+import { Link } from "react-router-dom";
+import Gnb from '../Gnb'
 
 function MarketResearch(){
-    /*
-    $( document ).ready( function() { 
-        const donut1 = document.getElementsById("container");
-        const donut2 = document.getElementsById("container"); 
-        Highcharts.chart(donut1, {
-            colors: ['rgb(155, 187, 89)', 'rgb(128, 127, 127)'],
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                type: 'pie'
-            },
-            title: {
-                text: ''
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: false
-                    },
-                    showInLegend: true,
-                    innerSize: 80
-                }
-            },
-            credits: {
-                enabled: false
-            },
-            series: [{
-                name: '',
-                colorByPoint: true,
-                data: [{
-                    name: '응답완료',
-                    y: 60
-                }, {
-                    name: '응답미완료',
-                    y: 40,
-                    sliced: false,
-                    selected: true
-                }]
-            }]
-        });
-        Highcharts.chart(donut2, {
-            colors: ['rgb(101, 170, 195)', 'rgb(128, 127, 127)'],
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                type: 'pie'
-            },
-            title: {
-                text: ''
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: false
-                    },
-                    showInLegend: true,
-                    innerSize: 80
-                }
-            },
-            credits: {
-                enabled: false
-            },
-            series: [{
-                name: '',
-                colorByPoint: true,
-                data: [{
-                    name: '매칭성공',
-                    y: 40
-                }, {
-                    name: '매칭실패',
-                    y: 60,
-                    sliced: false,
-                    selected: true
-                }]
-            }]
-        });
-    });   */
     const donut1 =  {
         colors: ['rgb(155, 187, 89)', 'rgb(128, 127, 127)'],
         chart: {
@@ -183,6 +95,8 @@ function MarketResearch(){
         }]
     };
     return(
+        <>
+        <Gnb />
         <div>
             <div className={styles.marketResearch}>
                 <div className={styles.toparea}>
@@ -311,10 +225,11 @@ function MarketResearch(){
                 </section>
             </div>
             <div className={styles.researchBtnarea}>
-                <button className={styles.modifyBtn}>수정</button>
-                <button className={styles.listBtn}>목록</button>
+                <button className={styles.modifyBtn}><Link to='/surveymodify'>수정</Link></button>
+                <button className={styles.listBtn}><Link to='/registration'>목록</Link></button>
             </div>
     </div>
+    </>
     )
 }
 
