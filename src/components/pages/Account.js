@@ -1,19 +1,25 @@
 import React from "react";
 import Gnb from "../Gnb";
 import { useState } from "react";
+import AccChange from "../AccChange";
 import MyPage from "../MyPage";
-import SuperCng from "../SuperCng";
 
 function Account() {
-  const [managerStat,setManagerState] = useState(true);
+  const [managerStat, setManagerState] = useState(true);
   return (
     <div className="account">
       <Gnb />
-      {
-        managerStat ? <SuperCng /> : <MyPage />
-      }
+      {managerStat ? (
+        <>
+        <AccChange/>
+        </>
+      ) : (
+        <>
+        <MyPage />
+        </>
+      )}
     </div>
-  )
+  );
 }
 
-export default Account
+export default Account;

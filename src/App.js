@@ -16,8 +16,8 @@ import Registration from "./components/pages/Registration";
 import Points from "./components/pages/Points";
 import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
-import SuperGenerate from "./components/SuperGenerate";
-import SuperManage from "./components/SuperManage";
+import AccCreate from "./components/AccCreate";
+import AccManage from "./components/AccManage";
 
 export default function App() {
   return (
@@ -32,8 +32,9 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/QA" element={<QA />} />
         <Route path="/account" element={<Account />} />
-        <Route path="/account/generate" element={<SuperGenerate />} />
-        <Route path="/account/manage" element={<SuperManage />} />
+        <Route path="/account/create" element={<AccCreate />} />
+        <Route path="/account/manage" element={<AccManage />} />
+        <Route path="/account" element={<Account />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/points" element={<Points />} />
         <Route path="/general" element={<General />} />
