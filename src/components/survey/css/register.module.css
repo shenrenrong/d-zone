@@ -149,7 +149,7 @@ select option[value=""]:disabled {
 /* 가로 스크롤 */
 .scrollbar {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 /* 태그 */ 
 .tag {

@@ -25,6 +25,8 @@ const OVERLAY_STYLE = {
 }
 
 function Register({open, children, onClose}){
+    const [deltag, setDeleteTag] = useState(false);
+    const [createtag, setCreateTag] = useState(false);
     const [isFileOpen, setIsFileOpen] = useState(false);
     if (!open) return null
     return(

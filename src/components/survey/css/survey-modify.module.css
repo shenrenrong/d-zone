@@ -115,7 +115,7 @@
 /*설문지바로가기*/
 .shortcut {
   text-decoration: underline;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 /* 인풋 */
 input:focus {
@@ -123,17 +123,44 @@ input:focus {
 }
 /*파일등록*/
 .fileuploadArea {
-  width: 200px;
+  width: 250px;
+  display: flex;
 }
-.fileuploadBtn {
-  color: #fff;
+.fileuploadArea label{
+    width: 130px;
+    display: inline-block;
+    padding: 12px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #ffc107;
+    cursor: pointer;
+    height: 40px;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 10px;
+}
+.fileuploadArea input[type="file"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+/*.fileuploadArea input:focus{outline: none;color: transparent;}*/
+.fileuploadArea .uploadName{
+    display: inline-block;
+    height: 40px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: none;
+    width: 78%;
+    color: #999999;
+}
+.dl4 p{
   font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  padding: 12px 20px;
-  background-color: #ffc107;
-  padding: 5px 10px;
-  border-radius: 10px;
+  line-height: 2;
+  margin-left: 5px;
 }
 /* 선택박스 & 태그 */
 .selectArea {
@@ -149,7 +176,7 @@ select option[value=""]:disabled {
 /* 가로 스크롤 */
 .scrollbar {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 /* 태그 */
 .tag {

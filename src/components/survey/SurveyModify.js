@@ -5,6 +5,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
 import { Link } from "react-router-dom";
 import Gnb from '../Gnb'
+import {useState} from 'react';
 
 function SurveyModify(){
     return(
@@ -23,15 +24,21 @@ function SurveyModify(){
                     <dt><span>설문링크</span></dt>
                     <dd>
                         <input type="text" placeholder="www.google.com" name="" id="" />
-                        <a href="#" className={styles.shortcut}>설문지 바로가기</a>
+                        <a href="#" className={styles.shortcut} onClick={()=>{alert('외부 설문 url로 연결됩니다.')}}>설문지 바로가기</a>
                     </dd>
                 </dl>
                 <dl className={styles.dl4}>
                     <dt><span>발송패널 수</span></dt>
                     <dd>
+                        
                         <div className={styles.fileuploadArea}>
-                            <a href="#" className={styles.fileuploadBtn}>파일 등록</a>
+                            <label for="upload_btn">파일 등록</label>
+                            <input type="file" id="upload_btn"  className={styles.fileuploadBtn} />
+                            <input className={styles.uploadName} value='' placeholder="" />
                         </div>
+                        {/*<div class={`${styles.inputGroup}`}>
+                            <input type="file" class={styles.formControl} id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" />
+                        </div>*/}
                         <p>12,500건</p>
                     </dd>
                 </dl>
@@ -144,8 +151,8 @@ function SurveyModify(){
                 </dl>
             </form>
             <section className={styles.btnArea}>
-                <button className={styles.saveBtn}><Link to='/registration'>저장</Link></button>
-                <button className={styles.cancelBtn}><Link to='/marketresearch'>취소</Link></button>
+                <button className={styles.saveBtn} onClick={()=>{alert('저장되었습니다.')}}><Link to='/registration'>저장</Link></button>
+                <button className={styles.cancelBtn} onClick={()=>{alert('변경사항이 저장되지 않습니다.')}}><Link to='/marketresearch'>취소</Link></button>
             </section>
         </div>
         </>

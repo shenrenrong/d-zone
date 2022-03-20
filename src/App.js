@@ -37,8 +37,8 @@ export default function App() {
             <Route path='/points' element={<Points />} />
             <Route path='/general' element={<General />} />
             <Route path='/user-guide' element={<UserGuide />} />
-            <Route exact path='/surveymodify' element={<SurveyModify />} />
-            <Route exact path='/marketresearch' element={<MarketResearch />} />
+            <Route path='/surveymodify' element={<SurveyModify />} />
+            <Route path='/marketresearch' element={<MarketResearch />} />
           </Routes>
           <Footer />
     </div>

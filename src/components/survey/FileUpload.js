@@ -49,14 +49,14 @@ function FileUpload({fileopen, children, onClose}){
                 <section className={styles.filebox}>
                     <span>파일 첨부</span>
                     <label for="upload_btn">첨부</label> 
-                    <input type="file" id="upload_btn" />
+                    <input type="file" id="upload_btn"/>
                     <input className={styles.uploadName} value="" placeholder="" />
                 </section>
                 <section className={styles.btnArea}>
                     <button className={styles.submitBtn} onClick={()=>{setTransfer(true)}}>
                         <span>등록</span>
                     </button>
-                    <Transfer trans={transfer} onClose={()=>setTransfer(false)}/>
+                    <Transfer trans={transfer} onClose={()=>{setTransfer(false)}}/>
                 </section>
             </div>
         </div>

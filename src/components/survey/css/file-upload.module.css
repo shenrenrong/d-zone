@@ -45,6 +45,7 @@
   position: relative;
   justify-content: space-between;
 }
+.filebox input:focus{outline: none;color: transparent;}
 .filebox span {
   align-self: center;
   font-size: 18px;
