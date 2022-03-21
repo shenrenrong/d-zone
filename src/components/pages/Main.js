@@ -1,15 +1,13 @@
 import React from 'react';
-import HeroSection from '../HeroSection.js';
-import Cards from '../Cards';
-
+import MainLive from '../MainLive';
 
 function Main() {
   return (
     <div>
-    <HeroSection />
-    <Cards />
+      <MainLive />
     </div>
-  )
+  )  
+
 }
 
 export default Main;
