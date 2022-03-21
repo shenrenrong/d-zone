@@ -115,15 +115,7 @@ function Register({open, children, onClose}){
                                             <option value="60세 ~ " >60세 ~ </option>
                                         </select>
                                     </section>
-                                    <section className={styles.scrollbar}>
-                                        {/*<div className={styles.tag}>
-                                            <span>남성</span>
-                                            <div className={styles.tagX}>
-                                                <FontAwesomeIcon
-                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
-                                                />
-                                            </div>  
-                                        </div>*/}
+                                    <section className={styles.tagWrapper}>
                                         <div className={styles.tagContainer}>
                                             {tags.map((tag, index) => {
                                             return (
@@ -137,9 +129,6 @@ function Register({open, children, onClose}){
                                                 </div>
                                             )})}
                                         </div> 
-
-
-                                        
                                     </section>
                                 </dd>
                             </li>
@@ -157,17 +146,7 @@ function Register({open, children, onClose}){
                                             <option value="알뜰폰" >알뜰폰</option>
                                         </select>
                                     </section>
-                                    <section className={styles.scrollbar}>
-                                        {/* 
-                                        <div className={styles.tag}>
-                                            <span>SKT</span>
-                                            <div className={styles.tagX}>
-                                                <FontAwesomeIcon
-                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}`}
-                                                />
-                                            </div>
-                                        </div>
-                                        */}
+                                    <section className={styles.tagWrapper}>
                                          <div className={styles.tagContainer}>
                                             {tagtwo.map((tag, index) => {
                                             return (
@@ -189,10 +168,10 @@ function Register({open, children, onClose}){
                                 <dd>
                                     <section className={styles.selectArea}>
                                         <select name="전자기기" className={styles.selectbox}>
-                                            <option>전자기기</option>
+                                            <option value="">전자기기</option>
                                         </select>
                                         <select name="휴대폰기종" className={styles.selectbox}>
-                                            <option>휴대폰기종</option>
+                                            <option value="">휴대폰기종</option>
                                         </select>
                                         <select name="기종선택" required className={styles.selectbox} onChange={addTagthree}>
                                             <option value="갤럭시S1" selected >갤럭시S1</option>
@@ -201,17 +180,7 @@ function Register({open, children, onClose}){
                                             <option value="아이폰13" >아이폰13</option>
                                         </select>
                                     </section>
-                                    <section className={styles.scrollbar}>
-                                        {/* 
-                                        <div className={styles.tag}>
-                                            <span>갤럭시S1</span>
-                                            <div className={styles.tagX}>
-                                                <FontAwesomeIcon
-                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tagX}`}
-                                                />
-                                            </div>
-                                        </div>
-                                        */}
+                                    <section className={styles.tagWrapper}>
                                          <div className={styles.tagContainer}>
                                             {tagthree.map((tag, index) => {
                                             return (

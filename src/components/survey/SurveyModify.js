@@ -8,7 +8,19 @@ import Gnb from '../Gnb'
 import {useState, useCallback} from 'react';
 
 function SurveyModify(){
-    
+    /* 태그 생성 */
+    const [tags, setTags] = useState([])
+    const addTag = e => { 
+        setTags([...tags,e.target.value])
+    }
+    const [tagtwo, setTagtwo] = useState([])
+    const addTagtwo = e => { 
+        setTagtwo([...tagtwo,e.target.value])
+    }
+    const [tagthree, setTagthree] = useState([])
+    const addTagthree = e => { 
+        setTagthree([...tagthree,e.target.value])
+    }
     
     return(
         <>
@@ -57,36 +69,33 @@ function SurveyModify(){
                                 <dt>1단계</dt>
                                 <dd>
                                     <section className={styles.selectArea}>
-                                        <select name="성별" required className={styles.selectbox}>
+                                        <select name="성별" required className={styles.selectbox} onChange={addTag}>
                                             <option value="" disabled selected>성별</option>
-                                            <option value="man">남자</option>
-                                            <option value="woman">여자</option>
+                                            <option value="남자">남자</option>
+                                            <option value="여자">여자</option>
                                         </select>
-                                        <select name="나이" required className={styles.selectbox}>
+                                        <select name="나이" required className={styles.selectbox} onChange={addTag}>
                                             <option value="" disabled selected>나이</option>
-                                            <option value="">0 ~ 19세</option>
-                                            <option value="">20세 ~ 39세</option>
-                                            <option value="">40세 ~ 59세</option>
-                                            <option value="">60세 ~ </option>
+                                            <option value="0 ~ 19세">0 ~ 19세</option>
+                                            <option value="20세 ~ 39세">20세 ~ 39세</option>
+                                            <option value="40세 ~ 59세">40세 ~ 59세</option>
+                                            <option value="60세 ~ ">60세 ~ </option>
                                         </select>
                                     </section>
-                                    <section className={styles.scrollbar}>
-                                        <button className={styles.tag}>
-                                            <span>남성</span>
-                                            <div className={styles.tagX}>
-                                                <FontAwesomeIcon
-                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
-                                                />
-                                            </div>
-                                        </button>
-                                        <button className={styles.tag}>
-                                            <span>20세~39세</span>
-                                            <div className={styles.tagX}>
-                                                <FontAwesomeIcon
-                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
-                                                />
-                                            </div>
-                                        </button>
+                                    <section className={styles.tagWrapper}>
+                                        <div className={styles.tagContainer}>
+                                            {tags.map((tag, index) => {
+                                            return (
+                                                <div key={index} className={styles.tagbox}>
+                                                    <div style={{fontSize:'16px',lineHeight:'16px',verticalAlign:'middle',padding:'3px'}}>{tag}</div>
+                                                    <div className={styles.tagX}>
+                                                    <FontAwesomeIcon
+                                                        icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
+                                                    />
+                                                    </div>  
+                                                </div>
+                                            )})}
+                                        </div> 
                                     </section>
                                 </dd>
                             </li>
@@ -97,22 +106,27 @@ function SurveyModify(){
                                         <select name="통신사" className={styles.selectbox}>
                                             <option value="">통신사</option>
                                         </select>
-                                        <select name="통신사선택" required className={styles.selectbox}>
+                                        <select name="통신사선택" required className={styles.selectbox} onChange={addTagtwo}>
                                             <option value="SKT" selected>SKT</option>
                                             <option value="KT">KT</option>
                                             <option value="U+">U+</option>
                                             <option value="알뜰폰">알뜰폰</option>
                                         </select>
                                     </section>
-                                    <section className={styles.scrollbar}>
-                                        <button className={styles.tag}>
-                                            <span>SKT</span>
-                                            <div className={styles.tagX}>
-                                                <FontAwesomeIcon
-                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
-                                                />
-                                            </div>
-                                            </button>
+                                    <section className={styles.tagWrapper}>
+                                         <div className={styles.tagContainer}>
+                                            {tagtwo.map((tag, index) => {
+                                            return (
+                                                <div key={index} className={styles.tagbox}>
+                                                    <div style={{fontSize:'16px',lineHeight:'16px',verticalAlign:'middle',padding:'3px'}}>{tag}</div>
+                                                    <div className={styles.tagX}>
+                                                    <FontAwesomeIcon
+                                                        icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
+                                                    />
+                                                    </div>  
+                                                </div>
+                                            )})}
+                                        </div> 
                                     </section>
                                 </dd>
                             </li>
@@ -121,27 +135,32 @@ function SurveyModify(){
                                 <dd>
                                     <section className={styles.selectArea}>
                                         <select name="전자기기" className={styles.selectbox}>
-                                            <option>전자기기</option>
+                                            <option value="">전자기기</option>
                                         </select>
                                         <select name="휴대폰기종" className={styles.selectbox}>
-                                            <option>휴대폰기종</option>
+                                            <option value="">휴대폰기종</option>
                                         </select>
-                                        <select name="기종선택" required className={styles.selectbox}>
-                                            <option value="" selected>갤럭시S1</option>
-                                            <option value="">갤럭시S20</option>
-                                            <option value="">갤럭시노트20</option>
-                                            <option value="">아이폰13</option>
+                                        <select name="기종선택" required className={styles.selectbox} onChange={addTagthree}>
+                                            <option value="갤럭시S1" selected>갤럭시S1</option>
+                                            <option value="갤럭시S20">갤럭시S20</option>
+                                            <option value="갤럭시노트20">갤럭시노트20</option>
+                                            <option value="아이폰13">아이폰13</option>
                                         </select>
                                     </section>
-                                    <section className={styles.scrollbar}>
-                                        <button className={styles.tag}>
-                                            <span>갤럭시S1</span>
-                                            <div className={styles.tagX}>
-                                                <FontAwesomeIcon
-                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}${styles.tag_x}`}
-                                                />
-                                            </div>
-                                            </button>
+                                    <section className={styles.tagWrapper}>
+                                         <div className={styles.tagContainer}>
+                                            {tagthree.map((tag, index) => {
+                                            return (
+                                                <div key={index} className={styles.tagbox}>
+                                                    <div style={{fontSize:'16px',lineHeight:'16px',verticalAlign:'middle',padding:'3px'}}>{tag}</div>
+                                                    <div className={styles.tagX}>
+                                                    <FontAwesomeIcon
+                                                        icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
+                                                    />
+                                                    </div>  
+                                                </div>
+                                            )})}
+                                        </div> 
                                     </section>
                                 </dd>
                             </li>
