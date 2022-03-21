@@ -21,7 +21,17 @@ function SurveyModify(){
     const addTagthree = e => { 
         setTagthree([...tagthree,e.target.value])
     }
-    
+    /* 태그 삭제 */
+    function deleteTag(index){
+        setTags(tags.filter((el,i)=>i !== index))
+    }
+    function deleteTagtwo(index){
+        setTagtwo(tagtwo.filter((el,i)=>i !== index))
+    }
+    function deleteTagthree(index){
+        setTagthree(tagthree.filter((el,i)=>i !== index))
+    }
+
     return(
         <>
         <Gnb />
@@ -88,7 +98,7 @@ function SurveyModify(){
                                             return (
                                                 <div key={index} className={styles.tagbox}>
                                                     <div style={{fontSize:'16px',lineHeight:'16px',verticalAlign:'middle',padding:'3px'}}>{tag}</div>
-                                                    <div className={styles.tagX}>
+                                                    <div className={styles.tagX} onClick={()=>deleteTag(index)}>
                                                     <FontAwesomeIcon
                                                         icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
                                                     />
@@ -119,7 +129,7 @@ function SurveyModify(){
                                             return (
                                                 <div key={index} className={styles.tagbox}>
                                                     <div style={{fontSize:'16px',lineHeight:'16px',verticalAlign:'middle',padding:'3px'}}>{tag}</div>
-                                                    <div className={styles.tagX}>
+                                                    <div className={styles.tagX} onClick={()=>deleteTagtwo(index)}>
                                                     <FontAwesomeIcon
                                                         icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
                                                     />
@@ -153,7 +163,7 @@ function SurveyModify(){
                                             return (
                                                 <div key={index} className={styles.tagbox}>
                                                     <div style={{fontSize:'16px',lineHeight:'16px',verticalAlign:'middle',padding:'3px'}}>{tag}</div>
-                                                    <div className={styles.tagX}>
+                                                    <div className={styles.tagX} onClick={()=>deleteTagthree(index)}>
                                                     <FontAwesomeIcon
                                                         icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
                                                     />
