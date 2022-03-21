@@ -25,7 +25,8 @@
     min-height: 90vh;
     align-items: center;
     justify-content: flex-start;
-    font-size: 16px;/* 나중에 16px 로 변경 */
+    font-size: 16px;
+    color: #333;
     /* background-color: lemonchiffon; */
   }
   

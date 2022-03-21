@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FaqCategoryList from "./FaqCategoryList";
 import "./FaqCategory.css";
-import FaqAccordian from "./FaqAccordian";
+import FaqAccordion from "./FaqAccordion";
 
 function FaqCategory() {
   const [data, setData] = useState(FaqCategoryList);
