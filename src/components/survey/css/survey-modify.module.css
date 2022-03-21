@@ -1,6 +1,6 @@
 /*상단*/
 .modifybox {
-  width: 1200px;
+  width: 100vw;
   margin: 20px auto 0;
   color: #333;
   font-size: 17px;
@@ -126,18 +126,18 @@ input:focus {
   width: 250px;
   display: flex;
 }
-.fileuploadArea label{
-    width: 130px;
-    display: inline-block;
-    padding: 12px 20px;
-    color: #fff;
-    vertical-align: middle;
-    background-color: #ffc107;
-    cursor: pointer;
-    height: 40px;
-    font-size: 16px;
-    line-height: 16px;
-    border-radius: 10px;
+.fileuploadArea label {
+  width: 130px;
+  display: inline-block;
+  padding: 12px 20px;
+  color: #fff;
+  vertical-align: middle;
+  background-color: #ffc107;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 10px;
 }
 .fileuploadArea input[type="file"] {
   position: absolute;
@@ -146,19 +146,17 @@ input:focus {
   padding: 0;
   border: 0;
   overflow: hidden;
-
 }
-.fileuploadArea input:focus{}
-.fileuploadArea .uploadName{
-    display: inline-block;
-    height: 40px;
-    padding: 0 10px;
-    vertical-align: middle;
-    border: none;
-    width: 78%;
-    color: #999999;
+.fileuploadArea .uploadName {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  vertical-align: middle;
+  border: none;
+  width: 78%;
+  color: #999999;
 }
-.dl4 p{
+.dl4 p {
   font-size: 16px;
   line-height: 2;
   margin-left: 5px;
@@ -178,8 +176,8 @@ select option[value=""]:disabled {
 .tagWrapper {
   display: flex;
 }
-/* 태그 */ 
-.tagContainer{
+/* 태그 */
+.tagContainer {
   display: flex;
 }
 .tagbox {
@@ -191,7 +189,7 @@ select option[value=""]:disabled {
   line-height: 16px;
   display: flex;
 }
-.tagtagbox span{
+.tagtagbox span {
   padding: 3px;
   vertical-align: middle;
 }

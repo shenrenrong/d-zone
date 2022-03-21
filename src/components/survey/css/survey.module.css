@@ -1,18 +1,18 @@
+/* top */
 .surveyArea {
-  width: 100%;
+  width: 100vw;
   margin: auto;
   padding-top: 79px;
   color: #333;
 }
-/* top */
-.topbar h2{
+.topbar h2 {
   font-size: 24px;
   font-weight: 700;
   display: flex;
   justify-content: center;
   margin-bottom: 17px;
 }
-.searchArea{
+.searchArea {
   display: flex;
   justify-content: center;
   margin-bottom: 17px;
@@ -34,7 +34,7 @@
   font-size: 16px;
   width: 230px;
   height: 40px;
-  background-color:transparent;
+  background-color: transparent;
 }
 .searchbox > a {
   margin: auto;
@@ -64,8 +64,12 @@
   margin-right: 20px;
 }
 /* 인풋 */
-.searchline:focus {outline:none;}
-.searchicon{font-size: 20px;}
+.searchline:focus {
+  outline: none;
+}
+.searchicon {
+  font-size: 20px;
+}
 /* table */
 .table {
   text-align: center;
@@ -108,7 +112,7 @@ td:last-child {
   font-weight: 400;
   padding: 0 5px;
 }
-.arrowkey {   
+.arrowkey {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;

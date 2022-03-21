@@ -47,12 +47,12 @@ function FileUpload({fileopen, children, onClose}){
             <div className={styles.contentsbox}>
                 <section className={styles.filebox}>
                     <span>파일 첨부</span>
-                    <label for="upload_btn">첨부</label> 
-                    <input type="file" id="upload_btn"/>
+                    <label htmlFor="upload_btn">첨부</label> 
+                    <input type="file" id="upload_btn" />
                     <input className={styles.uploadName} value="" placeholder="" />
                 </section>
                 <section className={styles.btnArea}>
-                    <button className={styles.submitBtn} onClick={onClose}>
+                    <button className={styles.submitBtn} onClick={()=>{alert('파일이 업로드 되었습니다.')}}>
                         <span>등록</span>
                     </button>
                 </section>

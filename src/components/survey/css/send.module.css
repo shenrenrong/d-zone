@@ -21,9 +21,13 @@
   line-height: 30px;
 }
 /* 인풋 */
-input:focus {outline:1px solid #ffc107;}
+input:focus {
+  outline: 1px solid #ffc107;
+}
 /* 컨텐츠 */
-.contentsArea{width:100%;}
+.contentsArea {
+  width: 100%;
+}
 .headerTxtArea {
   display: flex;
   justify-content: center;
@@ -32,7 +36,6 @@ input:focus {outline:1px solid #ffc107;}
   font-weight: 700;
   margin: 50px 0 70px;
 }
-.specification{}
 .subtxt {
   display: flex;
   justify-content: center;
@@ -45,26 +48,32 @@ input:focus {outline:1px solid #ffc107;}
   justify-content: flex-start;
   border-top: 5px dashed #ccc;
   border-bottom: 5px dashed #ccc;
-  padding:30px;
+  padding: 30px;
   margin: 34px 43px 42px;
   vertical-align: middle;
 }
-.formArea ul{margin-left: 93px;}
+.formArea ul {
+  margin-left: 93px;
+}
 .formArea li {
   /*list-style: disc;*/
   padding-bottom: 26px;
   font-size: 18px;
 }
-.formArea li:first-child{
+.formArea li:first-child {
   padding-top: 42px;
 }
-.formArea li:last-child{
+.formArea li:last-child {
   padding-bottom: 57px;
 }
-.Alink{text-decoration: underline;}
+.Alink {
+  text-decoration: underline;
+}
 
 /* 태그 */
-.formArea li:last-child{display: flex;}
+.formArea li:last-child {
+  display: flex;
+}
 .tag {
   border: 1px solid #777;
   border-radius: 10px;
@@ -92,7 +101,7 @@ input:focus {outline:1px solid #ffc107;}
   display: flex;
   justify-content: flex-end;
 }
-.confirmBtn{
+.confirmBtn {
   background-color: #ffc107;
   border: none;
   box-shadow: none;

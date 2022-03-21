@@ -33,10 +33,12 @@ label {
   display: none;
 }
 /* 인풋 */
-input:focus {outline:1px solid #ffc107;}
-  
+input:focus {
+  outline: 1px solid #ffc107;
+}
+
 /* 컨텐츠 정렬*/
-.form{
+.form {
   width: fit-content;
   margin: 20px auto 0;
   padding: 20px 0;
@@ -96,10 +98,10 @@ input:focus {outline:1px solid #ffc107;}
 .dl4 dd {
   display: flex;
 }
-.dl4 dd .fileupload{
+.dl4 dd .fileupload {
   width: 120px;
 }
-.dl4 dd p{
+.dl4 dd p {
   font-size: 17px;
 }
 .dl5 dt {
@@ -124,9 +126,9 @@ input:focus {outline:1px solid #ffc107;}
   height: 23px;
 }
 /* 단계 */
-.dl6{
+.dl6 {
   display: flex;
-  width:fit-content;
+  width: fit-content;
 }
 .surveyProfile {
   align-self: center;
@@ -162,8 +164,8 @@ select option[value=""]:disabled {
 .tagWrapper {
   display: flex;
 }
-/* 태그 */ 
-.tagContainer{
+/* 태그 */
+.tagContainer {
   display: flex;
 }
 .tagbox {
@@ -175,7 +177,7 @@ select option[value=""]:disabled {
   line-height: 16px;
   display: flex;
 }
-.tagtagbox span{
+.tagtagbox span {
   padding: 3px;
   vertical-align: middle;
 }
@@ -217,6 +219,3 @@ select option[value=""]:disabled {
   padding: 5px 10px;
   border-radius: 10px;
 }
-
-/**/
-.datearea{}

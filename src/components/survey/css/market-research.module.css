@@ -1,17 +1,17 @@
 /* top */
 .marketResearch {
-  width: 100%;
+  width: 100vw;
   margin: 53px auto 126px;
 }
-.toparea{
+.toparea {
   margin: 56px auto 41px;
 }
-.imgarea{
+.imgarea {
   display: flex;
   justify-content: center;
   margin: 0 auto 53px;
 }
-.imgarea img{
+.imgarea img {
   width: 117px;
   height: 115px;
 }
@@ -30,7 +30,6 @@
   padding-bottom: 20px;
 }
 /* chart 텍스트 */
-.chartarea{}
 .chartTxt {
   display: flex;
   justify-content: space-evenly;
@@ -39,7 +38,7 @@
   height: 243px;
   background-color: #eee;
 }
-.result h2{
+.result h2 {
   font-size: 19px;
   font-weight: 700;
   text-align: center;
@@ -53,16 +52,15 @@
   justify-content: space-between;
   width: 200px;
   margin: auto;
-  
 }
 .resultTxt span {
   font-size: 16px;
   padding-bottom: 20px;
 }
-.resultTxt:last-child span{
+.resultTxt:last-child span {
   padding-bottom: 39px;
 }
-/*도넛 차트*/ 
+/*도넛 차트*/
 .donutChart {
   display: flex;
   justify-content: space-evenly;
@@ -71,7 +69,7 @@
 }
 
 /*플러그인 작대기 3개 삭제*/
-.highcharts-button-symbol{
+.highcharts-button-symbol {
   display: none;
 }
 /*----------------------------------------------------------------*/
@@ -91,14 +89,13 @@
   margin: auto;
   padding-bottom: 20px;
 }
-.stepArea dt{
+.stepArea dt {
   font-size: 17px;
 }
-.scrollbar{}
 .stepTag {
   display: flex;
 }
-.tag{
+.tag {
   cursor: pointer;
 }
 .history {
@@ -123,8 +120,8 @@
   background-color: #eee;
   display: flex;
 }
-.resendTxt{
-  width:250px;
+.resendTxt {
+  width: 250px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -134,7 +131,7 @@
   vertical-align: middle;
   margin: auto;
 }
-.resendTxt p:last-child{
+.resendTxt p:last-child {
   color: #ff5907;
 }
 
@@ -157,8 +154,8 @@
   background-color: #eee;
   display: flex;
 }
-.confirmTxt{
-  width:350px;
+.confirmTxt {
+  width: 350px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -168,10 +165,10 @@
   vertical-align: middle;
   margin: auto;
 }
-.confirmTxt p:last-child{
+.confirmTxt p:last-child {
   color: #ff5907;
 }
-/* 태그 */ 
+/* 태그 */
 .tag {
   background-color: #fff;
   border: 1px solid #777777;
@@ -181,22 +178,17 @@
   line-height: 16px;
   display: flex;
 }
-.tag span{
+.tag span {
   padding: 3px;
   vertical-align: middle;
 }
-/*.tag_x {
-  margin-left: 7px;
-  cursor: pointer;
-}*/
-
 /* 버튼 */
 .researchBtnarea {
   display: flex;
   justify-content: center;
   margin: 0 auto 127px;
 }
-.modifyBtn{
+.modifyBtn {
   background-color: #ffc107;
   color: #333;
   border: none;
@@ -211,7 +203,7 @@
   height: 52px;
   margin-right: 19px;
 }
-.listBtn{
+.listBtn {
   background-color: #fff;
   border: 1px solid #333;
   color: #333;
