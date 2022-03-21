@@ -42,7 +42,6 @@
   margin: 14px 0;
   display: flex;
   position: relative;
-  justify-content: space-between;
 }
 .filebox input:focus {
   outline: none;
