@@ -19,7 +19,7 @@ function FaqCategory() {
         <div className="inner-box">
           <div id="acco">
 
-            {/* 여기 */}
+
             <div id="myBtnContainer">
               <button className="btn" onClick={() => setData(FaqCategoryList)}>
                 전체
@@ -36,11 +36,13 @@ function FaqCategory() {
             </div>
 
             <h3>제목</h3>
-            <ul className="container">
+
+            <ul className="faqContainer">
               {data.map((values) => {
                 const { id,category, question, answer } = values;
                 return (
-                  <FaqAccordian {...values}/>
+                  <FaqAccordion {...values}/>
+
                 );
               })}
             </ul>
@@ -52,3 +54,4 @@ function FaqCategory() {
 }
 
 export default FaqCategory;
+
