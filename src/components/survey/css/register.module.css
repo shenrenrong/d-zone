@@ -148,12 +148,14 @@ select option[value=""]:disabled {
 }
 /* 가로 스크롤 */
 .scrollbar {
+  /*width: 150px;*/
   display: flex;
   overflow-x: auto;
 }
 /* 태그 */ 
 .tagContainer{
   display: flex;
+  /*flex-shrink: 0;*/
 }
 .tagbox {
   background-color: #fff;

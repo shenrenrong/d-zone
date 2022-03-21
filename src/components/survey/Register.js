@@ -25,9 +25,18 @@ const OVERLAY_STYLE = {
 }
 
 function Register({open, children, onClose}){
+    /* 태그 생성 */
     const [tags, setTags] = useState([])
     const addTag = e => { 
         setTags([...tags,e.target.value])
+    }
+    const [tagtwo, setTagtwo] = useState([])
+    const addTagtwo = e => { 
+        setTagtwo([...tagtwo,e.target.value])
+    }
+    const [tagthree, setTagthree] = useState([])
+    const addTagthree = e => { 
+        setTagthree([...tagthree,e.target.value])
     }
 
     const [isFileOpen, setIsFileOpen] = useState(false);
@@ -119,7 +128,7 @@ function Register({open, children, onClose}){
                                             {tags.map((tag, index) => {
                                             return (
                                                 <div key={index} className={styles.tagbox}>
-                                                    {tag}
+                                                    <div style={{fontSize:'16px',lineHeight:'16px',verticalAlign:'middle',padding:'3px'}}>{tag}</div>
                                                     <div className={styles.tagX}>
                                                     <FontAwesomeIcon
                                                         icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
@@ -141,7 +150,7 @@ function Register({open, children, onClose}){
                                         <select name="통신사" className={styles.selectbox}>
                                             <option value="" >통신사</option>
                                         </select>
-                                        <select name="통신사선택" required className={styles.selectbox} onChange={addTag}>
+                                        <select name="통신사선택" required className={styles.selectbox} onChange={addTagtwo}>
                                             <option value="SKT" selected >SKT</option>
                                             <option value="KT" >KT</option>
                                             <option value="U+" >U+</option>
@@ -160,10 +169,10 @@ function Register({open, children, onClose}){
                                         </div>
                                         */}
                                          <div className={styles.tagContainer}>
-                                            {tags.map((tag, index) => {
+                                            {tagtwo.map((tag, index) => {
                                             return (
                                                 <div key={index} className={styles.tagbox}>
-                                                    {tag}
+                                                    <div style={{fontSize:'16px',lineHeight:'16px',verticalAlign:'middle',padding:'3px'}}>{tag}</div>
                                                     <div className={styles.tagX}>
                                                     <FontAwesomeIcon
                                                         icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
@@ -185,7 +194,7 @@ function Register({open, children, onClose}){
                                         <select name="휴대폰기종" className={styles.selectbox}>
                                             <option>휴대폰기종</option>
                                         </select>
-                                        <select name="기종선택" required className={styles.selectbox} onChange={addTag}>
+                                        <select name="기종선택" required className={styles.selectbox} onChange={addTagthree}>
                                             <option value="갤럭시S1" selected >갤럭시S1</option>
                                             <option value="갤럭시S20" >갤럭시S20</option>
                                             <option value="갤럭시노트20" >갤럭시노트20</option>
@@ -204,10 +213,10 @@ function Register({open, children, onClose}){
                                         </div>
                                         */}
                                          <div className={styles.tagContainer}>
-                                            {tags.map((tag, index) => {
+                                            {tagthree.map((tag, index) => {
                                             return (
                                                 <div key={index} className={styles.tagbox}>
-                                                    {tag}
+                                                    <div style={{fontSize:'16px',lineHeight:'16px',verticalAlign:'middle',padding:'3px'}}>{tag}</div>
                                                     <div className={styles.tagX}>
                                                     <FontAwesomeIcon
                                                         icon={faTimes} className={`${styles.fa}${styles.faTimes}` }

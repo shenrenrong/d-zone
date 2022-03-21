@@ -5,9 +5,11 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
 import { Link } from "react-router-dom";
 import Gnb from '../Gnb'
-import {useState} from 'react';
+import {useState, useCallback} from 'react';
 
 function SurveyModify(){
+    
+    
     return(
         <>
         <Gnb />
@@ -31,11 +33,12 @@ function SurveyModify(){
                     <dt><span>발송패널 수</span></dt>
                     <dd>
                         <div className={styles.fileuploadArea}>
-                            <label for="upload_btn" className="filebtn">파일 등록</label>
-                            <input type="file" id="upload_btn"  className={styles.fileuploadBtn} />
-                            <input className={styles.uploadName} value="" placeholder="" />
+                            <label htmlFor="upload_btn" className="filebtn">파일 등록</label>
+                            <input type="file" id="upload_btn"  className={styles.fileuploadBtn}  />
+                            <span className={styles.uploadName}></span>
                         </div> 
                         <p>12,500건</p>
+                        
                     </dd>
                 </dl>
                 <dl className={styles.dl5}>
