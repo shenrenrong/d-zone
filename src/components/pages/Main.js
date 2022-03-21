@@ -2,12 +2,18 @@ import React from 'react';
 import Cards from '../Cards';
 import "./Main.css";
 import { Link } from "react-router-dom";
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import "swiper/css";
+import "swiper/css/effect-cards";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards } from "swiper";
+import Photo from '../Photo';
 
 function Main() {
+  
+
   useEffect(() => {
     AOS.init();
   }) //fade 효과
@@ -41,6 +47,38 @@ function Main() {
 
  // 관찰 종료
   }, []);
+
+  /* content6 slider */
+  const [swiperRef, setSwiperRef] = useState(null);
+
+  let appendNumber = 4;
+  let prependNumber = 1;
+
+  const prepend2 = () => {
+    swiperRef.prependSlide([
+      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+    ]);
+  };
+
+  const prepend = () => {
+    swiperRef.prependSlide(
+      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+    );
+  };
+
+  const append = () => {
+    swiperRef.appendSlide(
+      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+    );
+  };
+
+  const append2 = () => {
+    swiperRef.appendSlide([
+      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+    ]);
+  };
 
   return (
     <div>
@@ -121,12 +159,33 @@ function Main() {
       </div>
     </div>
 
-
     <div className="content5" data-aos="fade-up" data-aos-anchor-placement="top-center">
+    <div className="inner-box">
+    <h1>디지털존의 포인트 제도를 확인해보세요.</h1>
+    <p>필요한 사항에 꼭 맞는 기능을 갖춘 간편한 포인트 제도를 사용해보세요.<br />
+    (필요샘플수) X (1인당 지급 포인트) 만큼의 포인트가 필요합니다.</p>
+    <Swiper
+    effect={"cards"}
+    grabCursor={true}
+    modules={[EffectCards]}
+    className="mySwiper"
+  >
+    <SwiperSlide><div><img src="img/content05-1.jpg" alt=""/></div></SwiperSlide>
+    <SwiperSlide><div><img src="img/content05-2.jpg" alt=""/></div></SwiperSlide>
+    <SwiperSlide><div><img src="img/content05-3.jpg" alt=""/></div></SwiperSlide>
+    <SwiperSlide><div><img src="img/content05-4.jpg" alt=""/></div></SwiperSlide>
+  </Swiper>
+
+  
+    </div>
+  </div>
+
+
+    <div className="content6" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <div className="inner-box">
         <div className="left">
-          <div className="container5-top"></div>
-          <div className="container5-bottom">
+          <div className="container6-top"></div>
+          <div className="container6-bottom">
             <p>새로운</p>
             <p>설문조사의 시작</p>
             <p>디지털존과 함께하세요.</p>
@@ -134,12 +193,12 @@ function Main() {
           </div>
         </div>
         <div className="right" data-aos="fade-up" data-aos-anchor-placement="top-center">
-          <img src="img/content05.png" alt="" />
+          <img src="img/content06.png" alt="" />
         </div>
         </div>
     </div>
 
-
+    <Photo />
 
   </div>
   )

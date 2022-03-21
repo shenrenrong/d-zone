@@ -7,7 +7,7 @@ export default function Points() {
     <div className='points'>
       <Gnb />
       <main className="point">
-      <h2>[보유 포인트] 100point</h2>
+      <h2>[ 보유 포인트 ] <span>100point</span></h2>
       <div className="point-form-wrap">
           <form className="row gy-1 gx-4 align-items-center">
               <div className="col-auto">
@@ -22,20 +22,19 @@ export default function Points() {
                   </select>
                 </div>
               <div className="col-auto">
-                <label className="visually-hidden" for="autoSizingInput"></label>
+                <label  for="autoSizingInput"></label>
                 <input type="text" class="form-control" id="autoSizingInput" placeholder="환불 계좌 입력" />
               </div>
               <div className="col-auto">
-                <label className="visually-hidden" for="autoSizingInput"></label>
+                <label for="autoSizingInput"></label>
                 <input type="text" className="form-control" id="autoSizingInput" placeholder="계좌명 입력" />
               </div>
               <div className="col-auto">
-                <label class="visually-hidden" for="autoSizingInput"></label>
+                <label for="autoSizingInput"></label>
                 <input type="text" className="form-control" id="autoSizingInput" placeholder="환불 포인트 입력" />
-              </div>
-              
+              </div>             
               <div className="col-auto">
-                  <button type="button" className="btn-yellow">환불신청</button>
+                  <button type="button" className="point-btn form-control ">환불신청</button>
               </div>
             </form>    
           </div>
@@ -76,6 +75,7 @@ export default function Points() {
               <div className="col-auto point-add">
                   <button type="button" className="btn-yellow">충전하기</button>
               </div>
+              
           </section>    
       </main>
     </div>
