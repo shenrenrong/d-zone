@@ -1,11 +1,8 @@
 import React from "react";
 import styles from './css/market-research.module.css';
 import '../../reset.css';
-import { render } from 'react-dom';
 import * as Highcharts from 'highcharts';
 import HighchartsReact from "highcharts-react-official";
-import jquery from 'jquery';
-import $ from 'jquery';
 import { Link } from "react-router-dom";
 import Gnb from '../Gnb'
 

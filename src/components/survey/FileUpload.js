@@ -3,8 +3,7 @@ import styles from "./css/file-upload.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
-import {useState} from 'react';
-import Transfer from './Transfer';
+
 
 const MODAL_STYLES = {
     position: 'fixed',
@@ -25,7 +24,7 @@ const OVERLAY_STYLE = {
 }
 
 function FileUpload({fileopen, children, onClose}){
-    const [transfer, setTransfer] = useState(false);
+    
     if (!fileopen) return null
     return(
         <>
@@ -53,10 +52,9 @@ function FileUpload({fileopen, children, onClose}){
                     <input className={styles.uploadName} value="" placeholder="" />
                 </section>
                 <section className={styles.btnArea}>
-                    <button className={styles.submitBtn} onClick={()=>{setTransfer(true)}}>
+                    <button className={styles.submitBtn} onClick={onClose}>
                         <span>등록</span>
                     </button>
-                    <Transfer trans={transfer} onClose={()=>{setTransfer(false)}}/>
                 </section>
             </div>
         </div>

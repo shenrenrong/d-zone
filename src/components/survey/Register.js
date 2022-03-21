@@ -5,6 +5,8 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
 import { useState } from 'react';
 import FileUpload from "./FileUpload";
+import Transfer from './Transfer';
+
 
 const MODAL_STYLES = {
     position: 'fixed',
@@ -48,8 +50,9 @@ function Register({open, children, onClose}){
     function deleteTagthree(index){
         setTagthree(tagthree.filter((el,i)=>i !== index))
     }
-
+    /* modal */
     const [isFileOpen, setIsFileOpen] = useState(false);
+    const [transfer, setTransfer] = useState(false);
     if (!open) return null
     return(
         <>
@@ -60,6 +63,13 @@ function Register({open, children, onClose}){
             <div className={styles.titlebox}>
                 <section className={styles.titletext}>
                     <span>신규설문 등록</span>
+                </section>
+                <section className={styles.xbox} onClick={onClose}>
+                    <a href="#">
+                        <FontAwesomeIcon
+                            icon={faTimes} className={`${styles.fa}${styles.faTimes}`}
+                        />
+                    </a>
                 </section>
             </div>
             <form className={styles.form}>
@@ -212,7 +222,8 @@ function Register({open, children, onClose}){
                 </dl>
             </form>
             <section className={styles.btnArea}>
-                <button className={styles.saveBtn} onClick={onClose}>저장</button>
+                <button className={styles.saveBtn} onClick={()=>{setTransfer(true)}}>저장</button>
+                <Transfer trans={transfer} onClose={()=>{setTransfer(false)}}/>
             </section>
         </div>
         </div>
