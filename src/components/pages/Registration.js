@@ -1,13 +1,11 @@
-import React from 'react'
-import Gnb from '../Gnb'
+import React from "react";
+import Gnb from "../Gnb";
 
 export default function Registration() {
   return (
-    <div className='registration'>
+    <div className="registration">
       <Gnb />
-      <h1>
-        Registration
-        </h1>
-        </div>
-  )
+      <h1>Registration</h1>
+    </div>
+  );
 }

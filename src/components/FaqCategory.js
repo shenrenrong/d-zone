@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import FaqCategoryList from "./FaqCategoryList";
 import "./FaqCategory.css";
-import FaqAccordion from "./FaqAccordion";
-
-/* font-awesome */
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-
-
+import FaqAccordian from "./FaqAccordian";
 
 function FaqCategory() {
   const [data, setData] = useState(FaqCategoryList);
@@ -25,6 +19,7 @@ function FaqCategory() {
         <div className="inner-box">
           <div id="acco">
 
+
             <div id="myBtnContainer">
               <button className="btn" onClick={() => setData(FaqCategoryList)}>
                 전체
@@ -41,11 +36,13 @@ function FaqCategory() {
             </div>
 
             <h3>제목</h3>
+
             <ul className="faqContainer">
               {data.map((values) => {
                 const { id,category, question, answer } = values;
                 return (
                   <FaqAccordion {...values}/>
+
                 );
               })}
             </ul>
@@ -57,3 +54,4 @@ function FaqCategory() {
 }
 
 export default FaqCategory;
+
