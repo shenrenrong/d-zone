@@ -1,4 +1,4 @@
-main {
+.mypage main {
     width: 1200px;
     margin: auto;
     margin-top: 92px;
@@ -70,11 +70,11 @@ main {
 .alert i {
     padding-right: 7px;
 }
-form {
+.mypage form {
     display: flex;
     flex-direction: column;
 }
-form > Button {
+.mypage form > Button {
     align-self: flex-end;
     font-size: 22px !important;
 }

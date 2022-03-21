@@ -4,7 +4,7 @@ import './MyPage.css';
 
 function MyPage() {
   return (
-    <main>
+    <main className="mypage">
       <ul className="tab">
         <li className="tab-item current">
           <a href="#">마이페이지</a>

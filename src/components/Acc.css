@@ -1,8 +1,14 @@
+/* GENERAL */
+
 .change,
 .create,
 .manage
 {
     width: 1200px;
+}
+.form-content > form {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-inputs {
@@ -48,7 +54,10 @@
     margin-right: 6px;
 }
 
-/* GENERAL */
+.form-content > form > button {
+    align-self: flex-end;
+}
+
 
 /* SUP TAB START */
 
@@ -87,7 +96,7 @@
 /* ACCOUT-CREATE */
 
 .create form {
-    width: 800px;
+    width: 750px;
     margin: auto;
 }
 
