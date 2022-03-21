@@ -3,13 +3,13 @@ import validateInfo from "./validateInfo";
 
 const useForm = (validateInfo) => {
   const [values, setValues] = useState({
-    department:"(주)A",
-    userid:"admin",
+    department:"",
+    userid:"",
     password: "",
     password2: "",
     email: "",
     username: "",
-    mobile:"010-0000-0000"
+    mobile:""
   });
   const [errors, setErrors] = useState({});
 

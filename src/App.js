@@ -18,6 +18,8 @@ import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
 import AccCreate from "./components/AccCreate";
 import AccManage from "./components/AccManage";
+import AccChange from "./components/AccChange";
+import MyPage from "./components/MyPage";
 
 export default function App() {
   return (
@@ -32,6 +34,7 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/QA" element={<QA />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/account/mypage" element={<MyPage />} />
         <Route path="/account/create" element={<AccCreate />} />
         <Route path="/account/manage" element={<AccManage />} />
         <Route path="/account" element={<Account />} />

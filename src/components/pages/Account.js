@@ -1,8 +1,8 @@
 import React from "react";
 import Gnb from "../Gnb";
 import { useState } from "react";
-import AccChange from "../AccChange";
 import MyPage from "../MyPage";
+import AccChange from "../AccChange";
 
 function Account() {
   const [managerStat, setManagerState] = useState(true);

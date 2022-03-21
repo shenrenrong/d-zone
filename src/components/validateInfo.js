@@ -23,5 +23,9 @@ export default function validateInfo(values) {
       errors.password2 = "비밀번호가 일치하지 않습니다."
   } //password2
 
+  if (!values.mobile) {
+    errors.mobile = "휴대폰 번호를 입력해 주십시오.";
+  } //username
+
   return errors;
 }

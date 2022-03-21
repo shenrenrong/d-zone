@@ -1,16 +1,18 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import "./Acc.css";
+import Gnb from "./Gnb";
+import SupTab from "./SupTab";
 
 function AccManage() {
   return (
-    <>
-    <ul>
-        <NavLink exact to="/account">계정변경</NavLink>
-        <NavLink exact to="/account/create">관리자 계정생성</NavLink>
-        <NavLink exact to="/account/manage">계정관리</NavLink>
-      </ul>
-    </>
-  )
+    <div className="account">
+      <Gnb />
+      <div className="manage">
+        <SupTab />
+        
+      </div>
+    </div>
+  );
 }
 
-export default AccManage
+export default AccManage;
