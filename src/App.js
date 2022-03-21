@@ -18,7 +18,6 @@ import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
 import AccCreate from "./components/AccCreate";
 import AccManage from "./components/AccManage";
-import AccChange from "./components/AccChange";
 import MyPage from "./components/MyPage";
 
 export default function App() {

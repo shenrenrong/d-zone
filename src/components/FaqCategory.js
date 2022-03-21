@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FaqCategoryList from "./FaqCategoryList";
 import "./FaqCategory.css";
+import FaqAccordian from "./FaqAccordian";
 
 function FaqCategory() {
   const [data, setData] = useState(FaqCategoryList);
@@ -11,11 +12,14 @@ function FaqCategory() {
     setData(result);
   };
 
+
   return (
     <>
       <main className="faq">
         <div className="inner-box">
           <div id="acco">
+
+            {/* 여기 */}
             <div id="myBtnContainer">
               <button className="btn" onClick={() => setData(FaqCategoryList)}>
                 전체
@@ -36,15 +40,7 @@ function FaqCategory() {
               {data.map((values) => {
                 const { id,category, question, answer } = values;
                 return (
-                  <li key={id}>
-                    <h4>
-                      [{category}]<span className="q">Q.</span> {question}
-                      <i className="fa fa-plus" aria-hidden="true"></i>
-                    </h4>
-                    <p className="acco-body">
-                      <span className="answer">A.</span> {answer}
-                    </p>
-                  </li>
+                  <FaqAccordian {...values}/>
                 );
               })}
             </ul>
