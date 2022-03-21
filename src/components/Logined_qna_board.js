@@ -8,6 +8,45 @@ import FadeIn from "react-fade-in"
 export default function Logined_qna_board() {
   // 답글 수
   const replyNumber = 3;
+
+  // 테이블 자동생성
+  const surveyWill = 60;
+  const surveyIng = 15;
+  const surveyEd = 200;
+  const makeTableContents = (numberOfContents) => {
+    const result = []; 
+    for(let i=0; i <= numberOfContents; i++){
+    result.push(
+        <tr>
+          <td scope="row" className={styles.number}>
+            160
+          </td>
+          <td scope="row" className={styles.title}>
+            <a>갤럭시S21 사용자 만족도 조사</a>
+          </td>
+          <td scope="row" className={styles.date}>
+            2021.10.28 ~ 2021.11.28
+          </td>
+          <td scope="row" className={styles.sampleNeed}>
+            500
+          </td>
+          <td scope="row" className={styles.sampleComplete}>
+            0
+          </td>
+          <td scope="row" className={styles.state}>
+            <span> 설문예정</span>
+          </td>
+          <td scope="row" className={styles.register}>
+            홍길동
+          </td>
+          <td scope="row" className={styles.belong}>
+            개인
+          </td>
+        </tr>
+      );
+    }
+    return result;
+  };
   
   return (
     <div>

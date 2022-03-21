@@ -130,6 +130,7 @@ function Loginbf_pannel3() {
                   style={{ display: "none" }}
                   onChange={(e) => {
                     encodeFileToBase64(e.target.files[0]);
+                    console.log(e.target.value, 1)
                   }}
                 />
                 <button
@@ -152,6 +153,7 @@ function Loginbf_pannel3() {
                   style={{ display: "none" }}
                   onChange={(e) => {
                     encodeFileToBase64(e.target.files[0]);
+                    console.log(e.target.value, 2)
                   }}
                 />
                 <button
@@ -170,6 +172,7 @@ function Loginbf_pannel3() {
                   style={{ display: "none" }}
                   onChange={(e) => {
                     encodeFileToBase64(e.target.files[0]);
+                    console.log(e.target.value, 3)
                   }}
                 />
                 <button
