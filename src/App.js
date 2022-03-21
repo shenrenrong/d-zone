@@ -16,6 +16,7 @@ import Registration from "./components/pages/Registration";
 import Points from "./components/pages/Points";
 import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
+//import AccManage from "./components/AccManage";
 import MarketResearch from "./components/survey/MarketResearch";
 import SurveyModify from "./components/survey/SurveyModify";
 
@@ -37,6 +38,7 @@ export default function App() {
             <Route path='/points' element={<Points />} />
             <Route path='/general' element={<General />} />
             <Route path='/user-guide' element={<UserGuide />} />
+            {/*<Route path="/account/manage" element={<AccManage />} />*/}
             <Route path='/surveymodify' element={<SurveyModify />} />
             <Route path='/marketresearch' element={<MarketResearch />} />
           </Routes>

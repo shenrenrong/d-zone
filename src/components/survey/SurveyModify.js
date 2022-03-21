@@ -48,7 +48,7 @@ function SurveyModify(){
                     <dt><span>설문링크</span></dt>
                     <dd>
                         <input type="text" placeholder="www.google.com" name="" id="" />
-                        <a href="#" className={styles.shortcut} onClick={()=>{alert('외부 설문 url로 연결됩니다.')}}>설문지 바로가기</a>
+                        <a href="#" className={styles.shortcut} onClick={()=>{alert('등록한 설문 url로 연결됩니다.')}}>설문지 바로가기</a>
                     </dd>
                 </dl>
                 <dl className={styles.dl4}>

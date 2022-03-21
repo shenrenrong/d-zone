@@ -3,6 +3,7 @@ import styles from "./css/send.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../../reset.css';
+import { Link } from "react-router-dom";
 
 const MODAL_STYLES = {
     position: 'absolute',
@@ -75,7 +76,7 @@ function Send({send, children, onClose}){
                 </section>
             </div>
             <div className={styles.btnArea}>
-                <button className={styles.confirmBtn} onClick={()=>{alert('발송이 완료되었습니다.')}}>확인</button>
+                <button className={styles.confirmBtn} onClick={()=>{alert('포인트가 부족합니다. 충전하시겠습니까?')}}>{/*<Link to='/account/manage'>확인</Link>*/}확인</button>
                 <button className={styles.cancelBtn} onClick={onClose}>취소</button>
             </div>
         </div>
