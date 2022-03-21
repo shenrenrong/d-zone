@@ -18,9 +18,9 @@ function Gnb() {
           <NavLink to="/general" className="dp1">
             통합관리
             <ul className="depth2">
-              <NavLink to="#" className="dp2">패널인증시스템 신청현황</NavLink>
-              <NavLink to="#" className="dp2">포인트 현황</NavLink>
-              <NavLink to="#" className="dp2">설문승인 현황</NavLink>
+              <NavLink to="/panel-system" className="dp2">패널인증시스템 신청현황</NavLink>
+              <NavLink to="/point-overview" className="dp2">포인트 현황</NavLink>
+              <NavLink to="/survey-overview" className="dp2">설문승인 현황</NavLink>
             </ul>
           </NavLink>
         </ul>
@@ -31,4 +31,4 @@ function Gnb() {
   )
 }
 
-export default Gnb
+export default Gnb;

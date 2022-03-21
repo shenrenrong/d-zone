@@ -1,4 +1,4 @@
-@import url(./common/reset.css);
+@import url(../common/reset.css);
 
 /* content */
 .content {
@@ -55,10 +55,8 @@
   outline: transparent;
 }
 
-.search_box>a{
-  display: block;
-  width: 30px;
-  height: 30px;
+.search_box i {
+  color: #999;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -79,6 +77,7 @@
   border-right: transparent;
   text-align: center;
   margin-top: 20px;
+  width: 100%;
 }
 .panel_table tbody {
   padding: 10px 0;
