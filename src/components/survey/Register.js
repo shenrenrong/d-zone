@@ -25,8 +25,11 @@ const OVERLAY_STYLE = {
 }
 
 function Register({open, children, onClose}){
-    const [deltag, setDeleteTag] = useState(false);
-    const [createtag, setCreateTag] = useState(false);
+    const [tags, setTags] = useState([])
+    const addTag = e => { 
+        setTags([...tags,e.target.value])
+    }
+
     const [isFileOpen, setIsFileOpen] = useState(false);
     if (!open) return null
     return(
@@ -90,37 +93,44 @@ function Register({open, children, onClose}){
                                 <dt>1단계</dt>
                                 <dd>
                                     <section className={styles.selectArea}>
-                                        <select name="성별" required className={styles.selectbox}>
+                                        <select name="성별" required className={styles.selectbox} onChange={addTag}>
                                             <option value="" disabled selected>성별</option>
-                                            <option value="man">남자</option>
-                                            <option value="woman">여자</option>
+                                            <option value="남자" >남자</option>
+                                            <option value="여자">여자</option>
                                         </select>
-                                        <select name="나이" required className={styles.selectbox}>
+                                        <select name="나이" required className={styles.selectbox} onChange={addTag}>
                                             <option value="" disabled selected>나이</option>
-                                            <option value="">0 ~ 19세</option>
-                                            <option value="">20세 ~ 39세</option>
-                                            <option value="">40세 ~ 59세</option>
-                                            <option value="">60세 ~ </option>
+                                            <option value="0 ~ 19세" >0 ~ 19세</option>
+                                            <option value="20세 ~ 39세" >20세 ~ 39세</option>
+                                            <option value="40세 ~ 59세" >40세 ~ 59세</option>
+                                            <option value="60세 ~ " >60세 ~ </option>
                                         </select>
                                     </section>
                                     <section className={styles.scrollbar}>
-                                        <div className={styles.tag}>
+                                        {/*<div className={styles.tag}>
                                             <span>남성</span>
                                             <div className={styles.tagX}>
                                                 <FontAwesomeIcon
                                                     icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
                                                 />
                                             </div>  
-                                        </div>
-                                        <div className={styles.tag}>
-                                            <span>20세~39세</span>
-                                            <div className={styles.tagX}>
-                                                <FontAwesomeIcon
-                                                    icon={faTimes} className={`${styles.fa}${styles.faTimes}`}
-                                                />
-                                            </div>
-                                           
-                                        </div>
+                                        </div>*/}
+                                        <div className={styles.tagContainer}>
+                                            {tags.map((tag, index) => {
+                                            return (
+                                                <div key={index} className={styles.tagbox}>
+                                                    {tag}
+                                                    <div className={styles.tagX}>
+                                                    <FontAwesomeIcon
+                                                        icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
+                                                    />
+                                                    </div>  
+                                                </div>
+                                            )})}
+                                        </div> 
+
+
+                                        
                                     </section>
                                 </dd>
                             </li>
@@ -129,16 +139,17 @@ function Register({open, children, onClose}){
                                 <dd>
                                     <section className={styles.selectArea}>
                                         <select name="통신사" className={styles.selectbox}>
-                                            <option value="">통신사</option>
+                                            <option value="" >통신사</option>
                                         </select>
-                                        <select name="통신사선택" required className={styles.selectbox}>
-                                            <option value="SKT" selected>SKT</option>
-                                            <option value="KT">KT</option>
-                                            <option value="U+">U+</option>
-                                            <option value="알뜰폰">알뜰폰</option>
+                                        <select name="통신사선택" required className={styles.selectbox} onChange={addTag}>
+                                            <option value="SKT" selected >SKT</option>
+                                            <option value="KT" >KT</option>
+                                            <option value="U+" >U+</option>
+                                            <option value="알뜰폰" >알뜰폰</option>
                                         </select>
                                     </section>
                                     <section className={styles.scrollbar}>
+                                        {/* 
                                         <div className={styles.tag}>
                                             <span>SKT</span>
                                             <div className={styles.tagX}>
@@ -147,6 +158,20 @@ function Register({open, children, onClose}){
                                                 />
                                             </div>
                                         </div>
+                                        */}
+                                         <div className={styles.tagContainer}>
+                                            {tags.map((tag, index) => {
+                                            return (
+                                                <div key={index} className={styles.tagbox}>
+                                                    {tag}
+                                                    <div className={styles.tagX}>
+                                                    <FontAwesomeIcon
+                                                        icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
+                                                    />
+                                                    </div>  
+                                                </div>
+                                            )})}
+                                        </div> 
                                     </section>
                                 </dd>
                             </li>
@@ -160,14 +185,15 @@ function Register({open, children, onClose}){
                                         <select name="휴대폰기종" className={styles.selectbox}>
                                             <option>휴대폰기종</option>
                                         </select>
-                                        <select name="기종선택" required className={styles.selectbox}>
-                                            <option value="" selected>갤럭시S1</option>
-                                            <option value="">갤럭시S20</option>
-                                            <option value="">갤럭시노트20</option>
-                                            <option value="">아이폰13</option>
+                                        <select name="기종선택" required className={styles.selectbox} onChange={addTag}>
+                                            <option value="갤럭시S1" selected >갤럭시S1</option>
+                                            <option value="갤럭시S20" >갤럭시S20</option>
+                                            <option value="갤럭시노트20" >갤럭시노트20</option>
+                                            <option value="아이폰13" >아이폰13</option>
                                         </select>
                                     </section>
                                     <section className={styles.scrollbar}>
+                                        {/* 
                                         <div className={styles.tag}>
                                             <span>갤럭시S1</span>
                                             <div className={styles.tagX}>
@@ -176,6 +202,20 @@ function Register({open, children, onClose}){
                                                 />
                                             </div>
                                         </div>
+                                        */}
+                                         <div className={styles.tagContainer}>
+                                            {tags.map((tag, index) => {
+                                            return (
+                                                <div key={index} className={styles.tagbox}>
+                                                    {tag}
+                                                    <div className={styles.tagX}>
+                                                    <FontAwesomeIcon
+                                                        icon={faTimes} className={`${styles.fa}${styles.faTimes}` }
+                                                    />
+                                                    </div>  
+                                                </div>
+                                            )})}
+                                        </div> 
                                     </section>
                                 </dd>
                             </li>

@@ -30,15 +30,11 @@ function SurveyModify(){
                 <dl className={styles.dl4}>
                     <dt><span>발송패널 수</span></dt>
                     <dd>
-                        
                         <div className={styles.fileuploadArea}>
-                            <label for="upload_btn">파일 등록</label>
+                            <label for="upload_btn" className="filebtn">파일 등록</label>
                             <input type="file" id="upload_btn"  className={styles.fileuploadBtn} />
-                            <input className={styles.uploadName} value='' placeholder="" />
-                        </div>
-                        {/*<div class={`${styles.inputGroup}`}>
-                            <input type="file" class={styles.formControl} id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" />
-                        </div>*/}
+                            <input className={styles.uploadName} value="" placeholder="" />
+                        </div> 
                         <p>12,500건</p>
                     </dd>
                 </dl>

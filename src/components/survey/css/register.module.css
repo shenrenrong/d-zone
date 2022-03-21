@@ -152,7 +152,10 @@ select option[value=""]:disabled {
   overflow-x: auto;
 }
 /* 태그 */ 
-.tag {
+.tagContainer{
+  display: flex;
+}
+.tagbox {
   background-color: #fff;
   border: 1px solid #777777;
   border-radius: 10px;
@@ -161,7 +164,7 @@ select option[value=""]:disabled {
   line-height: 16px;
   display: flex;
 }
-.tag span{
+.tagtagbox span{
   padding: 3px;
   vertical-align: middle;
 }
