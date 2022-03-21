@@ -3,7 +3,7 @@ import styles from './css/market-research.module.css';
 import '../../reset.css';
 import * as Highcharts from 'highcharts';
 import HighchartsReact from "highcharts-react-official";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Gnb from '../Gnb'
 
 function MarketResearch(){
@@ -222,8 +222,8 @@ function MarketResearch(){
                 </section>
             </div>
             <div className={styles.researchBtnarea}>
-                <button className={styles.modifyBtn}><Link to='/surveymodify'>수정</Link></button>
-                <button className={styles.listBtn}><Link to='/registration'>목록</Link></button>
+                <button className={styles.modifyBtn}><NavLink to='/surveymodify'>수정</NavLink></button>
+                <button className={styles.listBtn}><NavLink to='/registration'>목록</NavLink></button>
             </div>
     </div>
     </>

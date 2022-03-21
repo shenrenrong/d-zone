@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Register from './Register';
 import Send from './Send';
 import '../../reset.css';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 function Survey(){
@@ -79,7 +79,7 @@ function Survey(){
                   <input className={styles.formCheckInput} type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled />
                 </th>
                 <td>158</td>
-                <td><Link to="/marketresearch">비대면 시장조사 필요성 인식 조사</Link></td>
+                <td><NavLink to="/marketresearch">비대면 시장조사 필요성 인식 조사</NavLink></td>
                 <td>2021.09.30 ~ 2021.10.25</td>
                 <td>2,500</td>
                 <td>1,500</td>
