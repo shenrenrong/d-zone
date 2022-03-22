@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FadeIn from 'react-fade-in';
 import FaqCategoryList from "./FaqCategoryList";
 import "./FaqCategory.css";
 import FaqAccordion from "./FaqAccordion";
@@ -16,7 +17,7 @@ function FaqCategory() {
 
   
   return (
-    <>
+    <FadeIn>
       <main className="faq">
         <div className="inner-box">
           <div id="acco">
@@ -51,7 +52,7 @@ function FaqCategory() {
           </div>
         </div>
       </main>
-    </>
+    </FadeIn>
   );
 }
 

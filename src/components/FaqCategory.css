@@ -66,9 +66,7 @@ main {
 }
 .faq .faqContainer{
   width: 900px;
-  height: 250px;
-  overflow: auto;
-  margin: 0;
+  margin: 30px 0;
 }
 .faq li {
   border-top: 1px solid #b1b1b1;
@@ -88,7 +86,7 @@ main {
   text-align: left !important;
   float: left;
   color:#333;
-  width: 880px;
+  width: 900px;
   height: 100px;
   background-color: #f2f2f2;
 }
