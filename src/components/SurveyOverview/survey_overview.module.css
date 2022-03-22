@@ -5,8 +5,8 @@
   position: relative;
   width: 1200px;
   margin: 0 auto;
+  padding-top: 30px;
   padding-bottom: 20px;
-  padding-top: 10px;
 }
 .content h2 {
   text-indent: -9999px;
@@ -45,13 +45,16 @@
   justify-content: flex-end;
 }
 .search_box_input {
-  border: 1px solid #999;
-  padding: 5px 40px 5px 20px;
-  border-radius: 20px;
-  font-size: 16px;
+  border: 1px solid #b1b1b1;
+  width: 320px;
+  height: 60px;
+  border-radius: 30px;
+  padding-left: 25px;
+  font-size: 24px;
   background-color: #fff;
   outline: transparent;
 }
+
 .search_box .search_icon {
   color: #999;
   position: absolute;
@@ -77,6 +80,7 @@
   font-size: 16px;
   font-weight: bold;
   padding: 10px 0;
+  text-align: center;
 }
 .panel_table td {
   border: 1px solid #ddd;

@@ -2,35 +2,59 @@ import React from "react";
 import { Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight, faSearch } from "@fortawesome/free-solid-svg-icons";
-import style from "./survey_overview.module.css";
+import styles from "./survey_overview.module.css";
 import Gnb from "../Gnb";
 
 function SurveyOverview() {
+  // 테이블 자동생성
+  const ContentsNum = 10; // 해당 값 만큼 컨텐츠 생성
+  const makeTableContents = (numberOfContents) => {
+    const result = [];
+    for (let i = 0; i < numberOfContents; i++) {
+      result.push(
+        // 생성하고 싶은 tbody 의 tr 복사
+        <tr className={styles.accepted}>
+          <td>{i+1}</td>
+          <td><Link to="/survey-info">갤럭시S21 사용자 만족도 조사{i+1}</Link></td>
+          <td>2021.10.28 ~ 2021.11.28</td>
+          <td>500</td>
+          <td>0</td>
+          <td>승인완료</td>
+          <td>2021.10.28</td>
+          <td>홍길동</td>
+          <td>해당없음</td>
+        </tr>
+      );
+    }
+    return result;
+  };
+
+
   return (
-    <div className={style.survey_overview}>
+    <div className={styles.survey_overview}>
       <Gnb />
-      <main className={style.content}>
+      <main className={styles.content}>
         <h2>설문승인 현황조회</h2>
-        <div className={style.route_box}>
-          <span className={style.route1}>통합관리</span>
-          <Link to="#" className={style.route2}>설문승인 현황조회</Link>
+        <div className={styles.route_box}>
+          <span className={styles.route1}>통합관리</span>
+          <Link to="#" className={styles.route2}>설문승인 현황조회</Link>
         </div>
-        <div className={style.search_box}>
-          <input type="text" className={style.search_box_input} />
-          <Link to="#"><FontAwesomeIcon icon={faSearch} className={style.search_icon} /></Link>
-        </div>
-        <table className={style.panel_table}>
+        <div className={styles.search_box}>
+          <input type="text" className={styles.search_box_input} />
+          <Link to="#"><FontAwesomeIcon icon={faSearch} size={'2x'} className={styles.search_icon} /></Link>
+      </div>
+        <table className={styles.panel_table}>
           <caption>설문승인 현황</caption>
               <colgroup>
-                  <col style={{width: "60px;"}} />
-                  <col style={{width: "280px;"}} />
-                  <col style={{width: "230px;"}} />
-                  <col style={{width: "120px;"}} />
-                  <col style={{width: "120px;"}} />
-                  <col style={{width: "80px;"}} />
-                  <col style={{width: "120px;"}} />
-                  <col style={{width: "120px;"}} />
-                  <col style={{width: "100px;"}} />
+                  <col style={{width: "60px"}} />
+                  <col style={{width: "380px"}} />
+                  <col style={{width: "280px"}} />
+                  <col style={{width: "90px"}} />
+                  <col style={{width: "90px"}} />
+                  <col style={{width: "80px"}} />
+                  <col style={{width: "100px"}} />
+                  <col style={{width: "100px"}} />
+                  <col style={{width: "100px"}} />
               </colgroup>
           <thead>
             <tr>
@@ -46,126 +70,17 @@ function SurveyOverview() {
             </tr>
           </thead>
           <tbody>
-            <tr className={style.accepted}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>승인완료</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
-            <tr className={style.accepted}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>승인완료</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
-            <tr className={style.waiting}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>승인대기</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
-            <tr className={style.waiting}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>승인대기</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
-            <tr className={style.rejected}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>승인거부</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
-            <tr className={style.rejected}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>승인거부</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
-            <tr className={style.finished}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>설문종료</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
-            <tr className={style.finished}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>설문종료</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
-            <tr className={style.finished}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>설문종료</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
-            <tr className={style.finished}>
-              <td>160</td>
-              <td>갤럭시 S21 사용자 만족도 조사</td>
-              <td>2021.10.28 ~ 2021.11.28</td>
-              <td>500</td>
-              <td>0</td>
-              <td>설문종료</td>
-              <td>2021.10.28</td>
-              <td>홍길동</td>
-              <td>해당없음</td>
-            </tr>
+            {makeTableContents(ContentsNum)}
           </tbody>
         </table>
-        <div className={style.controller_box}>
-          <Link to="#" className={style.btn}><FontAwesomeIcon icon={faCaretLeft} /></Link>
+        <div className={styles.controller_box}>
+          <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretLeft} /></Link>
           <Link to="#">1</Link>
           <Link to="#">2</Link>
           <Link to="#">3</Link>
           <Link to="#">4</Link>
           <Link to="#">5</Link>
-          <Link to="#" className={style.btn}><FontAwesomeIcon icon={faCaretRight} /></Link>
+          <Link to="#" className={styles.btn}><FontAwesomeIcon icon={faCaretRight} /></Link>
         </div>
       </main>
     </div>

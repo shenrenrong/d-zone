@@ -16,9 +16,9 @@ export const PanelSystem = ()=>{
         <span className="route1">통합관리</span>
         <Link to="#" className="route2">패널인증시스템 신청현황</Link>
       </div>
-      <div className="search_box">
-        <input type="text" className="search_box_input" />
-        <Link to="#"><FontAwesomeIcon icon={faSearch} size={'2x'} className="search_icon" /></Link>
+      <div className={style.search_box}>
+        <input type="text" className={style.search_box_input} />
+        <Link to="#"><FontAwesomeIcon icon={faSearch} size={'2x'} className={style.search_icon} /></Link>
       </div>
       <table className={style.panel_table}>
         <caption>패널인증시스템 신청현황</caption>
@@ -147,14 +147,14 @@ export const PanelSystem = ()=>{
           </tr>
         </tbody>
       </table>
-      <div className="controller_box">
-        <Link to="#" className="btn"><FontAwesomeIcon icon={faCaretLeft} /></Link>
+      <div className={style.controller_box}>
+        <Link to="#" className={style.btn}><FontAwesomeIcon icon={faCaretLeft} /></Link>
         <Link to="#">1</Link>
         <Link to="#">2</Link>
         <Link to="#">3</Link>
         <Link to="#">4</Link>
         <Link to="#">5</Link>
-        <Link to="#" className="btn"><FontAwesomeIcon icon={faCaretRight} /></Link>
+        <Link to="#" className={style.btn}><FontAwesomeIcon icon={faCaretRight} /></Link>
       </div>
     </main>
     </div>

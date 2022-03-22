@@ -52,3 +52,6 @@
 .depth1:hover .depth2{display: block;}
 .depth1:hover>.dp1::after{display: block;}
 .depth2 .dp2:hover{color: #8f8f8f;}
+.gnb .active {
+    color: #ffc107;
+}

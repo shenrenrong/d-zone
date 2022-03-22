@@ -55,7 +55,7 @@
   outline: transparent;
 }
 
-.search_box i {
+.search_box .search_icon {
   color: #999;
   position: absolute;
   top: 50%;

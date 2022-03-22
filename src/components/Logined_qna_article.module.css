@@ -1,0 +1,185 @@
+main {
+  width: fit-content;
+  min-height: calc(100vh - 221px);
+  margin: 68px auto 147px auto;
+}
+
+/* container */
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+/* pannel-category */
+.pannelCategory {
+  margin-bottom: 62px;
+  color: #333;
+}
+.pannelCategory h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.pannelCategory span {
+  margin: 0 27px 0 27px;
+}
+
+/* table */
+.article table {
+  width: 100%;
+  height: 67px;
+  border-top: 3px solid #333;
+  border-collapse: collapse;
+}
+.article table th {
+  /* padding: 10px; */
+  font-size: 18px;
+  font-weight: normal;
+  margin: 24px 0 24px 0;
+}
+.article table th:first-child {
+  border-left: none;
+}
+.article table .articleNum {
+  width: 14%;
+  table-layout: fixed;
+}
+.article table .articleTitle {
+  font-weight: bold;
+}
+.article table .articleWritter {
+  width: 14%;
+}
+.article table .articleDate {
+  width: 16%;
+}
+
+/* content */
+.content {
+  font-size: 17px;
+  min-height: 300px;
+  border-top: 1px solid #333;
+  padding: 35px 40px 35px 40px;
+}
+.content span {
+  line-height: 25px;
+}
+
+/* comment */
+.comment {
+  border-top: 1px solid #333;
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+}
+.commentUserInfo {
+  margin: 20px;
+}
+.commentUserInfo img {
+  width: 29px;
+  height: 29px;
+}
+.commentUserInfo .admin {
+  font-weight: bold;
+  margin-left: 8px;
+}
+.commentUserInfo .date {
+  margin-left: 18px;
+}
+.commentUserInfo .time {
+  margin-left: 8px;
+}
+.commentBtn {
+  margin-left: 16px;
+}
+.commentBtn .btn {
+  width: 50px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #333;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+}
+.commentBtn .btn:hover{
+  background-color: #333;
+  color: #fff;
+}
+.commentBtn .delete {
+  margin-left: 8px;
+}
+
+/* comment-content */
+.replyContent {
+  margin-top: 19px;
+  margin-bottom: 32px;
+}
+.replyContent {
+  display: block;
+}
+.replyContent span {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* reply-regist */
+.replyRegist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 22px 0 22px 0;
+}
+.replyRegist .formControl {
+  resize: none;
+  width: 904px;
+  height: 70px;
+  line-height: 15px;
+  padding: 5px 10px 10px 5px;
+  border-color: #b1b1b1;
+  margin-bottom: 0;
+}
+.replyRegist span {
+  color: #333;
+}
+.replyRegist .replyConfirm .btn {
+  width: 52px;
+  height: 47px;
+  cursor: pointer;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+}
+.replyRegist .replyConfirm .btn:hover{
+  background-color: #333;
+  color: #fff;
+}
+
+/* modify btn */
+.modifyButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 33px;
+}
+.modifyButton .btn {
+  margin-right: 21px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffc107;
+  width: 140px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.modifyButton .btn:hover{
+  background-color: #fff;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+}
+.modifyButton .list {
+  margin-right: 0;
+}
