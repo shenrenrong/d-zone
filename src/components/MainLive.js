@@ -1,6 +1,6 @@
 import React from 'react'
-import Cards from '../Cards';
-import styles from "./MainLive.module.css";
+import Cards from './Cards';
+import  "./MainLive.css";
 import { Link } from "react-router-dom";
 import { useRef, useEffect, useState } from 'react';
 import AOS from "aos";

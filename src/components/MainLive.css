@@ -233,23 +233,23 @@ p {
 }
 
 .content4 .cont4-box1 li:first-child {
-    background: url(../../../public/img/content04-1.jpg) no-repeat 100% -65%;
+    background: url(../../public/img/content04-1.jpg) no-repeat 100% -65%;
     background-size: 55%;
     background-color: #fff;
 }
 
 .content4 .cont4-box1 li:last-child {
-    background: url(../../../public/img/content04-2.jpg) no-repeat 100% -75%;
+    background: url(../../public/img/content04-2.jpg) no-repeat 100% -75%;
     background-color: #fff;
 }
 
 .content4 .cont4-box2 li:first-child {
-    background: url(../../../public/img/content04-3.jpg) no-repeat 100% -75%;
+    background: url(../../public/img/content04-3.jpg) no-repeat 100% -75%;
     background-color: #fff;
 }
 
 .content4 .cont4-box2 li:last-child {
-    background: url(../../../public/img/content04-4.png) no-repeat 100% -20%;
+    background: url(../../public/img/content04-4.png) no-repeat 100% -20%;
     background-color: #fff;
     position: relative;
 }

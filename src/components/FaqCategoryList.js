@@ -37,5 +37,5 @@ const FaqCategoryList = [
       answer: "여섯번째 답입니다."
   }
 
-
+]
 export default FaqCategoryList;
