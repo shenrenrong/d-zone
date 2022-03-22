@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./reset.css";
 import Navbar from "./components/Navbar";
@@ -16,13 +16,20 @@ import Registration from "./components/pages/Registration";
 import Points from "./components/pages/Points";
 import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
+<<<<<<< HEAD
 import AccManage from "./components/AccManage";
 import MarketResearch from "./components/survey/MarketResearch";
 import SurveyModify from "./components/survey/SurveyModify";
+=======
+import AccCreate from "./components/AccCreate";
+import AccManage from "./components/AccManage";
+import MyPage from "./components/MyPage";
+>>>>>>> refs/remotes/origin/main
 
 export default function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
 
           <Navbar />
           <Routes>
@@ -43,6 +50,28 @@ export default function App() {
             <Route path='/marketresearch' element={<MarketResearch />} />
           </Routes>
           <Footer />
+=======
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/log-in" element={<LogIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/QA" element={<QA />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/account/mypage" element={<MyPage />} />
+        <Route path="/account/create" element={<AccCreate />} />
+        <Route path="/account/manage" element={<AccManage />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/points" element={<Points />} />
+        <Route path="/general" element={<General />} />
+        <Route path="/user-guide" element={<UserGuide />} />
+      </Routes>
+      <Footer />
+>>>>>>> refs/remotes/origin/main
     </div>
   );
 }
