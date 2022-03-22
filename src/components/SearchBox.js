@@ -4,26 +4,52 @@ import userData from "./userData";
 import "./SearchBox.css";
 
 function SearchBox() {
-  const [indexKey, setIndex] = useState(null);
+  const [idKey, setIdKey] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <div className="search-box">
       <div className="left-container">
-        <input type="text" className="search-input"/>
+        <input
+          type="text"
+          className="search-input"
+          placeholder="사용자명, 아이디, 전화번호"
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+          }}
+        />
         <ul className="search-list">
-
-        {userData.map((values, index) => {
-            return (
-                <li className="search-item"
-                key={index}
-                onClick={() => {
-                    setIndex(index);
-                }}
+          {userData
+            .filter((values) => {
+              if (searchTerm == "") {
+                return values;
+              } else if (
+                values.username.toLowerCase().includes(searchTerm.toLowerCase())
+              ) {
+                return values;
+              } else if (
+                values.userid.toLowerCase().includes(searchTerm.toLowerCase())
+              ) {
+                return values;
+              } else if (
+                values.mobile.replace(/[-]/g, "").includes(searchTerm)
+              ) {
+                return values;
+              }
+            })
+            .map((values) => {
+              return (
+                <li
+                  className="search-item"
+                  key={values.id}
+                  onClick={() => {
+                    setIdKey(values.id);
+                  }}
                 >
-              {values.department} {values.username}
-            </li>
-          );
-        })}
+                  {values.department} {values.username}
+                </li>
+              );
+            })}
         </ul>
       </div>
       <div className="right-container">
@@ -36,7 +62,9 @@ function SearchBox() {
               type="text"
               className="readOnly"
               readOnly
-              value={indexKey != null ? userData[indexKey].userid : ""}
+              value={
+                idKey != null ? userData.find((c) => c.id == idKey).userid : ""
+              }
             />
           </div>
           <div className="form-inputs">
@@ -45,7 +73,11 @@ function SearchBox() {
             </label>
             <input
               type="text"
-              defaultValue={indexKey != null ? userData[indexKey].password : ""}
+              defaultValue={
+                idKey != null
+                  ? userData.find((c) => c.id == idKey).password
+                  : ""
+              }
             />
           </div>
           <div className="form-inputs">
@@ -54,7 +86,9 @@ function SearchBox() {
             </label>
             <input
               type="email"
-              defaultValue={indexKey != null ? userData[indexKey].email : ""}
+              defaultValue={
+                idKey != null ? userData.find((c) => c.id == idKey).email : ""
+              }
             />
           </div>
           <div className="form-inputs">
@@ -63,7 +97,11 @@ function SearchBox() {
             </label>
             <input
               type="text"
-              defaultValue={indexKey != null ? userData[indexKey].username : ""}
+              defaultValue={
+                idKey != null
+                  ? userData.find((c) => c.id == idKey).username
+                  : ""
+              }
             />
           </div>
           <div className="form-inputs">
@@ -72,17 +110,18 @@ function SearchBox() {
             </label>
             <input
               type="text"
-              defaultValue={indexKey != null ? userData[indexKey].mobile : ""}
+              defaultValue={
+                idKey != null ? userData.find((c) => c.id == idKey).mobile : ""
+              }
             />
           </div>
           <div className="search-field-btn">
-
-          <Button type="button" buttonStyle="btn--yellow">
-            삭제
-          </Button>
-          <Button type="submit" buttonStyle="btn--yellow">
-            저장
-          </Button>
+            <Button type="button" buttonStyle="btn--yellow">
+              삭제
+            </Button>
+            <Button type="submit" buttonStyle="btn--yellow">
+              저장
+            </Button>
           </div>
         </form>
       </div>

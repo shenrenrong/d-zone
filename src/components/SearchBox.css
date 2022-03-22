@@ -18,7 +18,7 @@
   line-height: 60px;
   border-radius: 30px;
   border: 2px solid #ffc107;
-  font-size: 22px;
+  font-size: 20px;
   padding-left: 30px;
   outline: none;
 }
@@ -34,7 +34,7 @@
   cursor: pointer;
   font-size: 20px;
   border-bottom: 1px solid #dadada;
-  padding: 16px 5px;
+  padding: 17px 5px;
 }
 
 .search-item::before {
