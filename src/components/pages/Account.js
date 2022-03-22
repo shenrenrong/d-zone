@@ -3,6 +3,7 @@ import Gnb from "../Gnb";
 import { useState } from "react";
 import MyPage from "../MyPage";
 import AccChange from "../AccChange";
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 function Account() {
   const [managerStat, setManagerState] = useState(true);
@@ -13,8 +14,9 @@ function Account() {
         <>
         <AccChange/>
         </>
-      ) : (
-        <>
+        
+        ) : (
+          <>
         <MyPage />
         </>
       )}
