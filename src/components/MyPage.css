@@ -9,7 +9,7 @@
     display: flex;
 }
 
-.tab-item {
+.mypage .tab-item {
     width: 235px;
     height: 68px;
     line-height: 68px;
@@ -19,7 +19,7 @@
     border-radius: 10px 10px 0 0;
 }
 
-.tab-item.current a {
+.mypage .tab-item.current a {
     display: block;
     background-color: #fff;
     border-radius: inherit;
@@ -27,7 +27,7 @@
     border-bottom: transparent;
 }
 
-.content {
+.mypage .content {
     width: fit-content;
     margin: auto;
     padding: 74px 0 137px;
@@ -35,19 +35,19 @@
     flex-direction: column;
 }
 
-.row {
+.mypage .row {
     display: flex;
     height: 40px;
     line-height: 40px;
     margin-bottom: 32px;
 }
 
-.row label {
+.mypage .row label {
     font-size: 18px;
     width: 150px;
 }
 
-.row input {
+.mypage .row input {
     width: 381px;
     padding-left: 16px;
     font-size: 18px;
@@ -56,18 +56,18 @@
     border-radius: 9px;
 }
 
-.row input.plaintext {
+.mypage .row input.plaintext {
     width: fit-content;
     border: none;
     background-color: transparent;
 }
 
-.alert {
+.mypage .alert {
     padding-left: 19px;
     color: #ffc107;
 }
 
-.alert i {
+.mypage .alert i {
     padding-right: 7px;
 }
 .mypage form {
@@ -79,11 +79,11 @@
     font-size: 22px !important;
 }
 
-.content .userID > Button {
+.mypage .content .userID > Button {
     margin-left: 23px;
 }
 
-.content .mobile > span {
+.mypage .content .mobile > span {
     margin: 0 12px;
 }
 
@@ -93,60 +93,3 @@
 }
 
 
-/* search box  */
-
-.super-manage .content {
-    display: flex;
-    flex-direction: row;
-    width: 1010px;
-    justify-content: space-between;
-}
-
-.super-manage .content > form {
-    width: 600px;
-}
-
-  .search-bar {
-    border: 2px solid #ffc107;
-    border-radius: 20px;
-    padding: 0 20px;
-    width: 320px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-  }
-
-  .search-bar input {
-      display: block;
-    border: none;
-    outline: none;
-    font-size: 25px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .search-bar button {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: #ffc107;
-    width: 42px;
-    height: 42px;
-    line-height: 1;
-    text-align: center;
-    padding: 0;
-  }
-
-  .search-list {
-    margin-top: 45px;
-    padding: 5px;
-  }
-
-  .search-list > li {
-    padding: 17px 0;
-    font-size: 22px;
-    border-bottom: 1px solid #b1b1b1;
-  }
-  .search-list > li > a::before  {
-    content: ' - ';
-  }
