@@ -13,7 +13,7 @@ function SearchBox() {
         <input
           type="text"
           className="search-input"
-          placeholder="사용자명, 아이디, 전화번호"
+          placeholder="사용자명, 아이디, 휴대폰 번호"
           onChange={(e) => {
             setSearchTerm(e.target.value);
           }}
