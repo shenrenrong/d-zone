@@ -39,7 +39,7 @@ function FaqCategory() {
 
             <ul className="faqContainer">
               {data.map((values) => {
-                const { id,category, question, answer } = values;
+                const { id, category, question, answer } = values;
                 return (
                   <FaqAccordion {...values}/>
 
