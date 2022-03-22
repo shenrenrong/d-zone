@@ -3,13 +3,8 @@ import FaqCategoryList from "./FaqCategoryList";
 import "./FaqCategory.css";
 import FaqAccordion from "./FaqAccordion";
 
-<<<<<<< HEAD
 
 
-
-
-=======
->>>>>>> efdfe3851adc4143e0f957cec402274166f81019
 function FaqCategory() {
   const [data, setData] = useState(FaqCategoryList);
   const filterResult = (catItem) => {
