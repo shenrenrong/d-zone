@@ -14,7 +14,7 @@ function FaqCategory() {
     setData(result);
   };
 
-
+  
   return (
     <>
       <main className="faq">
@@ -23,7 +23,7 @@ function FaqCategory() {
 
 
             <div id="myBtnContainer">
-              <button className="btn" onClick={() => setData(FaqCategoryList)}>
+              <button className="btn" onClick= {() => setData(FaqCategoryList)} >
                 전체
               </button>
               <button className="btn" onClick={() => filterResult("카테고리1")}>
