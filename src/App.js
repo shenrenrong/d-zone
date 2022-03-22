@@ -20,7 +20,6 @@ import AccManage from "./components/AccManage";
 import MarketResearch from "./components/survey/MarketResearch";
 import SurveyModify from "./components/survey/SurveyModify";
 import AccCreate from "./components/AccCreate";
-import AccManage from "./components/AccManage";
 import MyPage from "./components/MyPage";
 
 export default function App() {

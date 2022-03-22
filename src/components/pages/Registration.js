@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Gnb from '../Gnb'
 import { useState } from 'react';
@@ -13,10 +12,6 @@ import SurveyModify from '../survey/SurveyModify';
 import Transfer from '../survey/Transfer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
-
-import React from "react";
-import Gnb from "../Gnb";
 
 
 export default function Registration() {
