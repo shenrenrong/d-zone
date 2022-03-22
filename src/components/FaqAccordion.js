@@ -12,7 +12,7 @@ function FaqAccordion({ id, category, question, answer }) {
     <li key={id} onClick={toggleSwitch}>
       <h4>
         [{category}]<span className="q">Q.</span> {question}
-        
+        <i className="fa-solid fa-plus"></i>
       </h4>
       <p className={toggle ? "acco-body" : "acco-body none"}>
         <span className="answer">A.</span> {answer}

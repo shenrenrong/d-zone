@@ -3,6 +3,8 @@ import FaqCategoryList from "./FaqCategoryList";
 import "./FaqCategory.css";
 import FaqAccordion from "./FaqAccordion";
 
+
+
 function FaqCategory() {
   const [data, setData] = useState(FaqCategoryList);
   const filterResult = (catItem) => {
@@ -12,7 +14,7 @@ function FaqCategory() {
     setData(result);
   };
 
-
+  
   return (
     <>
       <main className="faq">
@@ -21,7 +23,7 @@ function FaqCategory() {
 
 
             <div id="myBtnContainer">
-              <button className="btn" onClick={() => setData(FaqCategoryList)}>
+              <button className="btn" onClick= {() => setData(FaqCategoryList)} >
                 전체
               </button>
               <button className="btn" onClick={() => filterResult("카테고리1")}>
