@@ -1,8 +1,6 @@
 import React from 'react'
 import Gnb from '../Gnb'
 import { useState } from 'react';
-
-
 import FileUpload from '../survey/FileUpload';
 import MarketResearch from '../survey/MarketResearch';
 import Register from '../survey/Register';
