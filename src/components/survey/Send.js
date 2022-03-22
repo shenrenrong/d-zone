@@ -76,7 +76,9 @@ function Send({send, children, onClose}){
                 </section>
             </div>
             <div className={styles.btnArea}>
-                <button className={styles.confirmBtn} onClick={()=>{alert('포인트가 부족합니다. 충전하시겠습니까?')}}><NavLink to='/points'>확인</NavLink></button>
+            <NavLink to='/points'>
+                <button className={styles.confirmBtn} onClick={()=>{alert('포인트가 부족합니다. 충전하시겠습니까?')}}>확인</button>
+            </NavLink>
                 <button className={styles.cancelBtn} onClick={onClose}>취소</button>
             </div>
         </div>
