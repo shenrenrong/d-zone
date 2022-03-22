@@ -5,6 +5,7 @@
 .manage
 {
     width: 1200px;
+    margin-bottom: 100px;
 }
 .form-content > form {
     display: flex;

@@ -4,12 +4,14 @@ import { Button } from "./Button";
 import useForm from "./useForm";
 import validateInfo from "./validateInfo";
 import SupTab from "./SupTab";
+import LocationBar from "./LocationBar";
 
 function AccChange() {
   const { handleChange, handleSubmit, values, errors } = useForm(validateInfo);
 
   return (
     <div className="change">
+      <LocationBar depth1="계정 설정" depth2="계정 관리" />
         <SupTab />
       <div className="form-content">
         <form className="form" onSubmit={handleSubmit}>

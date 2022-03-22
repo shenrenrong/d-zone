@@ -21,7 +21,7 @@ function SearchBox() {
         <ul className="search-list">
           {userData
             .filter((values) => {
-              if (searchTerm == "") {
+              if (searchTerm === "") {
                 return values;
               } else if (
                 values.username.toLowerCase().includes(searchTerm.toLowerCase())
@@ -63,7 +63,7 @@ function SearchBox() {
               className="readOnly"
               readOnly
               value={
-                idKey != null ? userData.find((c) => c.id == idKey).userid : ""
+                idKey != null ? userData.find((c) => c.id === idKey).userid : ""
               }
             />
           </div>
@@ -75,7 +75,7 @@ function SearchBox() {
               type="text"
               defaultValue={
                 idKey != null
-                  ? userData.find((c) => c.id == idKey).password
+                  ? userData.find((c) => c.id === idKey).password
                   : ""
               }
             />
@@ -87,7 +87,7 @@ function SearchBox() {
             <input
               type="email"
               defaultValue={
-                idKey != null ? userData.find((c) => c.id == idKey).email : ""
+                idKey != null ? userData.find((c) => c.id === idKey).email : ""
               }
             />
           </div>
@@ -99,7 +99,7 @@ function SearchBox() {
               type="text"
               defaultValue={
                 idKey != null
-                  ? userData.find((c) => c.id == idKey).username
+                  ? userData.find((c) => c.id === idKey).username
                   : ""
               }
             />
@@ -111,7 +111,7 @@ function SearchBox() {
             <input
               type="text"
               defaultValue={
-                idKey != null ? userData.find((c) => c.id == idKey).mobile : ""
+                idKey != null ? userData.find((c) => c.id === idKey).mobile : ""
               }
             />
           </div>
