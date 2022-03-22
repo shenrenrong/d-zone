@@ -6,18 +6,21 @@ function LoginContainer() {
  
 
   return (
-
     <div className="loginContainer">
       <div className="formContainer">
         <h1>WELCOME TO DIGITAL ZONE</h1>
         <form className="form">
           <input type="text" placeholder="ID" />
           <input type="password" placeholder="PASSWORD" />
-          <button type="submit" id="login-button"><Link to="./pages/Main.js">로그인</Link></button>
+          <button type="button" id="login-button"><Link to="/home">로그인</Link></button>
           <ul className="service-group">
+            <Link to='/log-in/search-id'>
             <li><a href="#">아이디 찾기</a></li>
+            </Link>
             <li><span>|</span></li>
+            <Link to='/log-in/search-password'>
             <li><a href="#">비밀번호 찾기</a></li>
+            </Link>
             <li><span>|</span></li>
             <li><a href="./pages/SignUp.js">회원가입</a></li>
           </ul>

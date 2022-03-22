@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import FaqCategoryList from "./FaqCategoryList";
 import "./FaqCategory.css";
-import FaqAccordian from "./FaqAccordian";
+import FaqAccordion from "./FaqAccordion";
+
+
 
 function FaqCategory() {
   const [data, setData] = useState(FaqCategoryList);
@@ -12,7 +14,7 @@ function FaqCategory() {
     setData(result);
   };
 
-
+  
   return (
     <>
       <main className="faq">
@@ -21,7 +23,7 @@ function FaqCategory() {
 
 
             <div id="myBtnContainer">
-              <button className="btn" onClick={() => setData(FaqCategoryList)}>
+              <button className="btn" onClick= {() => setData(FaqCategoryList)} >
                 전체
               </button>
               <button className="btn" onClick={() => filterResult("카테고리1")}>
@@ -39,7 +41,7 @@ function FaqCategory() {
 
             <ul className="faqContainer">
               {data.map((values) => {
-                const { id,category, question, answer } = values;
+                const { id, category, question, answer } = values;
                 return (
                   <FaqAccordion {...values}/>
 

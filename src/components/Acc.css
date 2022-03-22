@@ -1,8 +1,17 @@
+/* GENERAL */
+
 .change,
 .create,
-.manage
+.manage,
+.mypage
 {
     width: 1200px;
+    margin-bottom: 100px;
+}
+
+.form-content > form {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-inputs {
@@ -15,6 +24,7 @@
 .form-label {
     width: 120px;
     font-size: 18px;
+    display: block;
 }
 
 .form-inputs input {
@@ -23,6 +33,14 @@
     border-radius: 9px;
     padding-left: 16px;
     font-size: 18px;
+    outline: none;
+}
+.form-inputs input:focus {
+    color: #333;
+    background-color: #fff;
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem #fff0c5;
+    transition: all 0.15s ease-out;
 }
 
 .form-inputs input.readOnly {
@@ -48,7 +66,10 @@
     margin-right: 6px;
 }
 
-/* GENERAL */
+.form-content > form > button {
+    align-self: flex-end;
+}
+
 
 /* SUP TAB START */
 
@@ -87,7 +108,7 @@
 /* ACCOUT-CREATE */
 
 .create form {
-    width: 800px;
+    width: 750px;
     margin: auto;
 }
 

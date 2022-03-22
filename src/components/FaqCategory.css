@@ -41,7 +41,7 @@ main {
   border-bottom: 1px solid #fff !important;
   color: #333;
 }
-.faq .btn.active {
+.faq .active {
   border: 1px solid #f79f1f;
   border-bottom: 1px solid #fff !important;
   color: #333;
@@ -84,17 +84,18 @@ main {
   color: #333;
   cursor: pointer;
 }
-.faq li  p{
+.faq li p{
+  text-align: left !important;
+  float: left;
   color:#333;
   width: 880px;
-  float: left;
   height: 100px;
   background-color: #f2f2f2;
 }
 
-.faq li .plus{
+.faq li .fa-plus{
   position: absolute;
-  right: 20px; top: 16px;
+  right: 20px; top: 0px;
   line-height: 50px;
 }
 .faq ul li .q{
@@ -111,91 +112,5 @@ main {
   font-size: 16px;
   height: 120px;
 }
-/* .faq li.active .acco-body{
-  background-color: #f2f2f2;
-}
- */
 
-
-/*
-.filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-Style the buttons
-.faq .btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-.faq .btn:hover {
-  background-color: #ddd;
-}
-
-.faq .btn.active {
-  background-color: #666;
-  color: white;
-} 
-*/
-=======
-.filterDiv {
-    float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
-    line-height: 100px;
-    text-align: center;
-    margin: 2px;
-    display: none;
-  }
-  
-  .show {
-    display: block;
-  }
-  
-  .container {
-    margin-top: 20px;
-    overflow: hidden;
-  }
-  
-  /* Style the buttons */
-  .faq .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  
-  .faq .btn:hover {
-    background-color: #ddd;
-  }
-  
-  .faq .btn.active {
-    background-color: #666;
-    color: white;
-  }
-
-  .none {
-    display: none;
-  }
 

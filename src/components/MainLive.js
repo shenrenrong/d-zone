@@ -1,6 +1,6 @@
 import React from 'react'
 import Cards from './Cards';
-import  "./MainLive.css";
+import "./MainLive.css";
 import { Link } from "react-router-dom";
 import { useRef, useEffect, useState } from 'react';
 import AOS from "aos";
@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
+import { Button } from './Button';
 
 
 function Main_live() {
@@ -186,7 +187,7 @@ function Main_live() {
                 <p>새로운</p>
                 <p>설문조사의 시작</p>
                 <p>디지털존과 함께하세요.</p>
-                <button buttonStyle="btn--footer">자세히 알아보기</button>
+                <Button buttonStyle="btn--footer">자세히 알아보기</Button>
               </div>
             </div>
             <div className="right" data-aos="fade-up" data-aos-anchor-placement="top-center">
