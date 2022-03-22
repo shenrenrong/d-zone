@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import "./reset.css";
 import Navbar from "./components/Navbar";
@@ -21,9 +21,20 @@ import AccManage from "./components/AccManage";
 import MyPage from "./components/MyPage";
 
 export default function App() {
+  const [notLogIn, setNotLogIn] = useState(true);
+  const location = useLocation();
+
+  useEffect(()=>{
+    if (location.pathname === "/log-in") {
+      console.log(location.pathname);
+      setNotLogIn(false)
+    } else {
+      setNotLogIn(true)
+    }
+  },[location.pathname])
   return (
     <div className="App">
-      <Navbar />
+      {notLogIn && <Navbar />}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/FAQ" element={<FAQ />} />
@@ -42,7 +53,7 @@ export default function App() {
         <Route path="/general" element={<General />} />
         <Route path="/user-guide" element={<UserGuide />} />
       </Routes>
-      <Footer />
+      {notLogIn && <Footer />}
     </div>
   );
 }

@@ -12,7 +12,7 @@ function LoginContainer() {
         <form className="form">
           <input type="text" placeholder="ID" />
           <input type="password" placeholder="PASSWORD" />
-          <button type="submit" id="login-button"><Link to="/home">로그인</Link></button>
+          <button type="button" id="login-button"><Link to="/home">로그인</Link></button>
           <ul className="service-group">
             <li><a href="#">아이디 찾기</a></li>
             <li><span>|</span></li>
