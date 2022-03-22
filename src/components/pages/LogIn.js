@@ -12,6 +12,7 @@ export default function LogIn() {
       <Button buttonSize="btn--large">
         <Link to="/home">로그인</Link>
       </Button>
+      {/* 링크 연결 전 출력 확인 */}
       <Loginbf_pannel1 />
       <Loginbf_pannel2 />
       <Loginbf_pannel3 />

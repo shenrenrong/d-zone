@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Logined_qna_article.module.css";
 import FadeIn from "react-fade-in";
+import { Link } from "react-router-dom";
+import Gnb from "./Gnb";
 
 function Logined_qna_article() {
   // 게시글 삭제
@@ -9,6 +11,8 @@ function Logined_qna_article() {
   }
 
   return (
+    <div>
+      <Gnb />
     <main>
       <FadeIn>
       <div className={styles.container}>
@@ -87,21 +91,28 @@ function Logined_qna_article() {
           </div>
 
           <div className={styles.modifyButton}>
-            <button type="button" className={`${styles.btn} ${styles.modify}`}>
-              수정
-            </button>
-            <button type="button" className={`${styles.btn} ${styles.delete}`} onClick={()=>{
-              deleteArticle();
-            }} >
-              삭제
-            </button>
-            <button type="button" className={`${styles.btn} ${styles.list}`}>
-              목록
-            </button>
+            <Link to='/QA/qna_regist'>
+              <button type="button" className={`${styles.btn} ${styles.modify}`}>
+                수정
+              </button>
+            </Link>
+            <Link to='/QA'>
+              <button type="button" className={`${styles.btn} ${styles.delete}`} onClick={()=>{
+                deleteArticle();
+              }} >
+                삭제
+              </button>
+            </Link>
+            <Link to='/QA'>
+              <button type="button" className={`${styles.btn} ${styles.list}`}>
+                목록
+              </button>
+            </Link>
           </div>
       </div>
       </FadeIn>
     </main>
+    </div>
   );
 }
 

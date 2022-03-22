@@ -17,6 +17,11 @@ import Points from "./components/pages/Points";
 import General from "./components/pages/General";
 import UserGuide from "./components/pages/UserGuide";
 import Information from "./components/pages/Information";
+import Logined_qna_article from "./components/Logined_qna_article";
+import Logined_qna_regist from "./components/Logined_qna_regist";
+import Loginbf_pannel1 from "./components/Loginbf_pannel1";
+import Loginbf_pannel2 from "./components/Loginbf_pannel2";
+import Loginbf_pannel3 from "./components/Loginbf_pannel3";
 
 
 export default function App() {
@@ -26,7 +31,7 @@ export default function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<Main />} />
-            <Route path='/Information' element={<Information />} />
+            {/* <Route path='/Information' element={<Information />} /> */}
             <Route path='/FAQ' element={<FAQ />} />
             <Route path='/log-in' element={<LogIn />} />
             <Route path='/sign-up' element={<SignUp />} />
@@ -38,6 +43,14 @@ export default function App() {
             <Route path='/points' element={<Points />} />
             <Route path='/general' element={<General />} />
             <Route path='/user-guide' element={<UserGuide />} />
+
+            {/* 하연 추가 */}
+            <Route path="/QA/qna_article" element={<Logined_qna_article />} />
+            <Route path="/QA/qna_regist" element={<Logined_qna_regist />} />
+            <Route path="/log-in/search-id" element={<Loginbf_pannel1 />} />
+            <Route path="/log-in/search-password" element={<Loginbf_pannel2 />} />
+            <Route path="/request-pannel-certif" element={<Loginbf_pannel3 />} />
+
           </Routes>
           <Footer />
     </div>

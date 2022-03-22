@@ -4,28 +4,32 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import Gnb from "./Gnb";
 import FadeIn from "react-fade-in";
+import { Link } from "react-router-dom";
 
 export default function Logined_qna_board() {
   // 답글 수
   const replyNumber = 3;
 
   // 테이블 자동생성
-  const qnaContentsNum = 60;
+  const qnaContentsNum = 15; // 해당 값 만큼 컨텐츠 생성
   const makeTableContents = (numberOfContents) => {
     const result = [];
     for (let i = 0; i <= numberOfContents; i++) {
       result.push(
+        // 생성하고 싶은 tbody 의 tr 복사
         <tr>
-          <td scope="row">160</td>
+          <td scope="row">{i}</td>
           <td>
+            <Link to='/QA/qna_article'>
             <a href="#">Q&A 게시판 ({replyNumber})</a>
+            </Link>
           </td>
           <td>2021.11.28</td>
           <td>홍길동</td>
         </tr>
       );
     }
-    return result;
+    return result.reverse();
   };
 
   return (
@@ -38,7 +42,9 @@ export default function Logined_qna_board() {
           <div className={styles.qnaBox}>
             <div className={styles.registSearch}>
               <div className={styles.registBox}>
-                <button className={styles.regist}>신규등록</button>
+                <Link to='/QA/qna_regist'>
+                  <button className={styles.regist}>신규등록</button> 
+                </Link>
               </div>
               {/* e: registBox */}
               <form>

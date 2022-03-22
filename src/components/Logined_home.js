@@ -13,19 +13,19 @@ function Logined_home() {
   };
 
   // 테이블 자동생성
-  const surveyWill = 60;
+  const surveyWill = 6;
   const surveyIng = 15;
-  const surveyEd = 200;
+  const surveyEd = 20;
   const makeTableContents = (numberOfContents) => {
     const result = []; 
-    for(let i=0; i <= numberOfContents; i++){
+    for(let i=0; i < numberOfContents; i++){
     result.push(
         <tr>
           <td scope="row" className={styles.number}>
-            160
+            {i+1}
           </td>
           <td scope="row" className={styles.title}>
-            <a>갤럭시S21 사용자 만족도 조사</a>
+            <a>갤럭시S21 사용자 만족도 조사{i+1}</a>
           </td>
           <td scope="row" className={styles.date}>
             2021.10.28 ~ 2021.11.28
@@ -48,8 +48,20 @@ function Logined_home() {
         </tr>
       );
     }
-    return result;
+    // setPosts(result.reverse());
+    return result.reverse();
   };
+
+  const pagination = (total, limit, page, setPage) => {
+
+  }
+
+
+  // PageNation을 위한 props 설정들
+  // const [posts, setPosts] = useState([]);
+  // const [limit, setLimit] = useState(30);
+  // const [page, setPage] = useState(1);
+  // const offset = (page - 1) * limit;
 
   return (
     <main>
@@ -248,7 +260,6 @@ function Logined_home() {
                     </tbody>
                   </table>
                   {/* e: table */}
-
                   <div className={styles.qnaPageNumber}>
                     <div className={styles.controllerBox}>
                       <a href="#" className={styles.btn}>
