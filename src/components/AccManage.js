@@ -1,6 +1,7 @@
 import React from "react";
 import "./Acc.css";
 import Gnb from "./Gnb";
+import SearchBox from "./SearchBox";
 import SupTab from "./SupTab";
 
 function AccManage() {
@@ -9,7 +10,7 @@ function AccManage() {
       <Gnb />
       <div className="manage">
         <SupTab />
-        
+        <SearchBox />
       </div>
     </div>
   );
