@@ -222,7 +222,7 @@ function MarketResearch(){
                 </section>
             </div>
             <div className={styles.researchBtnarea}>
-                <button className={styles.modifyBtn}><NavLink to='/surveymodify'>수정</NavLink></button>
+                <button className={styles.modifyBtn}><NavLink to='/registration/surveymodify'>수정</NavLink></button>
                 <button className={styles.listBtn}><NavLink to='/registration'>목록</NavLink></button>
             </div>
     </div>

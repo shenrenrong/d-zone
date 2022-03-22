@@ -53,8 +53,8 @@ export default function App() {
             <Route path='/user-guide' element={<UserGuide />} />
             <Route path="/account/manage" element={<AccManage />} />
             <Route path="/account/create" element={<AccCreate />} />
-            <Route path='/surveymodify' element={<SurveyModify />} />
-            <Route path='/marketresearch' element={<MarketResearch />} />
+            <Route path='/registration/surveymodify' element={<SurveyModify />} />
+            <Route path='/registration/marketresearch' element={<MarketResearch />} />
           </Routes>
       {notLogIn && <Footer />}
 
