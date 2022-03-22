@@ -98,7 +98,7 @@ function MarketResearch(){
             <div className={styles.marketResearch}>
                 <div className={styles.toparea}>
                     <section className={styles.imgarea}>
-                        <img src="./img/digitalnet.png"/>
+                        <img src="../img/digitalnet.png"/>
                     </section>
                     <section className={styles.txtarea}>
                         <h2>비대면 시장조사 필요성 인식 조사</h2>
