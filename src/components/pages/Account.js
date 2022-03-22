@@ -5,7 +5,7 @@ import MyPage from "../MyPage";
 import AccChange from "../AccChange";
 
 function Account() {
-  const [managerStat, setManagerState] = useState(false);
+  const [managerStat, setManagerState] = useState(true);
   return (
     <div className="account">
       <Gnb />
