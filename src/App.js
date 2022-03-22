@@ -52,6 +52,7 @@ export default function App() {
             <Route path='/general' element={<General />} />
             <Route path='/user-guide' element={<UserGuide />} />
             <Route path="/account/manage" element={<AccManage />} />
+            <Route path="/account/create" element={<AccCreate />} />
             <Route path='/surveymodify' element={<SurveyModify />} />
             <Route path='/marketresearch' element={<MarketResearch />} />
           </Routes>
