@@ -4,6 +4,8 @@ import { Button } from "../Button";
 import Loginbf_pannel1 from "../Loginbf_pannel1";
 import Loginbf_pannel2 from "../Loginbf_pannel2";
 import Loginbf_pannel3 from "../Loginbf_pannel3";
+import LoginContainer from "../LoginContainer";
+
 
 export default function LogIn() {
   return (
@@ -12,9 +14,8 @@ export default function LogIn() {
       <Button buttonSize="btn--large">
         <Link to="/home">로그인</Link>
       </Button>
-      <Loginbf_pannel1 />
-      <Loginbf_pannel2 />
-      <Loginbf_pannel3 />
+      <LoginContainer/>
     </div>
+
   );
 }

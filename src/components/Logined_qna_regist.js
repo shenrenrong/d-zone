@@ -2,6 +2,7 @@ import React from "react";
 import Gnb from "./Gnb";
 import styles from "./Logined_qna_regist.module.css";
 import FadeIn from "react-fade-in"
+import { Link } from "react-router-dom";
 
 function Logined_qna_regist() {
   // 문의신청
@@ -21,7 +22,9 @@ function Logined_qna_regist() {
   };
 
   return (
-      <main>
+    <div>
+      <Gnb />
+      <main className={styles.main}>
         <div className={styles.container}>
           <div className={styles.qnaRegist}>
             <FadeIn>
@@ -71,26 +74,31 @@ function Logined_qna_regist() {
             </form>
 
             <div className={styles.registCancleBtn}>
-              <button
-                type="button"
-                className={`${styles.btn} ${styles.regist}`}
-                onClick={()=>{
-                  qnaRegist();
-                }}
-              >
-                등록
-              </button>
+              <Link to='/QA'>
+                <button
+                  type="button"
+                  className={`${styles.btn} ${styles.regist}`}
+                  onClick={()=>{
+                    qnaRegist();
+                  }}
+                >
+                  등록
+                </button>
+              </Link>
+              <Link to='/QA'>
               <button
                 type="button"
                 className={`${styles.btn} ${styles.cancle}`}
               >
                 취소
               </button>
+              </Link>
             </div>
             </FadeIn>
           </div>
         </div>
       </main>
+    </div>
   );
 }
 

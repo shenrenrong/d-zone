@@ -94,3 +94,14 @@ main {
   cursor: pointer;
   margin-left: 15px;
 }
+
+.highlight {
+  position: absolute;
+  box-sizing: border-box;
+  border: 5px solid #ccc;
+  box-shadow: 4px 4px 4px #ccc;
+  width: 0;
+  height: 0;
+  border-radius: 10px;
+  opacity:0;
+}

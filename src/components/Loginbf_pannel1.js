@@ -3,7 +3,7 @@ import styles from "./Loginbf_pannel1.module.css";
 import FadeIn from "react-fade-in"
 
 function Loginbf_pannel1() {
-
+  // 로그인 버튼 클릭 시
   const login = () => {
     var loginForm = document.loginForm;
     var inputEmail = loginForm.inputEmail.value;
@@ -16,6 +16,14 @@ function Loginbf_pannel1() {
       alert("입력하신 이메일로 아이디가 발송 되었습니다.");
     }
   };
+
+
+  // input 태그 onFocus
+  const highLight = (e) => {
+    console.log(e.currentTarget.id);
+    const targetID = e.currentTarget.id;
+    const cur = ``
+  }
 
   return (
     <main>
@@ -38,6 +46,7 @@ function Loginbf_pannel1() {
                 id="inputEmail"
                 placeholder="이메일"
                 required
+                onFocus={(e)=>{highLight(e)}}
               />
             </div>
           </div>
