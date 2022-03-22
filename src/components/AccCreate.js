@@ -6,6 +6,7 @@ import SupTab from "./SupTab";
 import useForm from "./useForm";
 import validateInfo from "./validateInfo";
 import LocationBar from "./LocationBar";
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 function AccCreate() {
   const { handleChange, handleSubmit, values, errors } = useForm(validateInfo);
@@ -16,6 +17,7 @@ function AccCreate() {
       <div className="create">
       <LocationBar depth1="계정 설정" depth2="관리자 계정 생성" />
         <SupTab />
+      <FadeIn>
         <div className="form-content">
           <form className="form" onSubmit={handleSubmit}>
             <div className="form-inputs">
@@ -103,6 +105,7 @@ function AccCreate() {
             </Button>
           </form>
         </div>
+    </FadeIn>
       </div>
     </div>
   );
