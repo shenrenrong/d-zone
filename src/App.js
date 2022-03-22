@@ -53,7 +53,7 @@ export default function App() {
             </Route>
             <Route path='/survey-overview' element={<SurveyOverview />} />
             <Route path='/point-info' element={<PointInfo />} />
-            <Route path='/panelsystem-info' element={<PanelSystemInfo />} />
+            <Route path='/panel-system-info' element={<PanelSystemInfo />} />
             <Route path='/survey-info' element={<SurveyInfo />} />
 
             <Route path='/join1' element={<Join1 />} />

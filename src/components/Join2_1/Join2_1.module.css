@@ -4,7 +4,7 @@
   width: 100%;
   min-width: 1200px;
 }
-.Join2_1 .inner-box {
+.Join2_1 .inner_box {
   width: 100%;
   margin: auto;
 }
@@ -22,17 +22,17 @@
 }
 
 /* top btn */
-.step-box {
+.step_box {
   width: 1000px;
   height: 100px;
   margin: auto;
 }
-.step-box ul {
+.step_box ul {
   display: flex;
   justify-content: space-between;
   padding-left: 10px;
 }
-.step-box ul li {
+.step_box ul li {
   /* height: 45px;*/
   width: 230px;
   line-height: 100px;
@@ -47,7 +47,7 @@
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em; */
 }
 
-.step-box ul li img{
+.Join2_1 .step_box ul li img{
   width: 60px;
   height: auto;
   position: absolute;
@@ -58,7 +58,7 @@
   z-index: 1;
 }
 
-.step-box ul li::after{
+.step_box ul li::after{
   content:' ';
   display: block;
   width: 300px;
@@ -71,7 +71,7 @@
 }
 
 /* 회원가입 과정 스텝 켜지기 */
-.step-box ul li.on {
+.step_box ul li.on {
   /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -80,8 +80,8 @@
   color: #fa8231;
 }
 
-.step-box ul li.on img{filter: none;}
-.step-box ul li.on::after{background-color: #fa8231;}
+.step_box ul li.on img{filter: none;}
+.step_box ul li.on::after{background-color: #fa8231;}
 
 
 /* form */
@@ -163,14 +163,14 @@
 }
 
 /* input width */
-.input-box {
+.input_box {
   width: 400px;
   height: 40px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 5px;
 }
-.phone-box {
+.phone_box {
   width: 100px;
   height: 40px;
   background-color: #f2f2f2;
@@ -179,7 +179,7 @@
 }
 
 /* bottom btn */
-.btn-group {
+.btn_group {
   width: 420px;
   margin: auto;
   margin-top: 30px;
@@ -187,7 +187,7 @@
   justify-content: space-between;
   font-size: 17px;
 }
-.btn-group a {
+.btn_group a {
   display: block;
   width: 200px;
   height: 45px;
@@ -199,11 +199,11 @@
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   box-sizing: border-box;
 }
-.btn-group .back-btn {
+.btn_group .back_btn {
   background-color: #fff;
   color: #333;
 }
-.btn-group .join-btn {
+.btn_group .join_btn {
   background-color: #333;
   color: #fff;
 }

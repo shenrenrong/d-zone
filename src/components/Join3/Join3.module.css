@@ -99,7 +99,7 @@
 
 /* 회원가입 과정 스텝 켜지기 */
 /* contents */
-.contents-box {
+.contents_box {
   width: 742px;
   height: 392px;
   margin: auto;
@@ -108,7 +108,7 @@
   position: relative;
 }
 
-.contents-box img {
+.contents_box img {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -116,7 +116,7 @@
   left: 30px;
 }
 
-.contents-box-p {
+.contents_box_p {
   text-align: center;
   font-size: 16px;
   margin-bottom: 20px;
@@ -125,25 +125,25 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 0px;
+  right: 55px;
 }
 
-.contents-box-p p:first-child {
+.contents_box-p p:first-child {
   font-size: 30px;
   margin-bottom: 20px;
 }
 
 /* btn */
-.btn-group {
+.btn_group {
   margin-top: 40px;
 }
 
-.btn-group .complete-btn {
+.btn_group .complete_btn {
   display: inline-block;
   width: 200px;
   height: 45px;
   line-height: 45px;
-  font-size: 23px;
+  fon_-size: 23px;
   text-align: center;
   margin: auto;
   border-radius: 5px;

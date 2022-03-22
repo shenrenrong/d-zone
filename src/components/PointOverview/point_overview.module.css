@@ -62,14 +62,16 @@
 .date_box {
   width: 375px;
   font-size: 16px;
+  display: flex;
 }
-.date_box > label {
-  display: none;
-}
-.date_box input {
-  padding: 3px 6px;
-  outline: transparent;
+
+.date_box .date_picker {
+  padding: 3px 6px !important;
+  outline: transparent !important;
   cursor: pointer;
+  width: 150px !important;
+  font-family: 'Noto Sans KR', sans-serif !important;
+  display: inline-block !important;
 }
 
 .process_box {

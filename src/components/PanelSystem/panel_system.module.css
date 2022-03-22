@@ -5,7 +5,7 @@
   position: relative;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 .content h2 {
@@ -55,19 +55,14 @@
   outline: transparent;
 }
 
-.search_box i {
+.search_box .search_icon {
   color: #999;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
-}
-
-.search_box .search_icon {
-  color: #b1b1b1;
   font-size: 30px;
   line-height: 30px;
-  
 }
 
 /* panel_table */
