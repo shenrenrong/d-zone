@@ -1,4 +1,5 @@
 const FaqCategoryList = [
+
   {
       id:1,
       category: "카테고리1",
@@ -36,5 +37,4 @@ const FaqCategoryList = [
       answer: "여섯번째 답입니다."
   }
 ]
-
-export default FaqCategoryList;
+  export default FaqCategoryList;

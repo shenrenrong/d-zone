@@ -6,7 +6,6 @@ function LoginContainer() {
  
 
   return (
-
     <div className="loginContainer">
       <div className="formContainer">
         <h1>WELCOME TO DIGITAL ZONE</h1>

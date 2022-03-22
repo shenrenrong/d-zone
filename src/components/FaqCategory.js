@@ -3,10 +3,13 @@ import FaqCategoryList from "./FaqCategoryList";
 import "./FaqCategory.css";
 import FaqAccordion from "./FaqAccordion";
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> efdfe3851adc4143e0f957cec402274166f81019
 function FaqCategory() {
   const [data, setData] = useState(FaqCategoryList);
   const filterResult = (catItem) => {
@@ -22,6 +25,7 @@ function FaqCategory() {
       <main className="faq">
         <div className="inner-box">
           <div id="acco">
+
 
             <div id="myBtnContainer">
               <button className="btn" onClick={() => setData(FaqCategoryList)}>
@@ -39,11 +43,13 @@ function FaqCategory() {
             </div>
 
             <h3>제목</h3>
+
             <ul className="faqContainer">
               {data.map((values) => {
                 const { id,category, question, answer } = values;
                 return (
                   <FaqAccordion {...values}/>
+
                 );
               })}
             </ul>
@@ -55,3 +61,4 @@ function FaqCategory() {
 }
 
 export default FaqCategory;
+

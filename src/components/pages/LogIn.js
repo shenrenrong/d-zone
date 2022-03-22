@@ -5,7 +5,7 @@ import LoginContainer from "../LoginContainer";
 
 export default function LogIn() {
   return (
-    <div>
+    <div className="log-in">
       <LoginContainer/>
     </div>
 
