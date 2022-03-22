@@ -55,12 +55,9 @@ function SurveyModify(){
                     <dt><span>발송패널 수</span></dt>
                     <dd>
                         <div className={styles.fileuploadArea}>
-                            <label htmlFor="upload_btn" className="filebtn">파일 등록</label>
-                            <input type="file" id="upload_btn" accept=".xls,.xlsx" className={styles.fileuploadBtn}  />
-                            <span className={styles.uploadName}></span>
-                        </div> 
+                            <input type="file" accept=".xls,.xlsx" className={styles.uploadButton} />
+                        </div>
                         <p>12,500건</p>
-                        
                     </dd>
                 </dl>
                 <dl className={styles.dl5}>

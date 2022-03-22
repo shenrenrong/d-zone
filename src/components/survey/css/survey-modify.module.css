@@ -123,38 +123,21 @@ input:focus {
 }
 /*파일등록*/
 .fileuploadArea {
-  width: 250px;
   display: flex;
 }
-.fileuploadArea label {
-  width: 130px;
-  display: inline-block;
-  padding: 12px 20px;
-  color: #fff;
-  vertical-align: middle;
-  background-color: #ffc107;
-  cursor: pointer;
-  height: 40px;
+.uploadButton{
   font-size: 16px;
-  line-height: 16px;
+  background-color: #fff;
+  width: 250px;
+  outline: none;
+}
+::-webkit-file-upload-button{
+  color:#fff;
+  background: #ffc107;
+  padding: 10px;
   border-radius: 10px;
-}
-.fileuploadArea input[type="file"] {
-  position: absolute;
-  width: 0;
-  height: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-}
-.fileuploadArea .uploadName {
-  display: inline-block;
-  height: 40px;
-  padding: 0 10px;
-  vertical-align: middle;
   border: none;
-  width: 78%;
-  color: #999999;
+  outline: none;
 }
 .dl4 p {
   font-size: 16px;
