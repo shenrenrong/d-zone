@@ -22,6 +22,7 @@ function Navbar() {
     showButton();
   }, []); /* 작은화면에서 리프레쉬할때 로그인버튼 안보이게.. 아니 ㅅㅂ 머지? 이해안댐 */
 
+
   return (
     <>
       <nav className="navbar">

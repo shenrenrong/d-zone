@@ -3,9 +3,7 @@ import FaqCategoryList from "./FaqCategoryList";
 import "./FaqCategory.css";
 import FaqAccordion from "./FaqAccordion";
 
-/* font-awesome */
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+
 
 
 
